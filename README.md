@@ -18,7 +18,7 @@ This web page is create for a cake bakery to do the sales through an online stor
 ### 1. Online Order 
 
 #### Introduction
-The form prompts users to specify quantity, flavor preferences, and any special instructions. 
+The online order form on the bakery site is a user-friendly interface designed to streamline the process of purchasing delicious baked goods. The form prompts users to specify quantity, flavor preferences, and any special instructions. 
 
 #### Links
 - GitHub:
@@ -27,6 +27,7 @@ The form prompts users to specify quantity, flavor preferences, and any special 
 ### 2. Whole Sale form
 
 #### Introduction
+The Wholesale Form on the bakery site caters specifically to businesses or individuals looking to place bulk orders for baked goods. This streamlined form allows wholesale customers to easily select from a range of products, input desired quantities.
 
 #### Links
 - GitHub:
@@ -35,6 +36,7 @@ The form prompts users to specify quantity, flavor preferences, and any special 
 ### 3. Order for the event 
 
 #### Introduction
+The "Order for the Event" form on the bakery site is designed to accommodate customers planning special occasions. This specialized form streamlines the process of ordering baked goods for events such as weddings, birthdays, or corporate gatherings. Users can easily select from a curated menu of event-specific items like custom cakes & cupcakes.
 
 #### Links
 - GitHub:
@@ -43,6 +45,7 @@ The form prompts users to specify quantity, flavor preferences, and any special 
 ### 4. Membership form 
 
 #### Introduction
+The Membership Form on the bakery site offers an exclusive experience for loyal customers. By filling out the Membership Form, customers can join a community of fellow enthusiasts and enjoy a more personalized and rewarding relationship with the bakery.
 
 #### Links
 - GitHub:
