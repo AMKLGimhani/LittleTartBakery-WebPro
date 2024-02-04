@@ -11,7 +11,7 @@ This web page is created for a bakery to do the sales through an online store. T
 
 ## Features
 - [ ] Online Orders (Chalani Kalpana) 
-- [ ] Whole Sale form (Nilmini Pusweli)
+- [ ] Wholesale form (Nilmini Pusweli)
 - [ ] Order for an event (Kushani Abeykoon)
 - [ ] Membership form (Manasha Siriwardana)
       
