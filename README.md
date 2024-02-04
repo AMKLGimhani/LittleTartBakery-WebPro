@@ -10,9 +10,15 @@ This web page is created for a bakery to do the sales through an online store. T
 - [Tables](#tables)
 
 ## Features
+<<<<<<< HEAD
 - [ ] Online Orders (Chalani Kalpana) 
 - [ ] Whole Sale form (Nilmini Pusweli)
 - [ ] Order for an event (Kushani Abeykoon))
+=======
+- [ ] Online Order (Chalani Kalpana) 
+- [ ] Whole Sale form (Nilmini Pusweli)
+- [ ] Order for the event (Kushani Abeykoon)
+>>>>>>> 2dd3cdd6da78322db5e6d30dfa1e12fd6cf4ac04
 - [ ] Membership form (Manasha Siriwardana)
       
 ### 1. Online Order 
