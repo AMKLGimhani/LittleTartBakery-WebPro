@@ -10,10 +10,10 @@ This web page is create for a cake bakery to do the sales through an online stor
 - [Tables](#tables)
 
 ## Features
-- [ ] Online Order (Full Name, Created By) 
-- [ ] Whole Sale form (Full Name, Created By)
-- [ ] Order for the event (Full Name, Created By)
-- [ ] Membership form (Full Name, Created By)
+- [ ] Online Order (Chalani Kalpana) 
+- [ ] Whole Sale form (Nilmini Pusweli)
+- [ ] Order for the event (Kushani Abeykoon)
+- [ ] Membership form (Manasha Siriwardana)
       
 ### 1. Online Order 
 
