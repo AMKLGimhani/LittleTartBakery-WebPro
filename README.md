@@ -1,7 +1,7 @@
 # Exercise 5: Readme.md
 # Little Tart Bakers-Team 08
 
-This web page is create for a cake bakery to do the sales through an online store.
+This web page is created for a bakery to do the sales through an online store. The products are mainly focused on cake products such as various types of cakes and cupcake types.
 
 ## Table of Content
 - [Features](#features)
@@ -10,10 +10,10 @@ This web page is create for a cake bakery to do the sales through an online stor
 - [Tables](#tables)
 
 ## Features
-- [ ] Online Order (Full Name, Created By) 
-- [ ] Whole Sale form (Full Name, Created By)
-- [ ] Order for the event (Full Name, Created By)
-- [ ] Membership form (Full Name, Created By)
+- [ ] Online Orders (Chalani Kalpana) 
+- [ ] Whole Sale form (Nilmini Pusweli)
+- [ ] Order for an event (Kushani Abeykoon))
+- [ ] Membership form (Manasha Siriwardana)
       
 ### 1. Online Order 
 
