@@ -1,7 +1,7 @@
 # Exercise 5: Readme.md
 # Little Tart Bakers-Team 08
 
-This web page is created for a bakery to do the sales through an online store. The products are mainly focused on cake products such as various types of cakes and cupcake types.
+This web page is created for a bakery to do the sales through an online store. The sales are mainly focused on cake products such as various types of cakes and cupcake types.
 
 ## Table of Content
 - [Features](#features)
@@ -27,7 +27,7 @@ The online order form on the bakery site is a user-friendly interface designed t
 ### 2. Whole Sale form
 
 #### Introduction
-The Wholesale Form on the bakery site caters specifically to businesses or individuals looking to place bulk orders for baked goods. This streamlined form allows wholesale customers to easily select from a range of products, input desired quantities.
+The Wholesale Form on the bakery site caters specifically to businesses or individuals looking to place bulk orders for baked goods. This streamlined form allows wholesale customers to easily select from a range of products and  input desired quantities.
 
 #### Links
 - GitHub:
@@ -36,7 +36,7 @@ The Wholesale Form on the bakery site caters specifically to businesses or indiv
 ### 3. Order for the event 
 
 #### Introduction
-The "Order for the Event" form on the bakery site is designed to accommodate customers planning special occasions. This specialized form streamlines the process of ordering baked goods for events such as weddings, birthdays, or corporate gatherings. Users can easily select from a curated menu of event-specific items like custom cakes & cupcakes.
+The "Order for the Event" form on the bakery site is designed to accommodate customers who are planning special occasions. This specialized form streamlines the process of ordering baked goods for events such as weddings, birthdays or corporate gatherings. Users can easily select from a curated menu of event-specific items like custom cakes & cupcakes.
 
 #### Links
 - GitHub:
