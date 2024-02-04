@@ -10,12 +10,21 @@ This web page is create for a cake bakery to do the sales through an online stor
 - [Tables](#tables)
 
 ## Features
-- [ ] Feature 1 (Full Name,Created By) 
-- [ ] Feature 2 (Full Name,Created By)
-- [ ] Feature 3 (Full Name,Created By)
-- [ ] Feature 3 (Full Name,Created By)
+- [ ] Online Order (Full Name, Created By) 
+- [ ] Whole Sale form (Full Name, Created By)
+- [ ] Order for the event (Full Name, Created By)
+- [ ] Membership form (Full Name, Created By)
       
-### Feature 1 
+### 1. Online Order 
+
+#### Introduction
+The form prompts users to specify quantity, flavor preferences, and any special instructions. 
+
+#### Links
+- GitHub:
+- shell.hamk.fi:
+
+### 2. Whole Sale form
 
 #### Introduction
 
@@ -23,7 +32,7 @@ This web page is create for a cake bakery to do the sales through an online stor
 - GitHub:
 - shell.hamk.fi:
 
-### Feature 2
+### 3. Order for the event 
 
 #### Introduction
 
@@ -31,15 +40,7 @@ This web page is create for a cake bakery to do the sales through an online stor
 - GitHub:
 - shell.hamk.fi:
 
-### Feature 3 
-
-#### Introduction
-
-#### Links
-- GitHub:
-- shell.hamk.fi:
-
-### Feature 4 
+### 4. Membership form 
 
 #### Introduction
 
