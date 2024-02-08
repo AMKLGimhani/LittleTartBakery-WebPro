@@ -1,0 +1,213 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image: url(Pictures/Backgroundnew.jpg);
+    margin: 16px auto;
+    width: 1200px;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.logo {
+    width: 75%; 
+    height: auto;
+    float: left;
+    padding-left: 10%;
+    background: transparent;
+}
+
+.bg-body-tertiary {
+    background: transparent!important;
+    margin-top: 75px;
+}
+
+.navbar-nav a, .navbar-nav a:visited, .navbar-nav a:active {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 20px;
+    margin-right: 30px;
+    font-size: 20px;      
+}
+
+.navbar-nav a:hover {
+    color: brown;
+}
+
+.btn-danger {
+    background-color: rgb(238, 116, 116);
+    border-color: rgb(241, 175, 175);
+    padding: 15px;
+    border-radius: 20px;
+    color: aliceblue;
+    text-decoration: none;    
+}
+
+.btn-danger:hover {
+    background-color: rgb(240, 96, 96);
+    border-color: rgb(240, 96, 96);
+}
+
+.topic {
+    background-color: rgba(238, 116, 116, 0.252);
+    padding-bottom: 1px;
+    padding-top: 20px;
+    font-weight: bolder;
+    text-align: center;
+    overflow: hidden;
+    font-family:Georgia, 'Times New Roman', Times, serif;  
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card1:hover img {
+    transform: scale(1.1,1.1)
+}
+
+.card2:hover img {
+    transform: scale(1.1,1.1)
+}
+
+.text {
+    padding-bottom: 60px;
+    background: transparent;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text2 {
+    background-color: rgba(238, 116, 116, 0.252);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;   
+}
+
+.text3 {
+    grid-area: companydes;
+    background: transparent;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer {  
+    height: 150px;
+    background-color: rgb(238, 116, 116);
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.mail {
+    width: 40px;
+    height: auto;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.fb {
+    width: 35px;
+    height: auto;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.insta {
+    width: 20px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.Discount {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.card {
+    width: 250px;
+    height: auto;
+    display:grid;
+    margin: 16px auto;
+    gap: 16px;
+}
+
+
+
+.branch-card {
+    width: 100%;
+    height: auto; 
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(238, 116, 116, 0.252);
+    font-size: 25px;
+    margin: 16px auto;
+}
+
+
+.social1, .social2, .social3 {
+
+    width: auto;
+    height: auto;
+    margin: 10px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.visitus {  
+    
+    width: 100%;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.vsfb, .vsinsta {
+    
+    width: 75px;
+    height: auto;
+    margin: 5px; 
+    align-items: center;  
+}
+
+.vsmail {
+    
+    width: 75px;
+    height: auto;
+    align-items: center;
+}
+
+
+@media screen and (max-width:1200px) {
+    
+    body {
+        width: 90%;
+     }    
+
+    
+}
+
