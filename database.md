@@ -45,7 +45,7 @@ CREATE TABLE `Product` (
 # Order Table- Chalani Kalpana
 ```sql
 
-CREATE TABLE `Order Table` (
+CREATE TABLE `Order_Table` (
   `order_id` int NOT NULL,
   `product_id` int NOT NULL,
   `quntity` int NOT NULL,
