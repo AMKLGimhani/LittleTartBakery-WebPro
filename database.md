@@ -32,7 +32,7 @@ CREATE TABLE `Admin` (
 
 ```
 
-# Product table - Nilmini Pusweli
+# Product Table - Nilmini Pusweli
 ```sql
 
 CREATE TABLE `Product` (
