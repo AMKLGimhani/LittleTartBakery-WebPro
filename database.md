@@ -14,6 +14,32 @@ CREATE TABLE `Customer` (
   `tp_no` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+```
+#  Admin Table - A.M. Kushani Lakshika
+
+```sql
+
+CREATE TABLE `Admin` (
+  `admin_id` int NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `user_name` varchar(20) NOT NULL,
+  `password` varchar(10) NOT NULL,
+  `admin_email` varchar(50) NOT NULL,
+  `admin_tp` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+```
+
+# Product table - Nilmini Pusweli
+```sql
+
+CREATE TABLE `Product` (
+  `product_id` int NOT NULL,
+  `product_name` varchar(50) NOT NULL,
+  `price` decimal(5,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 ```
 # Order Table- Chalani Kalpana
