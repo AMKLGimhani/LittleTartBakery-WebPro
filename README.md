@@ -53,10 +53,10 @@ The Membership Form on the bakery site offers an exclusive experience for loyal 
 
 ## Database Tables
 
-- [ ] DB Table 1 (Full Name,Created By)
-- [ ] DB Table 2 (Full Name,Created By)
-- [ ] DB Table 3 (Full Name,Created By)
-- [ ] DB Table 4 (Full Name,Created By)
+- [ ] DB Table 1 (Admin Table,Created By-Kushani Abeykoon)
+- [ ] DB Table 2 (Order Table,Created By-Chalani Kalpana)
+- [ ] DB Table 3 (Product Table,Created By-Nilmini Pusweli)
+- [ ] DB Table 4 (Customer Table,Created By-Manasha Siriwardana)
       
 ### Table 1 
 ### Table 2  
