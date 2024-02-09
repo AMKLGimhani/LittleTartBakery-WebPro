@@ -143,6 +143,8 @@ The "Customer" table facilitates the management of customer-related information 
 
 ### ER Diagram
 
+![ER_Diagram](Pictures/ER_diagram.jpg)
+
 ## Forms
 - [ ] Form 1 (Full Name, Created By)
 - [ ] Form 2 (Full Name, Created By)
