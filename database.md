@@ -1,4 +1,4 @@
-#  Customer Table - Manasha Siriwardana
+#  Customer Table - Chalani Kalpana
 
 ```sql
 
@@ -58,7 +58,7 @@ CREATE TABLE `Order_Table` (
 ```
 
 
-# Membership Table- Chalani Kalpana
+# Membership Table- Manasha Siriwardana
 
 ```sql
 CREATE TABLE `Membership` (
