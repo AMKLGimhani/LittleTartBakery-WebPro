@@ -1,11 +1,12 @@
-#  Customer Table - Manasha Siriwardana
+#  Customer Table - Chalani Kalpana
 
 ```sql
 
 CREATE TABLE `Customer` (
   `customer_id` int NOT NULL,
+  `member_id` int NOT NULL,
   `fname` varchar(50) NOT NULL,
-  `lnam` varchar(50) NOT NULL,
+  `lname` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `apartment_no` varchar(20) NOT NULL,
   `street` varchar(50) NOT NULL,
   `postal_code` varchar(50) NOT NULL,
@@ -42,15 +43,35 @@ CREATE TABLE `Product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 ```
-# Order Table- Chalani Kalpana
+# Order Table- Nilmini Pusweli
 ```sql
 
 CREATE TABLE `Order_Table` (
   `order_id` int NOT NULL,
+  `customer_id` int NOT NULL,
   `product_id` int NOT NULL,
-  `quntity` int NOT NULL,
-  `price` decimal(5,2) NOT NULL
+  `quantity` int NOT NULL,
+  `price` decimal(10,0) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 
 ```
 
+
+# Membership Table- Manasha Siriwardana
+
+```sql
+CREATE TABLE `Membership` (
+  `member_id` int NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `apartment_no` varchar(50) NOT NULL,
+  `street_no` varchar(10) NOT NULL,
+  `postal_code` varchar(10) NOT NULL,
+  `city` varchar(20) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `ph_no` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+```

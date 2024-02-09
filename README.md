@@ -10,10 +10,10 @@ This web page is created for a bakery to do the sales through an online store. T
 - [Tables](#tables)
 
 ## Features
-- [ ] Online Orders (Chalani Kalpana) 
-- [ ] Wholesale form (Nilmini Pusweli)
-- [ ] Order for an event (Kushani Abeykoon)
+- [ ] Online Orders (Nilmini Pusweli) 
 - [ ] Membership form (Manasha Siriwardana)
+- [ ] Reviews (Chalani Kalpana)
+- [ ] Careers (Kushani Abeykoon)
       
 ### 1. Online Order 
 
@@ -54,9 +54,10 @@ The Membership Form on the bakery site offers an exclusive experience for loyal 
 ## Database Tables
 
 - [ ] DB Table 1 (Admin Table,Created By-Kushani Abeykoon)
-- [ ] DB Table 2 (Order Table,Created By-Chalani Kalpana)
+- [ ] DB Table 2 (Order Table,Created By-Nilmini Pusweli)
 - [ ] DB Table 3 (Product Table,Created By-Nilmini Pusweli)
-- [ ] DB Table 4 (Customer Table,Created By-Manasha Siriwardana)
+- [ ] DB Table 4 (Membership Table,Created By-Manasha Siriwardana)
+- [ ] DB Table 5 (Customer Table,Created By-Chalani Kalpana) 
       
 ### Table 1 
 #### Admin Table
