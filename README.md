@@ -85,6 +85,27 @@ The "Order_Table" storing information about orders placed in a system. It captur
 -  Analyzing customer buying behavior and preferences.
 
 ### Table 3  
+#### Product Table
+
+The "Product" table facilitates the management of product-related information within the system. It stores essential details about each product, enabling efficient inventory management, pricing strategies, and sales analysis.
+
+##### Columns
+- product_id (Primary Key): An integer field uniquely identifying each product within the system.
+- product_name: A varchar field representing the name or title of the product.
+- price: A decimal field representing the price of the product, with precision up to two decimal places.
+  
+##### Constraints
+- The "product_id" column serves as the primary key, ensuring each product record is uniquely identifiable.
+- product_id is a foreign key.
+- All columns (product_id, product_name, price) are marked as "NOT NULL," indicating that they must contain valid data for each product record.
+
+##### Usage
+- Cataloging and categorizing products offered by the organization.
+- Setting and updating product prices based on market trends and business strategies.
+- Tracking product availability and inventory levels.
+- Analyzing sales performance and revenue generation by product.
+
+
 
 ### Table 4
 
