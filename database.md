@@ -43,7 +43,7 @@ CREATE TABLE `Product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 ```
-# Order Table- Chalani Kalpana
+# Order Table- Nilmini Pusweli
 ```sql
 
 CREATE TABLE `Order_Table` (
