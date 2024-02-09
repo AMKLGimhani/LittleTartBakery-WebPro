@@ -54,9 +54,10 @@ The Membership Form on the bakery site offers an exclusive experience for loyal 
 ## Database Tables
 
 - [ ] DB Table 1 (Admin Table,Created By-Kushani Abeykoon)
-- [ ] DB Table 2 (Order Table,Created By-Chalani Kalpana)
+- [ ] DB Table 2 (Order Table,Created By-Nilmini Pusweli)
 - [ ] DB Table 3 (Product Table,Created By-Nilmini Pusweli)
-- [ ] DB Table 4 (Customer Table,Created By-Manasha Siriwardana)
+- [ ] DB Table 4 (Membership Table,Created By-Manasha Siriwardana)
+- [ ] DB Table 5 (Customer Table,Created By-Chalani Kalpana) 
       
 ### Table 1 
 #### Admin Table
