@@ -1,7 +1,19 @@
+<<<<<<< HEAD
 <?php
 include 'header.php';
 ?>
 <div class="row">   
+=======
+
+
+<?php 
+    $title = "Home";
+    include 'header.php'; 
+?>
+
+
+    <div class="row">   
+>>>>>>> d1149696dc7796950d6c7fc1bf469571e0d85697
         <div class="col-md-7"> 
             <div class="text">
                 </br></br>
