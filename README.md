@@ -60,9 +60,16 @@ The Membership Form on the bakery site offers an exclusive experience for loyal 
       
 ### Table 1 
 #### Admin Table
+Admin table is designed to store information about administrators or users with administrative privilage in this system.
 
-
-
+##### Columns
+- admin_id- This is the Primary Key and an integer field that can identify administrators uniquely within the system.
+- first_name- A varchar field storing the first name of the administrator.
+- last_name- A varchar field storing the last name of the administrator.
+- user_name: A varchar field representing the unique username used for authentication and identification.
+- password: A varchar field storing the password associated with the administrator's account, likely encrypted or hashed for security.
+- admin_email: A varchar field storing the email address associated with the administrator's account for communication and notification purposes.
+- admin_tp: A varchar field storing the telephone number or contact number of the administrator, facilitating communication and contact verification.
 
 ### Table 2  
 #### Order Table
