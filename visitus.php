@@ -3,7 +3,7 @@ include 'header.php';
 ?>
 
 
-<div class="row">
+        <div class="row">
             <img class="visitus" src="Pictures/visitus.jpg" alt="visit us banner">
         </div>
 
