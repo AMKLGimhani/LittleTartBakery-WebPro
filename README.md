@@ -59,7 +59,31 @@ The Membership Form on the bakery site offers an exclusive experience for loyal 
 - [ ] DB Table 4 (Customer Table,Created By-Manasha Siriwardana)
       
 ### Table 1 
+#### Admin Table
+
+
 ### Table 2  
+#### Order Table
+
+The "Order_Table" storing information about orders placed in a system. It captures details such as the order ID, the product ID of the item ordered, the quantity of the product, and the price per unit.The "Order_Table" facilitates the management of orders placed within the system. It captures essential details about each order, including the product ordered, the quantity, and the price per unit. This information is vital for tracking sales, managing inventory, and analyzing customer purchase patterns.
+
+##### Columns
+- order_id (Primary Key): An integer field uniquely identifying each order placed within the system.
+- product_id: An integer field representing the unique identifier of the product being ordered. This field likely references a separate table containing product information.
+- quantity: An integer field representing the quantity of the product ordered in the respective order.
+- price: A decimal field representing the price per unit of the product ordered, with precision up to two decimal places.
+  
+##### Constraints
+- The "order_id" column serves as the primary key, ensuring each order record is uniquely identifiable.
+- product_id is a foreign key.
+- All columns are marked as "Not Null" indicating that must contain valid data for each records.
+
+##### Usage
+-  Recording orders placed by customers.
+-  Calculating total sales revenue based on order quantities and prices.
+-  Updating inventory levels by deducting sold quantities.
+-  Analyzing customer buying behavior and preferences.
+
 ### Table 3  
 ### ER Diagram
 
