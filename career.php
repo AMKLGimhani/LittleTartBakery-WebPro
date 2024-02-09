@@ -2,8 +2,9 @@
 $title = "career";
 include 'header.php'; ?>
 
-
-<h1 class="pageBanner">Join Our Team</h1>
+<div class="pageBanner">
+    <h1 class="banner">Join Our Team</h1>
+</div>
 
 
 

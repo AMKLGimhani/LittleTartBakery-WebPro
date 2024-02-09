@@ -201,6 +201,11 @@ footer {
     align-items: center;
 }
 
+.pageBanner{
+    background-color: rgb(255, 20, 71);
+}
+
+
 
 @media screen and (max-width:1200px) {
     
