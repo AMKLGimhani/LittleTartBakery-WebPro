@@ -4,7 +4,7 @@
 
 CREATE TABLE `Customer` (
   `customer_id` int NOT NULL,
-  `member_id` int NOT NULL,
+  `member_id` int NULL,
   `fname` varchar(50) NOT NULL,
   `lname` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `apartment_no` varchar(20) NOT NULL,
