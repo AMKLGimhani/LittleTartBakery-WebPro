@@ -115,9 +115,30 @@ The "Product" table facilitates the management of product-related information wi
 - Analyzing sales performance and revenue generation by product.
 
 
-
 ### Table 4
+#### Customer Table
+The "Customer" table facilitates the management of customer-related information within the organization. It contains details such as the customer ID, first name, last name, contact address, email address, and telephone number. It stores essential details about each customer, enabling personalized communication, order processing, and customer relationship management.
 
+##### Columns
+- customer_id (Primary Key): An integer field uniquely identifying each customer within the system.
+- fname: A varchar field representing the first name of the customer.
+- lname: A varchar field representing the last name of the customer.
+- apartment_no: A varchar field representing the apartment number or unit within the customer's address.
+- street: A varchar field representing the street name or address line of the customer's residence.
+- postal_code: A varchar field representing the postal or ZIP code of the customer's address.
+- city: A varchar field representing the city or locality of the customer's residence.
+- email: A varchar field representing the email address of the customer for communication and correspondence.
+- tp_no: A varchar field representing the telephone number or contact number of the customer.
+  
+##### Constraints
+- The "customer_id" column serves as the primary key, ensuring each customer record is uniquely identifiable.
+- All columns (customer_id, fname, lname, apartment_no, street, postal_code, city, email, tp_no) are marked as "NOT NULL," indicating that they must contain valid data for each customer record.
+
+##### Usage
+- Creating and managing customer accounts.
+- Recording customer contact information for marketing and communication purposes.
+- Processing orders and tracking customer transactions.
+- Providing personalized services and support based on customer preferences and history.
 
 
 ### ER Diagram
