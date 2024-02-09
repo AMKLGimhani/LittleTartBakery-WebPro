@@ -1,34 +1,8 @@
 <?php
 include 'header.php';
 ?>
-            </div>
-            </div>
-            <div class="col-md-8"> 
-                <div class="list">               
-                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                        <div class="container-fluid d-flex justify-content-end">                     
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                <div class="navbar-nav">
-<<<<<<< HEAD
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-=======
-                                <a class="nav-link" aria-current="page" href="index.php">Home</a>
->>>>>>> 69a57327232efadd7dd13c87d42eb91d9e4764ba
-                                <a class="nav-link" href="cake.html">Cake</a>
-                                <a class="nav-link" href="cupcakes.html">Cupcake</a>
-                                <a class="nav-link" href="visitus.html">Visit Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>               
-                </div>
-            </div>
-        </div>
 
-        <div class="row">          
+<div class="row">          
             <a href="cake.html"><img class="Discount" src="Pictures/Pink and Red Happy Valentine’s Day Sale Promotional Banner.jpg" alt="Valentine cake"></a>    
         </div>
 
@@ -39,7 +13,7 @@ include 'header.php';
                     <div class="card-body">
                         <h5 class="card-title">Huminbird Cake</h5>
                         <p class="card-text">30,00 Euro</p>
-                        <a href="#" class="btn btn-danger">Shop Now</a>
+                        <a href="shop.php" class="btn btn-danger">Shop Now</a>
                     </div>
                 </div>
             </div> 
@@ -51,7 +25,7 @@ include 'header.php';
                     <div class="card-body">
                         <h5 class="card-title">Chocolate Cake</h5>
                         <p class="card-text">30,00 Euro</p>
-                        <a href="#" class="btn btn-danger">Shop Now</a>
+                        <a href="shop.php" class="btn btn-danger">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -63,7 +37,7 @@ include 'header.php';
                     <div class="card-body">
                       <h5 class="card-title">Vanila Cake</h5>
                       <p class="card-text">20,00 Euro</p>
-                      <a href="#" class="btn btn-danger">Shop Now</a>
+                      <a href="shop.php" class="btn btn-danger">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -76,7 +50,7 @@ include 'header.php';
                     <div class="card-body">
                         <h5 class="card-title">German Chocolate Cake</h5>
                         <p class="card-text">40,00 Euro</p>
-                        <a href="#" class="btn btn-danger">Shop Now</a>
+                        <a href="shop.php" class="btn btn-danger">Shop Now</a>
                     </div>
                 </div>
             </div> 
@@ -88,7 +62,7 @@ include 'header.php';
                     <div class="card-body">
                         <h5 class="card-title">Valantine's Day Cake</h5>
                         <p class="card-text">60,00 Euro</p>
-                        <a href="#" class="btn btn-danger">Shop Now</a>
+                        <a href="shop.php" class="btn btn-danger">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -100,11 +74,16 @@ include 'header.php';
                     <div class="card-body">
                         <h5 class="card-title">Carrot Cake</h5>
                         <p class="card-text">30,00 Euro</p>
-                        <a href="#" class="btn btn-danger">Shop Now</a>
+                        <a href="shop.php" class="btn btn-danger">Shop Now</a>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
+
+
 
 <?php
 include 'footer.php';

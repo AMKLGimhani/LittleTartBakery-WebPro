@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+
+<?php
+include 'header.php';
+?>
 <h2>Order Details:</h2>
 <form name="order_item form" method="post" action="process.php">
     <div class="form-group">
@@ -31,6 +35,8 @@
     </div>
     <button type="submit" class="btn btn-primary" name="submit">Add to Cart</button>
 </form>
+
+<?php include 'footer.php'; ?>
 =======
 
 <?php 
