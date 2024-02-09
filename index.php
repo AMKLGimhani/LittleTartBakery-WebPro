@@ -6,7 +6,6 @@
 
 
     <div class="row">   
->>>>>>> d1149696dc7796950d6c7fc1bf469571e0d85697
         <div class="col-md-7"> 
             <div class="text">
                 </br></br>
@@ -19,7 +18,7 @@
                 <p>with our exquisite cakes and cupcakes,</p>
                 <p> crafted to elevate your moments of joy.</p>
                 </br>
-                <a href="cake.html" class="btn btn-danger">Shop now</a>
+                <a href="cake.php" class="btn btn-danger">Shop now</a>
                 <br><br>
                 <p>Same day delivery in Hämeenlinna</p>
             </div>
@@ -58,17 +57,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
 
 <?php
 include 'footer.php';
