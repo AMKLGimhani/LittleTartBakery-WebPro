@@ -28,7 +28,7 @@
                                 <div class="navbar-nav">
                                 <a class="nav-link" aria-current="page" href="index.php">Home</a>
                                 <a class="nav-link" href="cake.php">Cake</a>
-                                <a class="nav-link" href="cupcake.php">Cupcake</a>
+                                <a class="nav-link" href="cupcakes.php">Cupcake</a>
                                 <a class="nav-link" href="visitus.php">Visit Us</a>
                                 </div>
                             </div>
