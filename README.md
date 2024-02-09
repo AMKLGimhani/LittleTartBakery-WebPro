@@ -10,10 +10,10 @@ This web page is created for a bakery to do the sales through an online store. T
 - [Tables](#tables)
 
 ## Features
-- [ ] Online Orders (Chalani Kalpana) 
-- [ ] Wholesale form (Nilmini Pusweli)
-- [ ] Order for an event (Kushani Abeykoon)
+- [ ] Online Orders (Nilmini Pusweli) 
 - [ ] Membership form (Manasha Siriwardana)
+- [ ] Reviews (Chalani Kalpana)
+- [ ] Careers (Kushani Abeykoon)
       
 ### 1. Online Order 
 
