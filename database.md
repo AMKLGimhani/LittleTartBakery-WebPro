@@ -16,6 +16,19 @@ CREATE TABLE `Customer` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 ```
+#  Review Table - Chalani Kalpana
+```sql
+
+CREATE TABLE `review` (
+  `review_id` int NOT NULL,
+  `product_id` int NOT NULL,
+  `customer_id` int NOT NULL,
+  `rating` decimal(3,2) NOT NULL,
+  `review_text` varchar(200) NOT NULL,
+  `review_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+```
+
 #  Admin Table - A.M. Kushani Lakshika
 
 ```sql
