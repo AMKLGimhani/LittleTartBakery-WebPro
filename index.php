@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-<?php
-include 'header.php';
-?>
-<div class="row">   
-=======
-
 
 <?php 
     $title = "Home";
