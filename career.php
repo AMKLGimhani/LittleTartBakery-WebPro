@@ -26,8 +26,8 @@ require_once 'header.php';
                 <label for="age">Age:</label>
                 <input type="number" class="form-control" id="age" placeholder="Enter your age" name="age" required><br>
 
-                <label for="apartmentNo&Street">Apartment No & Street:</label>
-                <input type="text" class="form-control" id="apartmentNo&Street" placeholder="Enter your apartment no & street" name="apartmentNo&Street" required><br>
+                <label for="apartmentDetais">Apartment No & Street:</label>
+                <input type="text" class="form-control" id="apartmentDetais" placeholder="Enter your apartment no & street" name="apartmentDetais" required><br>
 
                 <label for="city">City:</label>
                 <input type="text" class="form-control" id="city" placeholder="Enter your city" name="city" required><br>
@@ -47,7 +47,7 @@ require_once 'header.php';
 
 
             
-                <button type="submit" class="btn btn-primary" name="submit">Submit Application</button>
+                <button type="submit" class="btn btn-primary" name="submitcareer">Submit Application</button>
             </div>
 
             <div class="col-md-5"> 
