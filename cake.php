@@ -6,7 +6,9 @@ require_once 'header.php';
 <div class="row">          
             <a href="cake.html"><img class="Discount" src="Pictures/Pink and Red Happy Valentine’s Day Sale Promotional Banner.jpg" alt="Valentine cake"></a>    
         </div>
+        
 
+                                 		
         <div class="row">
             <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
@@ -84,7 +86,7 @@ require_once 'header.php';
 
 
 
-
+}
 
 <?php
 require_once 'footer.php';
