@@ -17,8 +17,8 @@ if (isset($_POST['submitcareer'])) {
     include 'db.php';
 
     
-    $sql = "INSERT INTO studentsinfo (Position, first_name, last_name, age, apartmentNo_street, city, email, tel_no, qualification, experience)
-            VALUES ('$OpenPositions', '$fname', '$lname', '$age', '$apartmentDetais', '$city', '$emailAdd' '$tp', '$pq', '$working')";
+    $sql = "INSERT INTO career (position, first_name, last_name, age, apartmentNo_street, city, email, tel_no, qualification, experience)
+            VALUES ('$OpenPositions', '$fname', '$lname', '$age', '$apartmentDetais', '$city', '$emailAdd', '$tp', '$pq', '$working')";
 
     
     if ($conn->query($sql) === TRUE) {

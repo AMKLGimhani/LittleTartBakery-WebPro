@@ -6,7 +6,7 @@ require_once 'header.php';
 <h1>Join Our Team</h1><br>
 <form name="formCareer" method="post" action="process_career.php">
     
-    <div class="form-group">
+    <div class="form-career">
      
         <div class="row">
             <div class="col-md-7">
