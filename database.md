@@ -50,6 +50,19 @@ CREATE TABLE `Admin` (
 
 ```sql
 
+CREATE TABLE `career` (
+  `applicant_id` int NOT NULL,
+  `position` varchar(50) NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `age` int NOT NULL,
+  `apartmentNo_street` varchar(70) NOT NULL,
+  `city` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `tel_no` varchar(20) NOT NULL,
+  `qualification` varchar(500) NOT NULL,
+  `experience` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 ```
 
