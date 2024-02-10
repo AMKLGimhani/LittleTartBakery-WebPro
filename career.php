@@ -1,6 +1,6 @@
 <?php 
 $title = "career";
-include 'header.php'; ?>
+require_once 'header.php'; ?>
 
 <div class="pageBanner">
     <h1 class="banner">Join Our Team</h1>
@@ -10,4 +10,4 @@ include 'header.php'; ?>
 
 
 
-<?php include 'footer.php'; ?>
+<?php require_once 'footer.php'; ?>

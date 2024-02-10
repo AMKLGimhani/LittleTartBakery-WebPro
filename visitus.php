@@ -1,5 +1,6 @@
 <?php
-include 'header.php';
+$title = "visit us";
+require_once 'header.php';
 ?>
 
 
@@ -60,5 +61,5 @@ include 'header.php';
 
 
 <?php
-include 'footer.php';
+require_once 'footer.php';
 ?>

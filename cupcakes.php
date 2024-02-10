@@ -1,5 +1,6 @@
 <?php
-include 'header.php';
+$title = "Cupcakes";
+require_once 'header.php';
 ?>
 
 <div class="row">          
@@ -90,5 +91,5 @@ include 'header.php';
 
 
 <?php
-include 'footer.php';
+require_once 'footer.php';
 ?>
