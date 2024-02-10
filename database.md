@@ -21,7 +21,6 @@ CREATE TABLE `Customer` (
 
 CREATE TABLE `review` (
   `review_id` int NOT NULL,
-  `product_id` int NOT NULL,
   `customer_name` varchar(50) NOT NULL,
   `rating` int NOT NULL,
   `review_text` varchar(200) NOT NULL,
