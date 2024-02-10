@@ -29,7 +29,7 @@ require_once 'header.php'; ?>
             </div>
     </div>
 
-    <form name="formCareer" method="post" action="process_career.php">
+    <form name="formCareer" method="post" action="process_membership.php">
     
     <div class="form-group">
         <div class="row">
