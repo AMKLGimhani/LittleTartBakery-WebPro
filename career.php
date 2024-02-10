@@ -1,5 +1,5 @@
 <?php 
-$title = "career";
+$title ="career";
 include 'header.php'; ?>
 
 <div class="pageBanner">
