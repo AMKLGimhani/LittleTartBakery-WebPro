@@ -46,6 +46,13 @@ CREATE TABLE `Admin` (
 
 ```
 
+#  Career Table - A.M. Kushani Lakshika
+
+```sql
+
+
+```
+
 # Product Table - Nilmini Pusweli
 ```sql
 
