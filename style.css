@@ -40,6 +40,7 @@ h2 {
 }
 
 .navbar-nav a:hover {
+   
     color: brown;
 }
 
@@ -51,6 +52,7 @@ h2 {
     color: aliceblue;
     text-decoration: none;    
 }
+
 
 .btn-danger:hover {
     background-color: rgb(240, 96, 96);
@@ -229,6 +231,32 @@ footer {
     width: 250px;
     height: auto;
     align-items: center;
+}
+
+.form-check-label a:hover  {
+    
+    color: brown;
+    text-decoration: underline;
+}
+
+.form-check-label a, .form-check-label a:visited, .form-check-label a:active{
+
+    text-decoration: underline;
+}
+
+.btn-primary { 
+    background-color: rgb(238, 116, 116);
+    border-color: rgb(241, 175, 175);
+    padding: 15px;
+    border-radius: 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.btn-primary:hover, .btn-primary a, .btn-primary a:visited, .btn-primary a:active {
+    background-color: rgb(240, 96, 96);
+    border-color: rgb(240, 96, 96);
+    --bs-btn-active-bg: rgb(240, 96, 96);
 }
 
 @media screen and (max-width:1200px) {
