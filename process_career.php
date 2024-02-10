@@ -1,0 +1,35 @@
+<?php
+
+if (isset($_POST['submitcareer'])) {
+    
+    $OpenPositions = $_POST['OpenPositions']; 
+    $fname = $_POST['fname'];     
+    $lname = $_POST['lname'];
+    $age = $_POST['age']; 
+    $apartmentDetais = $_POST['apartmentDetais'];
+    $city = $_POST['city'];
+    $emailAdd = $_POST['emailAdd'];
+    $tp = $_POST['tp'];    
+    $pq = $_POST['pq'];      
+    $working = $_POST['working']; 
+
+    
+    include 'db.php';
+
+    
+    $sql = "INSERT INTO career (position, first_name, last_name, age, apartmentNo_street, city, email, tel_no, qualification, experience)
+            VALUES ('$OpenPositions', '$fname', '$lname', '$age', '$apartmentDetais', '$city', '$emailAdd', '$tp', '$pq', '$working')";
+
+    
+    if ($conn->query($sql) === TRUE) {
+        
+        echo "New record added";
+    } else {
+        
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    
+    $conn->close();
+}
+?>
