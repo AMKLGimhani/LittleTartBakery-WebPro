@@ -205,7 +205,31 @@ footer {
     background-color: rgb(255, 20, 71);
 }
 
+.club {  
+    
+    width: 100%;
+    align-items: center;
+    margin-bottom: 16px;
+}
 
+.imgdelivery {
+    
+    width: 250px;
+    height: auto;
+    align-items: center;
+}
+.imggift {
+    
+    width: 250px;
+    height: auto;
+    align-items: center;
+}
+.imgcalender {
+    
+    width: 250px;
+    height: auto;
+    align-items: center;
+}
 
 @media screen and (max-width:1200px) {
     
