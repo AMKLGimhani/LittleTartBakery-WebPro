@@ -23,7 +23,7 @@ require_once 'header.php';
                 <label for="lname">Last Name:</label>
                 <input type="text" class="form-control" id="lname" placeholder="Enter your last name" name="lname" required><br>
 
-                <label for="age">Birth Year:</label>
+                <label for="age">Age:</label>
                 <input type="number" class="form-control" id="age" placeholder="Enter your age" name="age" required><br>
 
                 <label for="apartmentNo&Street">Apartment No & Street:</label>
