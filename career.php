@@ -48,8 +48,8 @@ require_once 'header.php';
             </div>
 
             <div class="col-md-5"> 
-            <div class="photo">
-                <img class="img-fluid" src="Pictures/IMAGE4.jpg" alt="Little Tart Bakery main cake">
+            <div class="careerphoto">
+                <img class="img-fluid" src="Pictures\baker2.png" alt="Little Tart Bakery main cake" style="height: 700px; width:700px">
             </div>
         </div>
         </div>
