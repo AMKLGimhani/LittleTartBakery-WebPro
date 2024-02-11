@@ -264,7 +264,67 @@ footer {
     body {
         width: 90%;
      }    
-
-    
 }
+.checked {
+    color: rgb(240, 96, 96);
+  }
 
+  .cards
+  {
+    width: 250px;
+    height: auto;
+    display:grid;
+    margin: 16px auto;
+    gap: 16px;
+    background-color: rgb(244, 241, 241);
+    border: 2px solid rgb(240, 96, 96);
+    border-radius: 12px;
+    padding: 5px;
+    
+  }
+
+  .card-bodys
+  {
+    font-style: italic;
+    font-size: 12px;
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(241, 175, 175);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 50%;
+    background-color: rgb(240, 96, 96);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(240, 96, 96);
+  }
+  input [type=number]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(241, 175, 175);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+  div {
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  

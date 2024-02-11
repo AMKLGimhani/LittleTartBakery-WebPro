@@ -1,11 +1,13 @@
 <?php
 include 'header.php';
+include 'db.php';
+$title = 'Customer Review';
 ?>
-   <h2>Enter Your Review</h2>
+<div class="row">   
+<div class='col-md-6'>
+<h2>Enter Your Review</h2><br><br>
     <form action="process_review.php" method="post">
-        <label for="product_id">Product ID:</label>
-        <input type="number" id="product_id" name="product_id" min="1" max="12" required><br><br>
-
+        
         <label for="customer_name">Your Name:</label>
         <input type="text" id="customer_name" name="customer_name" required><br><br>
 
@@ -16,13 +18,81 @@ include 'header.php';
         <textarea id="review_text" name="review_text" required></textarea><br><br>
 
         <input type="submit" value="Submit Review">
-    </form>
+    </form><br><br>
+    </div>
+    <div class='col-md-6'>
+        <img src="Pictures/review3.jpg" alt="">
+     
+    </div>  
 
-    
 
 
+
+
+<?php
+
+$sql = "SELECT customer_name, rating, review_text, review_date FROM review order by review_date desc";
+$result = $conn->query($sql);
  
+if($result->num_rows> 0)
+{
+   $col=1;
+    while($row = $result->fetch_assoc())
+ 
+    {
+        if ($col==1)
+        {
+             echo "<div class = 'row'>";
+        }
+      
+        echo "<div class='col-md-4' style='width: 18rem;'>";
 
+                $rates= $row["rating"];
+                echo "<div class='cards'>";
+                echo "<div class='card-headers'>" ;
+                echo "<p>" . $row["review_date"] . "</p>";
+                
+                for($i=1; $i<=$rates; $i++)
+
+                {
+
+                echo"<span class='fa fa-star checked'></span>";
+
+                }
+                echo  "</div>";
+                echo " <div class='card-bodys'>";
+                echo " <blockquote class='blockquote mb-0'>";
+                echo "<q>" .$row["review_text"] . "</q><br><br>";
+                echo "<p>". "-" . $row["customer_name"] . "</p><br><br>";
+                echo " </blockquote>";
+                echo "</div>";
+                echo "</div>";
+                echo "</div>"; 
+        
+        $col++;
+        if ($col==4)
+        {
+            $col=1;
+        }
+
+        if ($col==1)
+        {
+        echo "</div>"; 
+        }  
+        
+    }
+    
+}
+
+else
+{
+    echo "No Reviews Yet.";
+}
+
+$conn->close();
+
+?><br><br>
+   
 <?php
 include 'footer.php';
 ?>
