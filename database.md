@@ -89,7 +89,7 @@ INSERT INTO `Product` (`id`, `name`, `image`, `price`) VALUES
 (7, 'Birthday CupCake', 'Pictures/7.jpg', 30.00),
 (8, 'Valentine CupCake', 'Pictures/8.jpg', 56.00),
 (9, 'Classic CupCake', 'Pictures/9.jpg', 30.00),
-(10, 'Confetti CupCake', 'Pictures/10.jpg', 56.00),
+(10, 'Confetti CupCake', 'Pictures/10.jpg', 56.00), 
 (11, 'Mini Vanila CupCake', 'Pictures/11.jpg', 35.00),
 (12, 'Rose CupCake', 'Pictures/12.jpg', 50.00);
 
