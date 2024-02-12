@@ -15,7 +15,7 @@ if (isset($_POST['submitmembership'])) {
     
 
 
-    include 'dbmember.php';
+    include 'dbcareer.php';
 
     
     $sql = "INSERT INTO Membership (subscription, first_name, last_name, apartment_no, street, postal_code, city, email, ph_no, TnC)
