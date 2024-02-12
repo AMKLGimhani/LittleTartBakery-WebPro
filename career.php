@@ -3,7 +3,7 @@ $title = "career";
 require_once 'header.php';
 ?>
 
-<h1>Join Our Team</h1><br>
+<h1>Explore exciting career opportunities with us!</h1><br>
 <form name="formCareer" method="post" action="process_career.php">
     
     <div class="form-career">
