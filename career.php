@@ -54,7 +54,7 @@ require_once 'header.php';
 
             <div class="col-md-5"> 
             <div class="careerphoto">
-                <img class="img-fluid" src="Pictures\baker2.png" alt="Little Tart Bakery main cake" style="height: 700px; width:700px">
+                <img class="img-fluid" src="Pictures\baker2.png" alt="Little Tart Bakery main cake" style="height: 720px; width:720px">
             </div>
         </div>
         </div>
