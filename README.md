@@ -53,15 +53,17 @@ A career feature on this website typically serves as a gateway for individuals s
 
 ## Database Tables
 
-- [ ] DB Table 1 (Admin Table,Created By-Kushani Abeykoon)
-- [ ] DB Table 2 (Order Table,Created By-Nilmini Pusweli)
-- [ ] DB Table 3 (Product Table,Created By-Nilmini Pusweli)
-- [ ] DB Table 4 (Membership Table,Created By-Manasha Siriwardana)
-- [ ] DB Table 5 (Customer Table,Created By-Chalani Kalpana) 
+- [ ] DB Table 1 (Admin Table, Created By-A.M.Kushani Lakshika)
+- [ ] DB Table 2 (Order Table, Created By-Nilmini Pusweli)
+- [ ] DB Table 3 (Product Table, Created By-Nilmini Pusweli)
+- [ ] DB Table 4 (Membership Table, Created By-Manasha Siriwardana)
+- [ ] DB Table 5 (Customer Table, Created By-Chalani Kalpana)
+- [ ] DB Table 6 (Review Table, Created By-Chalani Kalpana)
+- [ ] DB Table 7 (Career Table, Created By-A.M.Kushani Lakshika)
       
 ### Table 1 
 #### Admin Table
-Admin table is designed to store information about administrators or users with administrative privilage in this system.
+The admin table is designed to store information about administrators or users with administrative privileges in this system.
 
 ##### Columns
 - admin_id- This is the Primary Key and an integer field that can identify administrators uniquely within the system.
@@ -75,7 +77,7 @@ Admin table is designed to store information about administrators or users with 
 ### Table 2  
 #### Order Table
 
-The "Order_Table" storing information about orders placed in a system. It captures details such as the order ID, the product ID of the item ordered, the quantity of the product, and the price per unit.The "Order_Table" facilitates the management of orders placed within the system. It captures essential details about each order, including the product ordered, the quantity, and the price per unit. This information is vital for tracking sales, managing inventory, and analyzing customer purchase patterns.
+The "Order_Table" stores information about orders placed in a system. It captures details such as the order ID, the product ID of the item ordered, the quantity of the product, and the price per unit. The "Order_Table" facilitates the management of orders placed within the system. It captures essential details about each order, including the product ordered, the quantity, and the price per unit. This information is vital for tracking sales, managing inventory, and analyzing customer purchase patterns.
 
 ##### Columns
 - order_id (Primary Key): An integer field uniquely identifying each order placed within the system.
@@ -86,7 +88,7 @@ The "Order_Table" storing information about orders placed in a system. It captur
 ##### Constraints
 - The "order_id" column serves as the primary key, ensuring each order record is uniquely identifiable.
 - product_id is a foreign key.
-- All columns are marked as "Not Null" indicating that must contain valid data for each records.
+- All columns are marked as "Not Null" indicating that they must contain valid data for each record.
 
 ##### Usage
 -  Recording orders placed by customers.
@@ -115,8 +117,10 @@ The "Product" table facilitates the management of product-related information wi
 - Tracking product availability and inventory levels.
 - Analyzing sales performance and revenue generation by product.
 
-
 ### Table 4
+#### Membership Table
+
+### Table 5
 #### Customer Table
 The "Customer" table facilitates the management of customer-related information within the organization. It contains details such as the customer ID, first name, last name, contact address, email address, and telephone number. It stores essential details about each customer, enabling personalized communication, order processing, and customer relationship management.
 
@@ -141,6 +145,11 @@ The "Customer" table facilitates the management of customer-related information 
 - Processing orders and tracking customer transactions.
 - Providing personalized services and support based on customer preferences and history.
 
+### Table 6
+#### Review Table
+
+### Table 7
+#### Career Table
 
 ### ER Diagram
 
