@@ -2,11 +2,7 @@
 $title = "Shopping Cart";
  session_start(); 
  include 'header.php'; 
-<<<<<<< HEAD
  include 'dbcareer.php'; 
-=======
- include 'dbmember.php'; 
->>>>>>> fce752abe982b334ae651decd9dbd8fdc91c0b43
 
  if(isset($_POST["add_to_cart"]))  
  {  
