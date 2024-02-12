@@ -24,7 +24,8 @@ require_once 'header.php';
                 <input type="text" class="form-control" id="lname" placeholder="Enter your last name" name="lname" required><br>
 
                 <label for="age">Age:</label>
-                <input type="number" class="form-control" id="age" placeholder="Enter your age" name="age" required><br>
+                <input type="number" class="form-control" id="age" placeholder="Enter your age" name="age" required min="18" max="55">
+                <p style="color: red;">Applicants must be between 18 and 50 years old to apply for these positions.</p>
 
                 <label for="apartmentDetais">Apartment No & Street:</label>
                 <input type="text" class="form-control" id="apartmentDetais" placeholder="Enter your apartment no & street" name="apartmentDetais" required><br>
@@ -33,7 +34,7 @@ require_once 'header.php';
                 <input type="text" class="form-control" id="city" placeholder="Enter your city" name="city" required><br>
 
                 <label for="emailAdd">Email:</label>
-                <input type="text" class="form-control" id="emailAdd" placeholder="Enter your email" name="emailAdd" required><br>
+                <input type="email" class="form-control" id="emailAdd" placeholder="Enter your email" name="emailAdd" required><br>
 
                 <label for="tp">Telephone No:</label>
                 <input type="text" class="form-control" id="tp" placeholder="Enter your telephone no" name="tp" required><br>
@@ -60,7 +61,28 @@ require_once 'header.php';
     
 </form>
 
+<script>
 
+
+
+function validateAge() {
+    const age= document.getElementById("age").value;
+    const ageError= document.getElementById("ageError").value;
+
+    if (age < 18 || age > 55){
+        ageError.innerHTML = "Applicants must be between 18 and 50 years old to apply for this position.";
+        return false;
+    }
+    else{
+        ageError.innerHTML = "";
+        return true;
+    }
+}
+
+// event listeners for real time validation
+document.getElementById("ageError").addEventListener("input",validateAge);
+
+</script>
 
 
 
