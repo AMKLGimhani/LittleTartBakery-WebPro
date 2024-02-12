@@ -69,23 +69,29 @@ CREATE TABLE `career` (
 ```sql
 
 CREATE TABLE `Product` (
-  `product_id` int NOT NULL,
-  `product_name` varchar(50) NOT NULL,
-  `price` decimal(5,2) NOT NULL
+  `id` int NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `price` double(5,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-```
-# Order Table- Nilmini Pusweli
-```sql
+--
+-- Dumping data for table `Product`
+--
 
-CREATE TABLE `Order_Table` (
-  `order_id` int NOT NULL,
-  `customer_id` int NOT NULL,
-  `product_id` int NOT NULL,
-  `quantity` int NOT NULL,
-  `price` decimal(10,0) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
+INSERT INTO `Product` (`id`, `name`, `image`, `price`) VALUES
+(1, 'Humming bird cake', 'Pictures/1.jpg', 30.00),
+(2, 'Chocolate Cake', 'Pictures/2.jpg', 30.00),
+(3, 'Vanila Cake', 'Pictures/3.jpg', 20.00),
+(4, 'German Chocolate Cake', 'Pictures/4.jpg', 40.00),
+(5, 'Valantine Cake', 'Pictures/5.jpg', 60.00),
+(6, 'Carrot Cake', 'Pictures/6.jpg', 30.00),
+(7, 'Birthday CupCake', 'Pictures/7.jpg', 30.00),
+(8, 'Valentine CupCake', 'Pictures/8.jpg', 56.00),
+(9, 'Classic CupCake', 'Pictures/9.jpg', 30.00),
+(10, 'Confetti CupCake', 'Pictures/10.jpg', 56.00),
+(11, 'Mini Vanila CupCake', 'Pictures/11.jpg', 35.00),
+(12, 'Rose CupCake', 'Pictures/12.jpg', 50.00);
 
 ```
 
