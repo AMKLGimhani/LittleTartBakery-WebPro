@@ -95,6 +95,7 @@ CREATE TABLE `Order_Table` (
 ```sql
 CREATE TABLE `Membership` (
   `member_id` int NOT NULL,
+  `subscription` varchar(50) NOT NULL,
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
   `apartment_no` varchar(50) NOT NULL,

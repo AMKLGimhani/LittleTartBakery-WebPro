@@ -259,6 +259,16 @@ footer {
     --bs-btn-active-bg: rgb(240, 96, 96);
 }
 
+.memberheading{
+    text-align: center;
+    padding-bottom: 0;
+    
+}
+
+.intro{
+
+    padding-top: 0;
+}
 @media screen and (max-width:1200px) {
     
     body {
