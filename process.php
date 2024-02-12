@@ -1,5 +1,6 @@
 <?php   
  session_start(); 
+ //session_destroy();
  include 'header.php'; 
  include 'db.php'; 
 
@@ -7,10 +8,13 @@
  {  
       if(isset($_SESSION["shopping_cart"]))  
       {  
-           $item_array_id = array_column($_SESSION["shopping_cart"], "item_id");  
+           $item_array_id = array_column($_SESSION["shopping_cart"], "item_array");  
+          
+           
            if(!in_array($_GET["id"], $item_array_id))  
            {  
                 $count = count($_SESSION["shopping_cart"]);  
+                
                 $item_array = array(  
                      'item_id'=>$_GET["id"],  
                      'item_name'=>$_POST["hidden_name"],  
@@ -21,11 +25,13 @@
            }  
            else  
            {  
+     
                 echo '<script>window.location="process.php"</script>';  
            }  
       }  
       else  
       {  
+         
            $item_array = array(  
                 'item_id'=>$_GET["id"],  
                 'item_name'=>$_POST["hidden_name"],  
@@ -43,10 +49,16 @@
            {  
                 if($values["item_id"] == $_GET["id"])  
                 {  
-                     unset($_SESSION["shopping_cart"][$keys]);  
+                    $key = array_search($_GET['id'], $_SESSION['shopping_cart']);	
+	
+
+
+                     unset($_SESSION["shopping_cart"][$key]);  
+                     
                      echo '<script>window.location="process.php"</script>';  
                 }  
-           }  
+           } 
+           $_SESSION['shopping_cart'] = array_values($_SESSION['shopping_cart']); 
       }  
  }  
  ?>  
