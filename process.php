@@ -2,7 +2,7 @@
  session_start(); 
  //session_destroy();
  include 'header.php'; 
- include 'db.php'; 
+ include 'dbshop.php'; 
 
  if(isset($_POST["add_to_cart"]))  
  {  
@@ -69,7 +69,7 @@
           <div class="row">
                <div class="col-6">
                <?php 
-                         $query = "SELECT * FROM Product ORDER BY product_id ASC";                 
+                         $query = "SELECT * FROM Product ORDER BY id ASC";                 
                          $result = $conn->query($query);
                          //$result = mysqli_query($connect, $query);  
                          if(mysqli_num_rows($result) > 0)
@@ -86,13 +86,13 @@
                     ?>   
                         <div class="col-sm-6">
 
-                         <form method="post" action="process.php?action=add&id="<?php echo $row["product_id"]; ?> >  
+                         <form method="post" action="process.php?action=add&id="<?php echo $row["id"]; ?> >  
                               <div style="border:1px solid #333; background-color:#f1f1f1; border-radius:5px; padding:16px;" align="center">  
-                                   <img src="<?php echo $row["product_name"]; ?>" width="150" height="auto" /><br />  
-                                   <h4 class="text-basic" ><?php echo $row["product_name"]; ?></h4>  
+                                   <img src="<?php echo $row["image"]; ?>" width="150" height="auto" /><br />  
+                                   <h4 class="text-basic" ><?php echo $row["name"]; ?></h4>  
                                    <h4 class="text-primary">€ <?php echo $row["price"]; ?></h4>  
                                    <input type="number" name="quantity" class="form-control" value="1" />  
-                                   <input type="hidden" name="hidden_name" value="<?php echo $row["product_name"]; ?>" />  
+                                   <input type="hidden" name="hidden_name" value="<?php echo $row["name"]; ?>" />  
                                    <input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>" />  
                                    <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />  
                               </div>  
@@ -169,6 +169,9 @@
           </div>  
      </div>  
 <br />  
+<?php include 'footer.php'; 
+?>
+
 </body>  
  </html>
    
