@@ -1,8 +1,8 @@
 <?php
-$servername = "php24-db-1";
-$username = "LittleTard";
-$password = "Engi@12345";
-$dbname = "LittleTard";
+$servername = "web-dev-env-main-db-1";
+$username = "LittleTartBakery";
+$password = "password";
+$dbname = "LittleTartBakery";
 
 
 $conn = new mysqli($servername,$username,$password,$dbname);

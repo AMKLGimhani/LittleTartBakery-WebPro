@@ -1,11 +1,14 @@
 <?php
-include 'header.php';
+$title = "cakes";
+require_once 'header.php';
 ?>
 
-<div class="row">          
+        <div class="row">          
             <a href="cake.html"><img class="Discount" src="Pictures/Pink and Red Happy Valentine’s Day Sale Promotional Banner.jpg" alt="Valentine cake"></a>    
         </div>
+        
 
+                                 		
         <div class="row">
             <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
@@ -13,7 +16,7 @@ include 'header.php';
                     <div class="card-body">
                         <h5 class="card-title">Huminbird Cake</h5>
                         <p class="card-text">30,00 Euro</p>
-                        <a href="shop.php" class="btn btn-danger">Shop Now</a>
+                        <a href="process.php" class="btn btn-danger">Shop Now</a>
                     </div>
                 </div>
             </div> 
@@ -25,7 +28,7 @@ include 'header.php';
                     <div class="card-body">
                         <h5 class="card-title">Chocolate Cake</h5>
                         <p class="card-text">30,00 Euro</p>
-                        <a href="shop.php" class="btn btn-danger">Shop Now</a>
+                        <a href="process.php" class="btn btn-danger">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -37,7 +40,7 @@ include 'header.php';
                     <div class="card-body">
                       <h5 class="card-title">Vanila Cake</h5>
                       <p class="card-text">20,00 Euro</p>
-                      <a href="shop.php" class="btn btn-danger">Shop Now</a>
+                      <a href="process.php" class="btn btn-danger">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -50,7 +53,7 @@ include 'header.php';
                     <div class="card-body">
                         <h5 class="card-title">German Chocolate Cake</h5>
                         <p class="card-text">40,00 Euro</p>
-                        <a href="shop.php" class="btn btn-danger">Shop Now</a>
+                        <a href="process.php" class="btn btn-danger">Shop Now</a>
                     </div>
                 </div>
             </div> 
@@ -62,7 +65,7 @@ include 'header.php';
                     <div class="card-body">
                         <h5 class="card-title">Valantine's Day Cake</h5>
                         <p class="card-text">60,00 Euro</p>
-                        <a href="shop.php" class="btn btn-danger">Shop Now</a>
+                        <a href="process.php" class="btn btn-danger">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -74,7 +77,7 @@ include 'header.php';
                     <div class="card-body">
                         <h5 class="card-title">Carrot Cake</h5>
                         <p class="card-text">30,00 Euro</p>
-                        <a href="shop.php" class="btn btn-danger">Shop Now</a>
+                        <a href="process.php" class="btn btn-danger">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -84,7 +87,6 @@ include 'header.php';
 
 
 
-
 <?php
-include 'footer.php';
+require_once 'footer.php';
 ?>

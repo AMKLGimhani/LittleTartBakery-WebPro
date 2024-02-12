@@ -1,9 +1,10 @@
 <?php
-include 'header.php';
+$title = "visit us";
+require_once 'header.php';
 ?>
 
 
-<div class="row">
+        <div class="row">
             <img class="visitus" src="Pictures/visitus.jpg" alt="visit us banner">
         </div>
 
@@ -60,5 +61,5 @@ include 'header.php';
 
 
 <?php
-include 'footer.php';
+require_once 'footer.php';
 ?>

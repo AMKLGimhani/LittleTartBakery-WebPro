@@ -1,7 +1,7 @@
 
 <?php 
     $title = "Home";
-    include 'header.php'; 
+    require_once 'header.php'; 
 ?>
 
 
@@ -18,7 +18,7 @@
                 <p>with our exquisite cakes and cupcakes,</p>
                 <p> crafted to elevate your moments of joy.</p>
                 </br>
-                <a href="cake.php" class="btn btn-danger">Shop now</a>
+                <a href="process.php" class="btn btn-danger">Shop now</a>
                 <br><br>
                 <p>Same day delivery in Hämeenlinna</p>
             </div>
@@ -59,5 +59,5 @@
     </div>
 
 <?php
-include 'footer.php';
+require_once 'footer.php';
 ?>
