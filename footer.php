@@ -12,9 +12,9 @@
     </div>
     <div class="col-md-6 rightfooter"> 
             <br>
-            <a class="nav-link" href="career.php">Career</a>
-            <a class="nav-link" href="review.php">Customer Review</a>
-            <a class="nav-link" href="membership.php">Little Tart Membership</a>
+            <a class="nav-link-footer" href="career.php">Career</a>
+            <a class="nav-link-footer" href="review.php">Customer Review</a>
+            <a class="nav-link-footer" href="membership.php">Little Tart Membership</a>
             <br>
       </div>
  
