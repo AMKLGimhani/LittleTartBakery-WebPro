@@ -2,7 +2,11 @@
 $title = "Submited Applications";
 include 'header.php';
 include 'dbcareer.php';
+?>
 
+<h2>Applications for Open Positions</h2>
+
+<?php
 
 $sql = "SELECT * FROM career ";
 
