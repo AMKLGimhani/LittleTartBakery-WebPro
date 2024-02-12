@@ -1,8 +1,9 @@
 <?php
+$title = "Customer Review";
 include 'header.php';
 include 'db.php';
-$title = 'Customer Review';
-?>
+
+?><br><br>
 <div class="row">   
 <div class='col-md-6'>
 <h2>Enter Your Review</h2><br><br>
@@ -21,7 +22,7 @@ $title = 'Customer Review';
     </form><br><br>
     </div>
     <div class='col-md-6'>
-        <img src="Pictures/review3.jpg" alt="">
+        <img src="Pictures/review4.jpg" alt="">
      
     </div>  
 
