@@ -24,28 +24,28 @@ The online order form on the bakery site is a user-friendly interface designed t
 - GitHub:
 - shell.hamk.fi:
 
-### 2. Whole Sale form
-
-#### Introduction
-The Wholesale Form on the bakery site caters specifically to businesses or individuals looking to place bulk orders for baked goods. This streamlined form allows wholesale customers to easily select from a range of products and  input desired quantities.
-
-#### Links
-- GitHub:
-- shell.hamk.fi:
-
-### 3. Order for the event 
-
-#### Introduction
-The "Order for the Event" form on the bakery site is designed to accommodate customers who are planning special occasions. This specialized form streamlines the process of ordering baked goods for events such as weddings, birthdays or corporate gatherings. Users can easily select from a curated menu of event-specific items like custom cakes & cupcakes.
-
-#### Links
-- GitHub:
-- shell.hamk.fi:
-
-### 4. Membership form 
+### 2. Membership form
 
 #### Introduction
 The Membership Form on the bakery site offers an exclusive experience for loyal customers. By filling out the Membership Form, customers can join a community of fellow enthusiasts and enjoy a more personalized and rewarding relationship with the bakery.
+
+#### Links
+- GitHub:
+- shell.hamk.fi:
+
+### 3. Reviews
+
+#### Introduction
+
+
+#### Links
+- GitHub:
+- shell.hamk.fi:
+
+### 4. Careers  
+
+#### Introduction
+A career feature on this website typically serves as a gateway for individuals seeking employment opportunities within the organization. It provides information about available job positions, requirements, and the application process.
 
 #### Links
 - GitHub:
