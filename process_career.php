@@ -14,7 +14,7 @@ if (isset($_POST['submitcareer'])) {
     $working = $_POST['working']; 
 
     
-    include 'db.php';
+    include 'dbcareer.php';
 
     
     $sql = "INSERT INTO career (position, first_name, last_name, age, apartmentNo_street, city, email, tel_no, qualification, experience)
