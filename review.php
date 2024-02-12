@@ -15,7 +15,7 @@ $title = 'Customer Review';
         <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
 
         <label for="review_text">Review:</label><br>
-        <textarea id="review_text" name="review_text" required></textarea><br><br>
+        <textarea id="review_text" name="review_text" style="height: 115px; width :420px;"></textarea><br><br>
 
         <input type="submit" value="Submit Review">
     </form><br><br>
@@ -25,7 +25,7 @@ $title = 'Customer Review';
      
     </div>  
 
-
+    
 
 
 
@@ -48,7 +48,7 @@ if($result->num_rows> 0)
         echo "<div class='col-md-4' style='width: 18rem;'>";
 
                 $rates= $row["rating"];
-                echo "<div class='cards'>";
+                echo "<div class='acards'>";
                 echo "<div class='card-headers'>" ;
                 echo "<p>" . $row["review_date"] . "</p>";
                 
@@ -60,7 +60,7 @@ if($result->num_rows> 0)
 
                 }
                 echo  "</div>";
-                echo " <div class='card-bodys'>";
+                echo " <div class='acard-bodys'>";
                 echo " <blockquote class='blockquote mb-0'>";
                 echo "<q>" .$row["review_text"] . "</q><br><br>";
                 echo "<p>". "-" . $row["customer_name"] . "</p><br><br>";
