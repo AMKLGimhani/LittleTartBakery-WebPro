@@ -11,20 +11,24 @@ require_once 'header.php'; ?>
         <h2>Why Join the club?</h2>
     </div>
 
-    <div class="row">
+    <div class="row intro">
             <div class="col-md-4">
                 <div class="delivery">
-                    <img class="imgdelivery" src="Pictures/delivery.png" alt="delivery icon"><br><p><h3>Free Nationwide Shipping</h3> <br>Become a member with no added fees at checkout! We ship anywhere within the country.</p>
+                    <img class="imgdelivery" src="Pictures/delivery.png" alt="delivery icon">
+                    <div class="captiondelivery"><h3>Free Nationwide Shipping</h3> Become a member with no added fees at checkout! We ship anywhere within the country.</div>
+                    
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="gift">
-                    <img class="imggift" src="Pictures/gift.png" alt="gift icon"><br><p><h3>Surprise Treats</h3> <br>Each box contains special cake/cupcakes and monthly surprise desserts!</p>
+                    <img class="imggift" src="Pictures/gift.png" alt="gift icon">
+                    <div class="captiongift"><h3>Surprise Treats</h3> Each box contains special cake/cupcakes and monthly surprise desserts!</div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="calender">
-                    <img class="imgcalender" src="Pictures/calender.png" alt="calender icon"><br><p><h3>Flexible Dates</h3> <br>Choose between the second or third Thursday of each month to receive your sweet delivery.</p>
+                    <img class="imgcalender" src="Pictures/calender.png" alt="calender icon"><br>
+                    <div class="captioncalender"><h3>Flexible Dates</h3>Choose between the second or third Thursday of each month to receive your sweet delivery.</div>
                 </div>
             </div>
     </div>
@@ -65,21 +69,12 @@ require_once 'header.php'; ?>
                 <label for="tp">Telephone No:</label>
                 <input type="text" class="form-control" id="ph_no" placeholder="Enter your telephone no" name="ph_no" required><br>
 
-                <label for="tp">Preferred Communication Method:</label>
-                <div class="form-check form-switch">
-                <label class="form-check-label" for="flexSwitchCheckDefault">Email</label>
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-            </div>
-
-            <div class="form-check form-switch">
-                <label class="form-check-label" for="flexSwitchCheckDefault">Mobile SMS</label>
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-            </div>
+    
 
             <br><br>
 
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                <input class="form-check-input" type="checkbox" value="" name="TnC" id="flexCheckDefault" required>
                 <label class="form-check-label" for="flexCheckDefault">
                 <a class="nav-link" href="#">Agree to Terms and Conditions</a>
                 </label>

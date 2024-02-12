@@ -10,17 +10,19 @@ if (isset($_POST['submitmembership'])) {
     $postal = $_POST['postal_code'];
     $city = $_POST['city'];
     $email = $_POST['email'];    
-    $phone = $_POST['ph_no'];      
-
-
+    $phone = $_POST['ph_no'];  
+    $TnC = isset($_POST['TnC']) ? 1 : 0;
     
+
+
     include 'dbmember.php';
 
     
-    $sql = "INSERT INTO Membership (subscription, first_name, last_name, apartment_no, street, postal_code, city, email, ph_no)
-            VALUES ('$Subscription', '$fname', '$lname', '$apartment', '$street', '$postal', '$city', '$email', '$phone')";
+    $sql = "INSERT INTO Membership (subscription, first_name, last_name, apartment_no, street, postal_code, city, email, ph_no, TnC)
+            VALUES ('$Subscription', '$fname', '$lname', '$apartment', '$street', '$postal', '$city', '$email', '$phone', '$TnC')";
 
     
+
     if ($conn->query($sql) === TRUE) {
         
         echo "Subscription Succcessfully added added";
