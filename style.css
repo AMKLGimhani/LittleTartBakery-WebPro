@@ -340,3 +340,10 @@ footer {
 }
 
 
+.nav-link-footer:hover {
+    color: white; 
+}
+
+.nav-link-footer{
+    color: black;
+}
