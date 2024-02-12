@@ -70,7 +70,7 @@ function validateAge() {
     const ageError= document.getElementById("ageError").value;
 
     if (age < 18 || age > 55){
-        ageError.innerHTML = "Applicants must be between 18 and 50 years old to apply for this position.";
+        ageError.innerHTML = "(Applicants must be between 18 and 50 years old to apply for this position.)";
         return false;
     }
     else{

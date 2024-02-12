@@ -1,4 +1,5 @@
 <?php
+$title = "Submited Applications";
 include 'header.php';
 include 'dbcareer.php';
 
@@ -49,5 +50,6 @@ else
     echo "No Reviews Yet.";
 }
 $conn->close();
+
 
 ?>
