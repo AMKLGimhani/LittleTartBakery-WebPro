@@ -1,4 +1,6 @@
 <?php
+$title = "Membership";
+require_once 'header.php'; 
 
 if (isset($_POST['submitcareer'])) {
     
@@ -23,7 +25,7 @@ if (isset($_POST['submitcareer'])) {
     
     if ($conn->query($sql) === TRUE) {
         
-        echo "New record added";
+        echo "<span style='font-size: 25px;>Thank you!</span> <br> Application submitted successfully.";
     } else {
         
         echo "Error: " . $sql . "<br>" . $conn->error;
@@ -32,4 +34,5 @@ if (isset($_POST['submitcareer'])) {
     
     $conn->close();
 }
+require_once 'footer.php';
 ?>
