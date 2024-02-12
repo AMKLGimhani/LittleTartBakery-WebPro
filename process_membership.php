@@ -33,5 +33,7 @@ if (isset($_POST['submitmembership'])) {
 
     
     $conn->close();
+
+    
 }
 ?>

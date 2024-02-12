@@ -35,11 +35,11 @@
         <div class="topic"> <h2>What we offer</h2> </div> 
         <div class="text2">
             <div class="card1">
-                <a href="cake.html"><img class="img-fluid" src="Pictures/cakecircle.png" 
+                <a href="cake.php"><img class="img-fluid" src="Pictures/cakecircle.png" 
                     alt="Little Tart Bakery cake Image"></a>
             </div>
             <div class="card2">
-                <a href="cupcakes.html"><img class="img-fluid" src="Pictures/cupcakecircle.png  " 
+                <a href="cupcakes.php"><img class="img-fluid" src="Pictures/cupcakecircle.png  " 
                     alt="Little Tart Bakery cupcake Image"></a>
             </div>
         </div>
