@@ -13,7 +13,7 @@ This web page is created for a bakery to do the sales through an online store. T
 - [ ] Online Orders (Nilmini Pusweli) 
 - [ ] Membership form (Manasha Siriwardana)
 - [ ] Reviews (Chalani Kalpana)
-- [ ] Careers (Kushani Abeykoon)
+- [ ] Careers (A.M.Kushani Lakshika)
       
 ### 1. Online Order 
 
