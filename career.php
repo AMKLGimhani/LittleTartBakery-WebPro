@@ -62,31 +62,6 @@ require_once 'header.php';
     
 </form>
 
-<script>
-
-
-
-function validateAge() {
-    const age= document.getElementById("age").value;
-    const ageError= document.getElementById("ageError").value;
-
-    if (age < 18 || age > 55){
-        ageError.innerHTML = "(Applicants must be between 18 and 50 years old to apply for this position.)";
-        return false;
-    }
-    else{
-        ageError.innerHTML = "";
-        return true;
-    }
-}
-
-// event listeners for real time validation
-document.getElementById("ageError").addEventListener("input",validateAge);
-
-</script>
-
-
-
 
 
 <?php
