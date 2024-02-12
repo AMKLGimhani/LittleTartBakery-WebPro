@@ -1,6 +1,6 @@
 <?php   
+$title = "Shopping Cart";
  session_start(); 
- //session_destroy();
  include 'header.php'; 
  include 'dbshop.php'; 
 
@@ -64,7 +64,7 @@
  ?>  
   
 
-     <h3 align="left">My Shopping Cart</h3><br />  
+     <h3 align ="left">My Shopping Cart</h3><br />  
      <div class="container" >  
           <div class="row">
                <div class="col-6">
@@ -169,7 +169,7 @@
           </div>  
      </div>  
 <br />  
-<?php include 'footer.php'; 
+<?php require_once 'footer.php'; 
 ?>
 
 </body>  

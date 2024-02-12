@@ -1,7 +1,7 @@
 <?php
 $title = "Customer Review";
 include 'header.php';
-include 'db.php';
+include 'dbmember.php';
 
 ?><br><br>
 <div class="row">   

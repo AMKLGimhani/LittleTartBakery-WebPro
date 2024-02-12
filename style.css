@@ -269,6 +269,13 @@ footer {
 
     padding-top: 0;
 }
+
+.rightfooter{
+    text-decoration: underline;
+}
+
+
+
 @media screen and (max-width:1200px) {
     
     body {
