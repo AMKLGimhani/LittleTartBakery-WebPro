@@ -1,7 +1,7 @@
 <?php
 $title = "Memberships";
 require_once 'layout/header.php';
-include 'memberdb.php';
+include 'dbcareer.php';
 ?>
 
 <h2>Little Tart Memberships</h2>
@@ -41,7 +41,7 @@ if($result->num_rows> 0)
                 <td>{$row['first_name']}</td>
                 <td>{$row['last_name']}</td>
                 <td>{$row['apartment_no']}</td>
-                <td>{$row['Street']}</td>
+                <td>{$row['street']}</td>
                 <td>{$row['postal_code']}</td>
                 <td>{$row['city']}</td>
                 <td>{$row['email']}</td>
