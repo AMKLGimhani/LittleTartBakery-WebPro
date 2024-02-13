@@ -75,6 +75,8 @@ CREATE TABLE `Product` (
   `price` double(5,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+
+
 --
 -- Dumping data for table `Product`
 --
@@ -95,6 +97,17 @@ INSERT INTO `Product` (`id`, `name`, `image`, `price`) VALUES
 
 ```
 
+# Order Table- Nilmini Pusweli
+```sql
+CREATE TABLE `Order_Table` (
+  `order_id` int NOT NULL,
+  `customer_id` int NOT NULL,
+  `product_id` int NOT NULL,
+  `quantity` int NOT NULL,
+  `price` decimal(10,0) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+```
 
 # Membership Table- Manasha Siriwardana
 
