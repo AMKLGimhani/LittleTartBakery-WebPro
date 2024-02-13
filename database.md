@@ -69,7 +69,7 @@ CREATE TABLE `career` (
 ```sql
 
 CREATE TABLE `Product` (
-  `id` int NOT NULL,
+  `pid` int NOT NULL,
   `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `image` varchar(255) NOT NULL,
   `price` double(5,2) NOT NULL
@@ -81,7 +81,7 @@ CREATE TABLE `Product` (
 -- Dumping data for table `Product`
 --
 
-INSERT INTO `Product` (`id`, `name`, `image`, `price`) VALUES
+INSERT INTO `Product` (`pid`, `name`, `image`, `price`) VALUES
 (1, 'Humming bird cake', 'Pictures/1.jpg', 30.00),
 (2, 'Chocolate Cake', 'Pictures/2.jpg', 30.00),
 (3, 'Vanila Cake', 'Pictures/3.jpg', 20.00),
@@ -101,8 +101,7 @@ INSERT INTO `Product` (`id`, `name`, `image`, `price`) VALUES
 ```sql
 CREATE TABLE `Order_Table` (
   `order_id` int NOT NULL,
-  `customer_id` int NOT NULL,
-  `id` int NOT NULL,
+  `pid` int NOT NULL,
   `quantity` int NOT NULL,
   `price` decimal(10,0) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
