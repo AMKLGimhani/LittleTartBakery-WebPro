@@ -25,7 +25,7 @@ if (isset($_POST['submitcareer'])) {
     
     if ($conn->query($sql) === TRUE) {
         
-        echo "<span style='font-size: 25px;>Thank you!</span> <br> Application submitted successfully.";
+        echo "<span style='font-size: 25px';>Thank you!</span> <br> Application submitted successfully.";
     } else {
         
         echo "Error: " . $sql . "<br>" . $conn->error;
