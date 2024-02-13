@@ -1,7 +1,7 @@
 <?php
 $title = "Submited Applications";
 include 'layout/header.php';
-include 'dbcareer.php';
+include 'memberdb.php';
 ?>
 
 <h2>Applications for Open Positions</h2>
