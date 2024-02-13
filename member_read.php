@@ -14,7 +14,7 @@ $result = $conn->query($sql);
 
 if($result->num_rows> 0)
 {
-    echo  "<table class='tablemembers'>
+    echo  "<table class='table'>
             <thead>
               <tr>
                 <th>Member ID</th>
@@ -37,11 +37,11 @@ if($result->num_rows> 0)
     {
         echo "<tr>
                 <td>{$row['member_id']}</td>
-                <td>{$row['Subscription']}</td>
+                <td>{$row['subscription']}</td>
                 <td>{$row['first_name']}</td>
                 <td>{$row['last_name']}</td>
                 <td>{$row['apartment_no']}</td>
-                <td>{$row['Street']}</td>
+                <td>{$row['street']}</td>
                 <td>{$row['postal_code']}</td>
                 <td>{$row['city']}</td>
                 <td>{$row['email']}</td>
@@ -58,3 +58,4 @@ $conn->close();
 
 
 ?>
+
