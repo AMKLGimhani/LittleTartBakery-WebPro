@@ -1,11 +1,7 @@
 <?php
 $title = "Customer Review";
-include 'header.php';
-<<<<<<< HEAD
+include 'layout/header.php';
 include 'dbcareer.php';
-=======
-include 'dbmember.php';
->>>>>>> fce752abe982b334ae651decd9dbd8fdc91c0b43
 
 ?><br><br>
 <div class="row">   
@@ -99,5 +95,5 @@ $conn->close();
 ?><br><br>
    
 <?php
-include 'footer.php';
+include 'layout/footer.php';
 ?>

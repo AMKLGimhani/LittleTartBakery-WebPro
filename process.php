@@ -1,17 +1,8 @@
 <?php   
 $title = "Shopping Cart";
  session_start(); 
- include 'header.php'; 
-<<<<<<< Updated upstream
+ include '../layout/header.php'; 
  include 'dbcareer.php'; 
-=======
- include 'dbshop.php';
-//<<<<<<< HEAD
- //include 'dbcareer.php'; 
-//=======
- //include 'dbmember.php'; 
-//>>>>>>> fce752abe982b334ae651decd9dbd8fdc91c0b43
->>>>>>> Stashed changes
 
  if(isset($_POST["add_to_cart"]))  
  {  

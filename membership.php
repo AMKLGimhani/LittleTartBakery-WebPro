@@ -1,6 +1,6 @@
 <?php 
 $title = "Membership";
-require_once 'header.php'; ?>
+require_once 'layout/header.php'; ?>
 
 
     <div class="row">
@@ -88,4 +88,4 @@ require_once 'header.php'; ?>
 
 
 
-<?php require_once 'footer.php'; ?>
+<?php require_once 'layout/footer.php'; ?>

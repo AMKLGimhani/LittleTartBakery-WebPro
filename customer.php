@@ -1,5 +1,5 @@
 <?php
-include 'header.php';
+include 'layout/header.php';
 ?>
 <h2>Customer Registration Form:</h2>
 <form name="customer form" method="post" action="process_customer.php">
@@ -48,5 +48,5 @@ include 'header.php';
 
 
 <?php
-include 'footer.php';
+include 'layout/footer.php';
 ?>
