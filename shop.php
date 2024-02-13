@@ -86,7 +86,7 @@ $title = "Shopping Cart";
                     ?>   
                         <div class="col-sm-6">
 
-                         <form method="post" action="shop_process.php="<?php echo $row["id"]; ?> >  
+                         <form method="post" action="shop_process.php"<?php echo $row["id"]; ?> >  
                               <div style="border:1px solid #333; background-color:#f1f1f1; border-radius:5px; padding:16px;" align="center">  
                                    <img src="<?php echo $row["image"]; ?>" width="150" height="auto" /><br />  
                                    <h4 class="text-basic" ><?php echo $row["name"]; ?></h4>  
