@@ -102,7 +102,7 @@ INSERT INTO `Product` (`id`, `name`, `image`, `price`) VALUES
 CREATE TABLE `Order_Table` (
   `order_id` int NOT NULL,
   `customer_id` int NOT NULL,
-  `product_id` int NOT NULL,
+  `id` int NOT NULL,
   `quantity` int NOT NULL,
   `price` decimal(10,0) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

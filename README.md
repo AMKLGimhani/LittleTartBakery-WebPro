@@ -156,14 +156,20 @@ The "Customer" table facilitates the management of customer-related information 
 ![ER_Diagram](Pictures/ER_diagram.jpg)
 
 ## Forms
-- [ ] Form 1 (Full Name, Created By)
-- [ ] Form 2 (Full Name, Created By)
-- [ ] Form 3 (Full Name, Created By)
-- [ ] Form 4 (Full Name, Created By)
+- [ ] Review Form (Chalani Kalpana)
+- [ ] Membership Form (Manasha Siriwardana)
+- [ ] Career Form(Kushani Lakshika)
+- [ ] Online Cart(Nilmini Pusweli)
 
 ### Form 1
 
-#### Form Name
+#### Review Page
+
+A customer review form is a tool used by businesses to gather feedback and opinions from their customers regarding their products, services, or overall experiences. Typically provided either online or in physical format, these forms ask customers to rate their satisfaction levels, provide comments or suggestions, and sometimes offer specific feedback on various aspects of the business.
+
+These forms serve multiple purposes, including helping businesses identify areas for improvement, gauging customer satisfaction, and gaining insights into customer preferences and expectations. Customer review forms often play a crucial role in shaping future strategies, refining products or services, and enhancing overall customer satisfaction.
+
+In this for we gather information from the customers and request to include customer name, rating and feedback about the products. After the customers feedback it stored in the database table. In the website the reviews are displyed in the website wall.
 
 #### Link
 - GitHub:
@@ -195,7 +201,7 @@ The "Customer" table facilitates the management of customer-related information 
 
 ## Tables
 
-- [ ] Table 1 (Full Name, Created By)
+- [ ] Customer Review Table ()
 - [ ] Table 2 (Full Name, Created By)
 - [ ] Table 3 (Full Name, Created By)
 - [ ] Table 4 (Full Name, Created By)
