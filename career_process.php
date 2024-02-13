@@ -1,6 +1,6 @@
 <?php
 $title = "career";
-require_once '../layout/header.php'; 
+require_once 'layout/header.php'; 
 
 if (isset($_POST['submitcareer'])) {
     
@@ -34,5 +34,5 @@ if (isset($_POST['submitcareer'])) {
     
     $conn->close();
 }
-require_once '../layout/footer.php';
+require_once 'layout/footer.php';
 ?>
