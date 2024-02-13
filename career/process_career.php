@@ -1,6 +1,6 @@
 <?php
 $title = "career";
-require_once 'layout/header.php'; 
+require_once '../layout/header.php'; 
 
 if (isset($_POST['submitcareer'])) {
     
@@ -16,7 +16,7 @@ if (isset($_POST['submitcareer'])) {
     $working = $_POST['working']; 
 
     
-    include 'memberdb.php';
+    include 'dbcareer.php';
 
     
     $sql = "INSERT INTO career (position, first_name, last_name, age, apartmentNo_street, city, email, tel_no, qualification, experience)
@@ -34,5 +34,5 @@ if (isset($_POST['submitcareer'])) {
     
     $conn->close();
 }
-require_once 'layout/footer.php';
+require_once '../layout/footer.php';
 ?>
