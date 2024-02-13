@@ -3,7 +3,7 @@ $title = "Shopping Cart";
  session_start(); 
  include 'header.php'; 
  include 'dbmember.php'; 
-
+//manasha
  if(isset($_POST["add_to_cart"]))  
  {  
       if(isset($_SESSION["shopping_cart"]))  
