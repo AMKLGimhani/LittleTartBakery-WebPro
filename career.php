@@ -1,6 +1,6 @@
 <?php
 $title = "career";
-require_once 'header.php';
+require_once 'layout/header.php';
 ?>
 
 <h1>Explore exciting career opportunities with us!</h1><br>
@@ -67,5 +67,5 @@ require_once 'header.php';
 
 
 <?php
-require_once 'footer.php';
+require_once 'layout/footer.php';
 ?>

@@ -1,8 +1,8 @@
 <?php   
 $title = "Shopping Cart";
  session_start(); 
- include 'header.php'; 
- include 'dbmember.php'; 
+ include '../layout/header.php'; 
+ include 'dbcareer.php'; 
 
  if(isset($_POST["add_to_cart"]))  
  {  

@@ -1,7 +1,7 @@
 
 <?php 
     $title = "Home";
-    require_once 'header.php'; 
+    require_once 'layout/header.php'; 
 ?>
 
 
@@ -59,5 +59,5 @@
     </div>
 
 <?php
-require_once 'footer.php';
+require_once 'layout/footer.php';
 ?>

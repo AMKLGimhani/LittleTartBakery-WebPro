@@ -1,6 +1,6 @@
 <?php
 $title = "cakes";
-require_once 'header.php';
+require_once 'layout/header.php';
 ?>
 
         <div class="row">          
@@ -88,5 +88,5 @@ require_once 'header.php';
 
 
 <?php
-require_once 'footer.php';
+require_once 'layout/footer.php';
 ?>

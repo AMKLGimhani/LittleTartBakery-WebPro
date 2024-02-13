@@ -1,6 +1,6 @@
 <?php
 $title = "Submited Applications";
-include 'header.php';
+include 'layout/header.php';
 include 'dbcareer.php';
 ?>
 
