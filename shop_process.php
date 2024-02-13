@@ -1,14 +1,20 @@
+
+
 <?php
-if($_SERVER["REQUEST_METHOD"] == "POST") 
-{
-  $id = $_POST['id'];
-  $item_quantity= $_POST['item_quantity'];
-  $item_price = $_POST['item_price'];
 
-  include 'db.php';
+if (isset($_POST['Submitorder'])) {
+    
+  $quantity = $_POST['quantity'];
+  $hidden_name= $_POST['hidden_name'];
+  $hidden_price = $_POST['hidden_price'];
+    
 
-  $sql = "INSERT INTO Order_Table (id,quntity,price) 
-  VALUES ('$id', '$item_quantity', '$item_price')";
+
+  include 'dbmember.php';
+
+    
+  $sql = "INSERT INTO Order_Table (quntity,price) 
+  VALUES ('$quantity', '$hidden_price')";
 
 
 if ($conn->query($sql) === TRUE) 

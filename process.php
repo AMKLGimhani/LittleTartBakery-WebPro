@@ -2,16 +2,7 @@
 $title = "Shopping Cart";
  session_start(); 
  include 'header.php'; 
-<<<<<<< Updated upstream
- include 'dbcareer.php'; 
-=======
- include 'dbshop.php';
-//<<<<<<< HEAD
- //include 'dbcareer.php'; 
-//=======
- //include 'dbmember.php'; 
-//>>>>>>> fce752abe982b334ae651decd9dbd8fdc91c0b43
->>>>>>> Stashed changes
+ include 'dbmember.php'; 
 
  if(isset($_POST["add_to_cart"]))  
  {  
@@ -95,7 +86,7 @@ $title = "Shopping Cart";
                     ?>   
                         <div class="col-sm-6">
 
-                         <form method="post" action="process.php?action=add&id="<?php echo $row["id"]; ?> >  
+                         <form method="post" action="shop_process.php="<?php echo $row["id"]; ?> >  
                               <div style="border:1px solid #333; background-color:#f1f1f1; border-radius:5px; padding:16px;" align="center">  
                                    <img src="<?php echo $row["image"]; ?>" width="150" height="auto" /><br />  
                                    <h4 class="text-basic" ><?php echo $row["name"]; ?></h4>  
@@ -167,16 +158,25 @@ $title = "Shopping Cart";
             <td colspan="4" align="right">Total Count</td>
             <td><?php echo $totalCount; ?></td>
         </tr>
+
+        
         <?php  
     }  
     ?>  
 </table> 
+
+          </div>
+
+                <button type="submit" class="btn btn-primary" name="Submitorder">Submit</button>
+        </div>
                      </div>
              
 
                </div>
           </div>  
      </div>  
+
+     
 <br />  
 <?php require_once 'footer.php'; 
 ?>

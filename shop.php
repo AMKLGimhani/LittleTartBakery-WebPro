@@ -2,7 +2,7 @@
 $title = "Shopping Cart";
  session_start(); 
  include 'header.php'; 
- include 'db.php';
+ include 'dbmember.php'; 
 
  if(isset($_POST["add_to_cart"]))  
  {  
@@ -86,7 +86,7 @@ $title = "Shopping Cart";
                     ?>   
                         <div class="col-sm-6">
 
-                         <form method="post" action="shop.php?action=add&id="<?php echo $row["id"]; ?> >  
+                         <form method="post" action="shop_process.php="<?php echo $row["id"]; ?> >  
                               <div style="border:1px solid #333; background-color:#f1f1f1; border-radius:5px; padding:16px;" align="center">  
                                    <img src="<?php echo $row["image"]; ?>" width="150" height="auto" /><br />  
                                    <h4 class="text-basic" ><?php echo $row["name"]; ?></h4>  
@@ -142,7 +142,7 @@ $title = "Shopping Cart";
                 <td><?php echo $values["item_quantity"]; ?></td>  
                 <td>€ <?php echo $values["item_price"]; ?></td>  
                 <td>€ <?php echo number_format($values["item_quantity"] * $values["item_price"], 2); ?></td>  
-                <td><a href="shop.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Remove</span></a></td>  
+                <td><a href="process.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Remove</span></a></td>  
             </tr>  
             <?php  
             $total += ($values["item_quantity"] * $values["item_price"]);
@@ -158,21 +158,25 @@ $title = "Shopping Cart";
             <td colspan="4" align="right">Total Count</td>
             <td><?php echo $totalCount; ?></td>
         </tr>
-        <div>
-        <input type="submit" value="Submit shop">
-        </div>
 
-
+        
         <?php  
     }  
     ?>  
 </table> 
+
+          </div>
+
+                <button type="submit" class="btn btn-primary" name="Submitorder">Submit</button>
+        </div>
                      </div>
              
 
                </div>
           </div>  
      </div>  
+
+     
 <br />  
 <?php require_once 'footer.php'; 
 ?>
