@@ -92,7 +92,7 @@ include 'dbshop.php'; // calling the database connection.
                                         if ($col==3) {
                                         $col=1;
                                         }
-                                        if ($col==1) {
+                                        if ($col==1) { 
                                         echo "</div>"; 
                                         }                         
                               }   
