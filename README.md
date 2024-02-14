@@ -120,6 +120,25 @@ The "Product" table facilitates the management of product-related information wi
 ### Table 4
 #### Membership Table
 
+The "Membership" table facilitates the management of new member information within the system. It stores essential details about each Member, enabling for the store admins to .
+
+##### Columns
+- pid (Primary Key): An integer field uniquely identifying each product within the system.
+- name: A varchar field representing the name or title of the product.
+- image: A varchar fiels representing the images of the products.
+- price: A decimal field representing the price of the product, with precision up to two decimal places.
+  
+##### Constraints
+- The "pid" column serves as the primary key, ensuring each product record is uniquely identifiable.
+- All columns (pid, name, image, price) are marked as "NOT NULL," indicating that they must contain valid data for each product record.
+
+##### Usage
+- Cataloging and categorizing products offered by the organization.
+- Setting and updating product prices based on market trends and business strategies.
+- Tracking product availability and inventory levels.
+- Analyzing sales performance and revenue generation by product.
+
+
 ### Table 5
 #### Customer Table
 The "Customer" table facilitates the management of customer-related information within the organization. It contains details such as the customer ID, first name, last name, contact address, email address, and telephone number. It stores essential details about each customer, enabling personalized communication, order processing, and customer relationship management.
