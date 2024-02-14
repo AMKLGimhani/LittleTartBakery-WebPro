@@ -150,7 +150,7 @@ The "Customer" table facilitates the management of customer-related information 
 
 ### Table 7
 #### Career Table
-The career table is used to securely store information submitted by job seekers when applying for positions listed on the website. 
+The career table is used to securely store information submitted by job seekers when applying for positions listed on the website. It typically includes fields such as applicant name, contact details, professional qualifications, and working experiences of the applicant.
 
 ### ER Diagram
 
