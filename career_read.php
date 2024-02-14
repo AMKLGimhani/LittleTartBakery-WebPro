@@ -51,7 +51,7 @@ if($result->num_rows> 0)
 }
 else
 {
-    echo "No Reviews Yet.";
+    echo "No Applications.";
 }
 $conn->close();
 
