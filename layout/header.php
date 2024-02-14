@@ -31,6 +31,7 @@
                                 <a class="nav-link" href="cake.php">Cake</a>
                                 <a class="nav-link" href="cupcakes.php">Cupcake</a>
                                 <a class="nav-link" href="visitus.php">Visit Us</a>
+                                <a class="nav-link" href="admin_view.php">Admin View</a>
                                 </div>
                             </div>
                         </div>

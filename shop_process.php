@@ -1,29 +1,40 @@
-
-
 <?php
+$title = "Shop Process";
 
-if (isset($_POST['Submitorder'])) {
-    
-  $quantity = $_POST['quantity'];
-  $hidden_name= $_POST['hidden_name'];
-  $hidden_price = $_POST['hidden_price'];
-    
+session_start();
+include 'dbshop.php';
 
+// Check if the form is submitted from shop.php.
+if(isset($_POST["submit_order"])) {
+    // Check if shopping cart session variable is set and not null
+    if(isset($_SESSION["shopping_cart"]) && is_array($_SESSION["shopping_cart"])) {
+        // Loop through shopping cart items
+        foreach($_SESSION["shopping_cart"] as $keys => $values) {
+            // Process each item...
+            $order_id = 1; // Assuming order ID is fixed for now
+            $pid = $values["item_id"];
+            $quantity = $values["item_quantity"];
+            $price = $values["item_price"];
 
-  include 'dbmember.php';
+            // Insert data into Order_Table
+            // Note: This is a simplified example. Use prepared statements to prevent SQL injection.
+            $sql = "INSERT INTO Order_Table (order_id, id, quantity, price) VALUES ($order_id, $pid, $quantity, $price)";
 
-    
-  $sql = "INSERT INTO Order_Table (quntity,price) 
-  VALUES ('$quantity', '$hidden_price')";
-
-
-if ($conn->query($sql) === TRUE) 
-{
-  echo "We placed your order. We will Contact you via e-mai. Thank you";
-} else 
-{
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
-$conn->close();
+            // Execute SQL statement
+            if ($conn->query($sql) !== TRUE) {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+        }
+        // Clear shopping cart after placing order
+        unset($_SESSION["shopping_cart"]);
+        echo '<script>alert("Your order has been placed successfully!")</script>';
+        echo '<script>window.location="shop.php"</script>';
+    } else {
+        // Handle case where shopping cart is empty
+        echo "Shopping cart is empty!";
+    }    
+} else {
+    // Handle case where form is not submitted
+    echo "Form is not submitted!";
 }
 ?>

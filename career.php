@@ -6,7 +6,7 @@ require_once 'layout/header.php';
 <h1>Explore exciting career opportunities with us!</h1><br>
 <h4>Our Career section is your portal to explore job openings, internships, and opportunities to join our dynamic team. 
     From entry-level positions to leadership roles, we offer diverse opportunities across various departments. </h4><br>
-<form name="formCareer" method="post" action="process_career.php">
+<form name="formCareer" method="post" action="career_process.php">
     
     <div class="form-career">
      

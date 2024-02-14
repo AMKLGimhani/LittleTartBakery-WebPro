@@ -33,7 +33,7 @@ require_once 'layout/header.php'; ?>
             </div>
     </div>
 
-    <form name="formCareer" method="post" action="process_membership.php">
+    <form name="formCareer" method="post" action="member_process.php">
     
     <div class="form-group">
         <div class="row">
