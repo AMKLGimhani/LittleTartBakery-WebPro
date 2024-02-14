@@ -1,11 +1,15 @@
 <?php
+
+include 'db.php';
+
 if($_SERVER["REQUEST_METHOD"] == "POST") 
 {
+  
   $customer_name = $_POST['customer_name'];
   $rating = $_POST['rating'];
   $review_text = $_POST['review_text'];
 
-  include 'dbcareer.php';
+ 
 
   $sql = "INSERT INTO review (customer_name, rating, review_text) 
   VALUES ('$customer_name', '$rating', '$review_text')";

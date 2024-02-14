@@ -1,13 +1,13 @@
 <?php
 $title = "Customer Review";
 include 'layout/header.php';
-include 'dbcareer.php';
+include 'db.php';
 
 ?><br><br>
 <div class="row">   
 <div class='col-md-6'>
 <h2>Enter Your Review</h2><br><br>
-    <form action="process_review.php" method="post">
+    <form action="review_process.php" method="post">
         
         <label for="customer_name">Your Name:</label>
         <input type="text" id="customer_name" name="customer_name" required><br><br>
@@ -20,11 +20,14 @@ include 'dbcareer.php';
 
         <input type="submit" value="Submit Review">
     </form><br><br>
-    </div>
-    <div class='col-md-6'>
-        <img src="Pictures/review4.jpg" alt="">
+</div>
+
+ 
+
+<div class='col-md-6'>
+    <img src="Pictures/review4.jpg" alt="">
      
-    </div>  
+</div>  
 
     
 
@@ -32,7 +35,7 @@ include 'dbcareer.php';
 
 <?php
 
-$sql = "SELECT customer_name, rating, review_text, review_date FROM review order by review_date desc";
+$sql = "SELECT review_id, customer_name, rating, review_text, review_date FROM review order by review_date desc";
 $result = $conn->query($sql);
  
 if($result->num_rows> 0)
@@ -49,9 +52,12 @@ if($result->num_rows> 0)
         echo "<div class='col-md-4' style='width: 18rem;'>";
 
                 $rates= $row["rating"];
+
                 echo "<div class='acards'>";
                 echo "<div class='card-headers'>" ;
-                echo "<p>" . $row["review_date"] . "</p>";
+                echo "<q>" .$row["review_date"] . "</q><br><br>";
+
+                echo "<a href='review_updatesingle.php?id={$row['review_id']}'>{$row['customer_name']}</a>";
                 
                 for($i=1; $i<=$rates; $i++)
 
@@ -63,7 +69,9 @@ if($result->num_rows> 0)
                 echo  "</div>";
                 echo " <div class='acard-bodys'>";
                 echo " <blockquote class='blockquote mb-0'>";
+
                 echo "<q>" .$row["review_text"] . "</q><br><br>";
+
                 echo "<p>". "-" . $row["customer_name"] . "</p><br><br>";
                 echo " </blockquote>";
                 echo "</div>";
