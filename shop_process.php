@@ -32,7 +32,7 @@ if(isset($_POST["submit_order"])) {
     } else {
         // Handle case where shopping cart is empty
         echo "Shopping cart is empty!";
-    }
+    }    
 } else {
     // Handle case where form is not submitted
     echo "Form is not submitted!";

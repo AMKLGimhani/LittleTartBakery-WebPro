@@ -114,7 +114,7 @@ include 'dbshop.php'; // calling the database connection.
                                    <th width="15%">Total</th>  
                                    <th width="5%">Action</th>  
                               </tr>  
-                                   <?php   
+                                   <?php    
                                         if(!empty($_SESSION["shopping_cart"])) //checking for any items in the shopping cart. 
                                         {  
                                              $total = 0;
