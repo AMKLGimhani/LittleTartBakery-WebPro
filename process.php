@@ -1,15 +1,8 @@
 <?php   
-<<<<<<< HEAD
 $title = "Shopping Cart";
  session_start(); 
  include '../layout/header.php'; 
  include 'dbcareer.php'; 
-=======
-session_start(); 
-include 'header.php'; 
-include 'dbshop.php'; // calling the database connection.
-?>
->>>>>>> 246b5bbe5aac22e2d1cfc1b99d28772511810e7a
 
 <?php
      if(isset($_POST["add_to_cart"])) {  // checking if the 'add_to_cart' form has been submitted.
