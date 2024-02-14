@@ -1,7 +1,7 @@
 <?php
 $title = "Shop Process";
 
-session_start();
+session_start();   
 include 'dbshop.php';
 
 // Check if the form is submitted from shop.php.
@@ -31,7 +31,7 @@ if(isset($_POST["submit_order"])) {
         echo "Shopping cart is empty!";
     }    
 } else {
-    // if a form is not submitted
+    // if the form is not submitted
     echo "Form is not submitted!";
 }
 ?>

@@ -25,7 +25,7 @@ include 'dbshop.php'; // calling the database connection.
                     $_SESSION["shopping_cart"][$count] = $item_array; 
                     echo '<script>window.location="shop.php"</script>';  //redirects the user to "process.php.
                }  
-             
+            
           }  
           //If session variable $_SESSION["shopping_cart"] does not exist(meaning it is the first item being added), 
           //it creates a new item array and adds  array at index 0.
