@@ -81,13 +81,13 @@ The "Order_Table" stores information about orders placed in a system. It capture
 
 ##### Columns
 - order_id (Primary Key): An integer field uniquely identifying each order placed within the system.
-- pid: An integer field representing the unique identifier of the product being ordered. This field likely references a separate table containing product information.
+- id: An integer field representing the unique identifier of the product being ordered. This field likely references a separate table containing product information.
 - quantity: An integer field representing the quantity of the product ordered in the respective order.
 - price: A decimal field representing the price per unit of the product ordered, with precision up to two decimal places.
   
 ##### Constraints
 - The "order_id" column serves as the primary key, ensuring each order record is uniquely identifiable.
-- pid is a foreign key.
+- id is a foreign key.
 - All columns are marked as "Not Null" indicating that they must contain valid data for each record.
 
 ##### Usage
@@ -102,14 +102,14 @@ The "Order_Table" stores information about orders placed in a system. It capture
 The "Product" table facilitates the management of product-related information within the system. It stores essential details about each product, enabling efficient inventory management, pricing strategies, and sales analysis.
 
 ##### Columns
-- pid (Primary Key): An integer field uniquely identifying each product within the system.
+- id (Primary Key): An integer field uniquely identifying each product within the system.
 - name: A varchar field representing the name or title of the product.
 - image: A varchar fiels representing the images of the products.
 - price: A decimal field representing the price of the product, with precision up to two decimal places.
   
 ##### Constraints
-- The "pid" column serves as the primary key, ensuring each product record is uniquely identifiable.
-- All columns (pid, name, image, price) are marked as "NOT NULL," indicating that they must contain valid data for each product record.
+- The "id" column serves as the primary key, ensuring each product record is uniquely identifiable.
+- All columns (id, name, image, price) are marked as "NOT NULL," indicating that they must contain valid data for each product record.
 
 ##### Usage
 - Cataloging and categorizing products offered by the organization.

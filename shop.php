@@ -1,21 +1,22 @@
 <?php  
 $title = "Shop here";
+
 session_start(); 
 include 'header.php'; 
 include 'dbshop.php'; // calling the database connection.
 ?>
 
 <?php
-     if(isset($_POST["add_to_cart"])) {  // checking if the 'add_to_cart' form has been submitted.
+     if(isset($_POST["add"])) {  // checking if the 'add_to_cart' form has been submitted.
          
           if(isset($_SESSION["shopping_cart"])) {  //checking for 'shopping cart session variable.
                $item_array_id = array_column($_SESSION["shopping_cart"], "item_array"); //creates an array containing all the "item_array" values in the shopping cart.      
                
-               if(!in_array($_GET["hidden_name"], $item_array_id)) {  //check for the id of the current item added to the arry.
+               if(!in_array($_GET["id"], $item_array_id)) {  //check for the id of the current item added to the arry.
                     $count = count($_SESSION["shopping_cart"]);   //counting the items in the cart.
                    //creating a new array 
                     $item_array = array(  
-                         'item_id'=>$_GET["hidden_id"],  
+                         'item_id'=>$_GET["id"],  
                          'item_name'=>$_POST["hidden_name"],  
                          'item_price'=>$_POST["hidden_price"],  
                          'item_quantity'=>$_POST["quantity"]  
@@ -30,7 +31,7 @@ include 'dbshop.php'; // calling the database connection.
           //it creates a new item array and adds  array at index 0.
           else  {          
                $item_array = array( 
-                    'item_id'=>$_GET["hidden_id"],  
+                    'item_id'=>$_GET["id"],  
                     'item_name'=>$_POST["hidden_name"],  
                     'item_price'=>$_POST["hidden_price"],  
                     'item_quantity'=>$_POST["quantity"]  
@@ -44,8 +45,8 @@ include 'dbshop.php'; // calling the database connection.
           if($_GET["action"] == "delete") { //It loops through $_SESSION["shopping_cart"] array and assign each item to the $values variable. 
                foreach($_SESSION["shopping_cart"] as $keys => $values) {  
                     
-                    if($values["item_id"] == $_GET["pid"]) {  //It checks $values["item_id"] is equal to the ID passed through ($_GET["id"]). 
-                         $key = array_search($_GET['pid'], $_SESSION['shopping_cart']);	
+                    if($values["item_id"] == $_GET["id"]) {  //It checks $values["item_id"] is equal to the ID passed through ($_GET["id"]). 
+                         $key = array_search($_GET['id'], $_SESSION['shopping_cart']);	
                          unset($_SESSION["shopping_cart"][$key]);   //removes the item from the $_SESSION["shopping_cart"].                   
                          echo '<script>window.location="shop.php"</script>';  //redirect
                     }  
@@ -53,38 +54,40 @@ include 'dbshop.php'; // calling the database connection.
                $_SESSION['shopping_cart'] = array_values($_SESSION['shopping_cart']); 
           }  
      }  
-?>  
+?> 
+
 <html>  
 <body>
      <div class="container" >  
           <div class="row">
                <div class="col-6">
-               <h2 align ="center">Select Your favourite Here!</h2><br>   
+                    <h2 align ="center">Select Your favourite Here!</h2><br>   
                     <?php 
-                         $query = "SELECT * FROM Product ORDER BY pid ASC";                 
-                         $result = $conn->query($query); //connect with the database.The results of the query are stored in $result.
-                         //if there are any products in the  variable $result, it displays products through this loop.
-                         if(mysqli_num_rows($result) > 0){  
-                              $col=1;
-                              while($row = mysqli_fetch_array($result)) { 
-                                   if ($col== 1){
-                                        echo "<div class='row'>";
-                                   }                             
+                        $query = "SELECT * FROM Product ORDER BY id ASC"; // fetching data from db.            
+                        $result = $conn->query($query); //connect with the database.The results of the query are stored in $result.
+                        //if there are any products in the  variable $result, it displays products through this loop.
+                        if(mysqli_num_rows($result) > 0){  
+                            $col=1;
+                            while($row = mysqli_fetch_array($result)) //result is assigned to $row here.
+                            { 
+                                if ($col== 1){
+                                    echo "<div class='row'>";
+                                }                             
                     ?>            
-                                   <!-- generating the form to display products.
-                                   when the form is submitted(clicked on add to cart button) selected product 
-                                    will be added to the shopping cart.<-->
-                                   <div class="col-sm-6"> 
-                                        <form method="post" action="shop.php?action=add&id="<?php echo $row["pid"]; ?> >  
+                                <!-- form to display products.
+                                when the form is submitted(clicked on add to cart button) selected product 
+                                will be added to the shopping cart.<-->
+                                   <div class="col-md-6"> 
+                                        <form method="post" action="shop.php?action=add&id="<?php echo $row["id"]; ?> >  
                                              <div style="border:1px solid #333; background-color:#f1f1f1; border-radius:5px; padding:16px;" align="center">  
                                                   <img src="<?php echo $row["image"]; ?>" width="150" height="auto" /><br />  
                                                   <h4 class="text-basic" ><?php echo $row["name"]; ?></h4>  
                                                   <h4 class="text-primary">€ <?php echo $row["price"]; ?></h4>  
+                                                  
                                                   <input type="number" name="quantity" class="form-control" value="1" min="1" />                                                  
-                                                  <input type="hidden" name="hidden_id" value="<?php echo $row["pid"]; ?>" /> 
                                                   <input type="hidden" name="hidden_name" value="<?php echo $row["name"]; ?>" />  
                                                   <input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>" />                                                              
-                                                  <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />  
+                                                  <input type="submit" name="add" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />  
                                              </div>  
                                         </form>  
                                    </div>  
@@ -97,9 +100,9 @@ include 'dbshop.php'; // calling the database connection.
                                         if ($col==1) { 
                                         echo "</div>"; 
                                         }                         
-                              }   
-                         }  
-                                   ?>
+                            }   
+                        }  
+                    ?>
 
                </div>
                
@@ -147,22 +150,20 @@ include 'dbshop.php'; // calling the database connection.
                               ?>  
                          </table>                                                 
                     </div>
-                    <form method="post" action="shop_process.php">
-     
-                   <button type="submit" class="btn btn-primary" name="submit_order">Submit Order</button>
+                    
+                    <form method="post" action="shop_process.php">    
+                        <button type="submit" class="btn btn-primary" name="submit_order">Submit Order</button>
                     </form>
-
-
                </div>
           </div>  
      </div> <br />  
 </body>
-
+</html> 
 
 
 <?php 
 mysqli_close($conn);
-include 'layout/footer.php';
+include 'footer.php';
 ?>
 
 

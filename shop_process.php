@@ -1,10 +1,10 @@
 <?php
-// Start the session
-session_start();
+$title = "Shop Process";
 
+session_start();
 include 'dbshop.php';
 
-// Check if the form is submitted
+// Check if the form is submitted from shop.php.
 if(isset($_POST["submit_order"])) {
     // Check if shopping cart session variable is set and not null
     if(isset($_SESSION["shopping_cart"]) && is_array($_SESSION["shopping_cart"])) {
@@ -18,7 +18,7 @@ if(isset($_POST["submit_order"])) {
 
             // Insert data into Order_Table
             // Note: This is a simplified example. Use prepared statements to prevent SQL injection.
-            $sql = "INSERT INTO Order_Table (order_id, pid, quantity, price) VALUES ($order_id, $pid, $quantity, $price)";
+            $sql = "INSERT INTO Order_Table (order_id, id, quantity, price) VALUES ($order_id, $pid, $quantity, $price)";
 
             // Execute SQL statement
             if ($conn->query($sql) !== TRUE) {
