@@ -120,23 +120,30 @@ The "Product" table facilitates the management of product-related information wi
 ### Table 4
 #### Membership Table
 
-The "Membership" table facilitates the management of new member information within the system. It stores essential details about each Member, enabling for the store admins to .
+The "Membership" table facilitates the management of new member information within the system. It stores essential details about each Member, enabling for the store admins to use the information when needed to benefit the members.
 
 ##### Columns
-- pid (Primary Key): An integer field uniquely identifying each product within the system.
-- name: A varchar field representing the name or title of the product.
-- image: A varchar fiels representing the images of the products.
-- price: A decimal field representing the price of the product, with precision up to two decimal places.
+- member_id (Primary Key): An integer field uniquely identifying each Member within the system.
+- subscription: A varchar field representing the type of the membership.
+- first_name: A varchar fiels representing the first name of the member.
+- last_name: A varchar fiels representing the last name of the member.
+- apartment_no: A varchar fiels representing the apartment_no of the member.
+- street: A varchar fiels representing the street name of the member.
+- postal_code: A varchar fiels representing the postal code of the member.
+- city: A varchar fiels representing the city name of the member.
+- email: A varchar fiels representing the email of the member.
+- ph_no:A varchar fiels representing the phone number of the member.
+
+
   
 ##### Constraints
-- The "pid" column serves as the primary key, ensuring each product record is uniquely identifiable.
-- All columns (pid, name, image, price) are marked as "NOT NULL," indicating that they must contain valid data for each product record.
+- The "member_id" column serves as the primary key, ensuring each member is uniquely identifiable.
+- All columnsare marked as "NOT NULL," indicating that they must contain valid data for each product record.
 
 ##### Usage
-- Cataloging and categorizing products offered by the organization.
-- Setting and updating product prices based on market trends and business strategies.
-- Tracking product availability and inventory levels.
-- Analyzing sales performance and revenue generation by product.
+- Creating and managing member accounts.
+- Recording member contact information for marketing and communication purposes.
+- Providing personalized services and support as a benefit of the membership.
 
 
 ### Table 5
