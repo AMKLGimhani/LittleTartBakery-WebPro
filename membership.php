@@ -38,26 +38,29 @@ require_once 'layout/header.php'; ?>
     <div class="form-group">
         <div class="row">
                 <label for="Subscription">Subscription Type:</label>
-                <select class="form-control" id="Subscription" name="Subscription">
+                <select class="form-control" id="Subscription" name="Subscription" require>
                     <option selected>Select one from the list</option>
                     <option value="Silver">Silver Subscription (For 3 months)</option>
                     <option value="Gold">Gold Subscription (For 6 months)</option>
                     <option value="Platinum">Platinum Subscription (For 12 months)</option>
                 </select><br>
+                
 
                 <label for="fname">First Name:</label>
-                <input type="text" class="form-control" id="first_name" placeholder="Enter your first name" name="first_name" required><br>
+                <input type="text" class="form-control" id="first_name" placeholder="Enter your first name" name="first_name" required minlength="3" maxlength="20"><br>
+                <span id="first_nameerror"> </span>
 
                 <label for="lname">Last Name:</label>
-                <input type="text" class="form-control" id="last_name" placeholder="Enter your last name" name="last_name" required><br>
+                <input type="text" class="form-control" id="last_name" placeholder="Enter your last name" name="last_name" required minlength="3" maxlength="30"><br>
+                <span id="last_nameerror"> </span>
 
-                <label for="apartmentNo&Street">Apartment No:</label>
+                <label for="apartmentNo">Apartment No:</label>
                 <input type="text" class="form-control" id="apartment_no" placeholder="Enter your apartment no" name="apartment_no" required><br>
 
-                <label for="apartmentNo&Street">Street:</label>
+                <label for="Street">Street:</label>
                 <input type="text" class="form-control" id="Street_no" placeholder="Enter your street" name="Street" required><br>
                 
-                <label for="apartmentNo&Street">Postal code:</label>
+                <label for="postalcode">Postal code:</label>
                 <input type="text" class="form-control" id="postal_code" placeholder="Enter your Postal code" name="postal_code" required><br>
 
                 <label for="city">City:</label>
@@ -84,8 +87,45 @@ require_once 'layout/header.php'; ?>
         </div>
     </div>
 
+    <script>
+
+            //function to validate name
+        function validateName(){
+            const first_name= document.getElementById("first_name").value;
+            const nameError = document.getElementById("first_nameerror");
+
+            if(first_name.length < 3 || first_name.length > 20){
+                nameError.innerHTML = "Name must be between 3 to 20 characters";
+                return false;
+            }
+            else{
+                nameError.innerHTML = "";
+                return true;
+            }
+
+        }
+
+        function validateLastName(){
+            const last_name= document.getElementById("last_name").value;
+            const lastnameError = document.getElementById("last_nameerror");
+
+            if(last_name.length < 3 || first_name.length > 20){
+                lastnameError.innerHTML = "Name must be between 3 to 50 characters";
+                return false;
+            }
+            else{
+                lastnameError.innerHTML = "";
+                return true;
+            }
+
+        }
 
 
+            //event listners for real time validation
+        document.getElementById("first_name").addEventListener("input", validateName);
+        document.getElementById("last_name").addEventListener("input", validateLastName);
+
+    </script>
 
 
 <?php require_once 'layout/footer.php'; ?>
