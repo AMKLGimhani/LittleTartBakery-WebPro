@@ -15,7 +15,7 @@ include 'dbshop.php'; // calling the database connection.
                     $count = count($_SESSION["shopping_cart"]);   //counting the items in the cart.
                    //creating a new array 
                     $item_array = array(  
-                         'item_id'=>$_GET["hidden_name"],  
+                         'item_id'=>$_GET["hidden_id"],  
                          'item_name'=>$_POST["hidden_name"],  
                          'item_price'=>$_POST["hidden_price"],  
                          'item_quantity'=>$_POST["quantity"]  
@@ -30,7 +30,7 @@ include 'dbshop.php'; // calling the database connection.
           //it creates a new item array and adds  array at index 0.
           else  {          
                $item_array = array( 
-                    'item_id'=>$_GET["hidden_name"],  
+                    'item_id'=>$_GET["hidden_id"],  
                     'item_name'=>$_POST["hidden_name"],  
                     'item_price'=>$_POST["hidden_price"],  
                     'item_quantity'=>$_POST["quantity"]  
@@ -81,7 +81,7 @@ include 'dbshop.php'; // calling the database connection.
                                                   <h4 class="text-basic" ><?php echo $row["name"]; ?></h4>  
                                                   <h4 class="text-primary">€ <?php echo $row["price"]; ?></h4>  
                                                   <input type="number" name="quantity" class="form-control" value="1" min="1" />                                                  
-                                                  <input type="hidden" name="hiddenid" value="<?php echo $row["pid"]; ?>" /> 
+                                                  <input type="hidden" name="hidden_id" value="<?php echo $row["pid"]; ?>" /> 
                                                   <input type="hidden" name="hidden_name" value="<?php echo $row["name"]; ?>" />  
                                                   <input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>" />                                                              
                                                   <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />  
@@ -147,15 +147,22 @@ include 'dbshop.php'; // calling the database connection.
                               ?>  
                          </table>                                                 
                     </div>
-                    <button type="submit" class="btn btn-primary" name="Submitorder">Confirm Your Order</button>
+                    <form method="post" action="shop_process.php">
+     
+                   <button type="submit" class="btn btn-primary" name="submit_order">Submit Order</button>
+                    </form>
+
+
                </div>
           </div>  
      </div> <br />  
 </body>
 
+
+
 <?php 
 mysqli_close($conn);
-include 'footer.php';
+include 'layout/footer.php';
 ?>
 
 
