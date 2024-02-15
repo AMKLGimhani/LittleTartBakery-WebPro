@@ -97,6 +97,7 @@ INSERT INTO `Product` (`pid`, `name`, `image`, `price`) VALUES
 
 ```
 
+
 # Order Table- Nilmini Pusweli
 ```sql
 CREATE TABLE `Order_Table` (
@@ -111,18 +112,18 @@ CREATE TABLE `Order_Table` (
 # Membership Table- Manasha Siriwardana
 
 ```sql
-CREATE TABLE Membership (
-  member_id int NOT NULL,
-  subscription varchar(50) NOT NULL,
-  first_name varchar(50) NOT NULL,
-  last_name varchar(50) NOT NULL,
-  apartment_no varchar(50) NOT NULL,
-  street varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  postal_code varchar(10) NOT NULL,
-  city varchar(20) NOT NULL,
-  email varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  ph_no varchar(20) NOT NULL,
-  TnC tinyint(1) NOT NULL
+CREATE TABLE `Membership` (
+  `member_id` int NOT NULL,
+  `subscription` varchar(50) NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `apartment_no` varchar(50) NOT NULL,
+  `street` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `postal_code` varchar(10) NOT NULL,
+  `city` varchar(20) NOT NULL,
+  `email` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `ph_no` varchar(20) NOT NULL,
+  `TnC` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 ```

@@ -9,7 +9,7 @@ include 'dbshop.php'; // calling the database connection.
 <?php
      if(isset($_POST["add"])) {  // checking if the 'add_to_cart' form has been submitted.
          
-          if(isset($_SESSION["shopping_cart"])) {  //checking for 'shopping cart session variable.
+          if(isset($_SESSION["shopping_cart"])) {  //checking for 'shopping cart' session variable.
                $item_array_id = array_column($_SESSION["shopping_cart"], "item_array"); //creates an array containing all the "item_array" values in the shopping cart.      
                
                if(!in_array($_GET["id"], $item_array_id)) {  //check for the id of the current item added to the arry.
@@ -25,7 +25,7 @@ include 'dbshop.php'; // calling the database connection.
                     $_SESSION["shopping_cart"][$count] = $item_array; 
                     echo '<script>window.location="shop.php"</script>';  //redirects the user to "process.php.
                }  
-             
+            
           }  
           //If session variable $_SESSION["shopping_cart"] does not exist(meaning it is the first item being added), 
           //it creates a new item array and adds  array at index 0.
@@ -84,9 +84,9 @@ include 'dbshop.php'; // calling the database connection.
                                                   <h4 class="text-basic" ><?php echo $row["name"]; ?></h4>  
                                                   <h4 class="text-primary">€ <?php echo $row["price"]; ?></h4>  
                                                   
-                                                  <input type="number" name="quantity" class="form-control" value="1" min="1" />                                                  
                                                   <input type="hidden" name="hidden_name" value="<?php echo $row["name"]; ?>" />  
                                                   <input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>" />                                                              
+                                                  <input type="number" name="quantity" class="form-control" value="1" min="1" />                                                  
                                                   <input type="submit" name="add" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />  
                                              </div>  
                                         </form>  
