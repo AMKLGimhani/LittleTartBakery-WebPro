@@ -1,7 +1,7 @@
 <?php
-$title = "Submited Applications";
-include 'layout/header.php';
-include 'dbcareer.php';
+$title = "Submitted Applications";
+require_once 'layout/header.php';
+require_once 'dbcareer.php';
 ?>
 
 <h2>Applications for Open Positions</h2>
@@ -14,7 +14,8 @@ $result = $conn->query($sql);
 
 if($result->num_rows> 0)
 {
-    echo "<table class='table'>
+    echo "<div class='table-responsive'>
+            <table class='table table-sm'>
             <thead>
                 <tr>
                     <th>Applicant ID</th>
@@ -47,6 +48,8 @@ if($result->num_rows> 0)
                 <td>{$row['qualification']}</td>
                 <td>{$row['experience']}</td>
               </tr>";
+            
+            
     }
 }
 else
@@ -55,5 +58,5 @@ else
 }
 $conn->close();
 
-
+ 
 ?>

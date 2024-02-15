@@ -26,9 +26,10 @@ require_once 'layout/header.php';
 
                 <label for="lname">Last Name:</label>
                 <input type="text" class="form-control" id="lname" placeholder="Enter your last name" name="lname" required style="border: solid 1px rgb(238, 116, 116);"><br>
+                <span id="last_nameerror" style="color: red"> </span><br>
 
                 <label for="age">Age:</label>
-                <input type="number" class="form-control" id="age" placeholder="Enter your age" name="age" required style="border: solid 1px rgb(238, 116, 116);">
+                <input type="number" class="form-control" id="age" placeholder="Enter your age" name="age" required min="18" max="55" style="border: solid 1px rgb(238, 116, 116);">
                 <span id="ageerror" style="color: red"> </span><br>
 
                 <label for="apartmentDetais">Apartment No & Street:</label>
@@ -52,7 +53,7 @@ require_once 'layout/header.php';
 
 
             
-                <button type="submit" class="btn btn-primary" name="submitcareer">Submit Application</button>
+                <button type="submit" class="btn btn-primary" name="submitcareer">Submit Application</button> 
             </div>
 
             <div class="col-md-5"> 
@@ -70,8 +71,8 @@ require_once 'layout/header.php';
             const fname= document.getElementById("fname").value;
             const nameError = document.getElementById("first_nameerror");
 
-            if(fname.length < 2 || fname.length > 20){
-                nameError.innerHTML = "Name must be between 2 to 20 characters";
+            if(fname.length < 3 || fname.length > 25){
+                nameError.innerHTML = "First name must be between 3 to 25 characters";
                 return false;
             }
             else{
@@ -81,22 +82,38 @@ require_once 'layout/header.php';
 
         }
 
-        function validateAge(){
-            const age= document.getElementById("age").value;
-            const ageError = document.getElementById("ageerror");
+    function validateLName(){
+        const lname= document.getElementById("lname").value;
+        const lnameError = document.getElementById("last_nameerror");
 
-            if(age < 55 || age > 18){
-                ageError.innerHTML = "Applicants must be between 18 and 50 years old to apply for these positions.";
-                return false;
-            }
-            else{
-                ageError.innerHTML = "";
-                return true;
-            }
-
+        if(lname.length < 3 || lname.length > 25){
+            lnameError.innerHTML = "Last name must be between 3 to 25 characters";
+            return false;
         }
+        else{
+            lnameError.innerHTML = "";
+            return true;
+        }
+
+    }
+
+    function validateAge(){
+        const age= document.getElementById("age").value;
+        const ageError = document.getElementById("ageerror");
+
+        if(age < 55 || age > 18){
+            ageError.innerHTML = "Applicants must be between 18 and 50 years old to apply for these positions.";
+            return false;
+        }
+        else{
+            ageError.innerHTML = "";
+            return true;
+        }
+
+    }
     
         document.getElementById("fname").addEventListener("input", validateFName);
+        document.getElementById("lname").addEventListener("input", validateLName);
         document.getElementById("age").addEventListener("input", validateAge);
 
 </script>
