@@ -34,5 +34,59 @@ if (isset($_POST['submitcareer'])) {
     
     $conn->close();
 }
+
+if (isset($_POST['update'])) {
+
+    
+    
+    $Positions = $_POST['OpenPositionsN']; 
+    $f_name = $_POST['fnameN'];     
+    $l_name = $_POST['lnameN'];
+    $ageN = $_POST['ageN']; 
+    $apartmentAdd = $_POST['apartmentDetaisN'];
+    $cityN = $_POST['cityN'];
+    $email = $_POST['emailAddN'];
+    $tel = $_POST['tpN'];    
+    $qua = $_POST['pqN'];      
+    $workingex = $_POST['workingN']; 
+
+    if (isset($_POST['applicant_id'])) {
+        $a = $_POST['applicant_id'];
+        
+        include 'dbcareer.php';
+
+    
+        $sql = "UPDATE career SET 
+            applicant_id = '$a'
+            position = '$Positions', 
+            first_name = '$f_name', 
+            last_name = '$l_name', 
+            age = '$ageN', 
+            apartmentNo_street = '$apartmentAdd', 
+            city = '$cityN', 
+            email = '$email', 
+            tel_no = '$tel', 
+            qualification = '$qua', 
+            experience = '$workingex' 
+            WHERE applicant_id = '$a'";
+
+
+        
+        if ($conn->query($sql) === TRUE) {
+            
+            echo "<span style='font-size: 25px';>Thank you!</span> <br> Application updated successfully.";
+        } else {
+            
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+
+        $conn->close();
+    } else {
+        echo "Error: Applicant ID is not set.";
+    }    
+    
+    
+}
+
 require_once 'layout/footer.php';
 ?>

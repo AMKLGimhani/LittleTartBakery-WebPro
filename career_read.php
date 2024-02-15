@@ -35,7 +35,7 @@ if($result->num_rows> 0)
     while($row = $result->fetch_assoc())
     {
         echo "<tr>
-                <td><a href='career_updates.php?id=$row[applicant_id]'>$row[applicant_id]</a></td>
+                <td><a href='career_updates.php?applicant_id={$row['applicant_id']}'>{$row['applicant_id']}</a></td>
                 <td>{$row['position']}</td>
                 <td>{$row['first_name']}</td>
                 <td>{$row['last_name']}</td>
