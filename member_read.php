@@ -36,7 +36,8 @@ if($result->num_rows> 0)
     while($row = $result->fetch_assoc())
     {
         echo "<tr>
-                <td>{$row['member_id']}</td>
+                
+                <td><a href='member_update.php?member_id={$row['member_id']}'>{$row['member_id']}</a></td>
                 <td>{$row['subscription']}</td>
                 <td>{$row['first_name']}</td>
                 <td>{$row['last_name']}</td>

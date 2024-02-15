@@ -1,8 +1,10 @@
 <?php
 
 if (isset($_POST['submitmembership'])) {
+
+   // if (isset($_POST['subscription'])) {//
     
-    $Subscription = $_POST['Subscription']; 
+    $Subscription = $_POST['subscription']; 
     $fname = $_POST['first_name'];     
     $lname = $_POST['last_name'];
     $apartment = $_POST['apartment_no']; 
@@ -17,6 +19,7 @@ if (isset($_POST['submitmembership'])) {
 
     include 'memberdb.php';
 
+    if ($Subscription !== "Select one from the list") { 
     
     $sql = "INSERT INTO Membership (subscription, first_name, last_name, apartment_no, street, postal_code, city, email, ph_no, TnC)
             VALUES ('$Subscription', '$fname', '$lname', '$apartment', '$street', '$postal', '$city', '$email', '$phone', '$TnC')";
@@ -31,9 +34,13 @@ if (isset($_POST['submitmembership'])) {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
+} else {
+    echo '<h2 style="color: red;">Please select a valid subscription type.</h2>' ;
+}
     
-    $conn->close();
 
+
+$conn->close();
     
 }
 ?>
