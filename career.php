@@ -22,13 +22,14 @@ require_once 'layout/header.php';
 
                 <label for="fname">First Name:</label>
                 <input type="text" class="form-control" id="fname" placeholder="Enter your first name" name="fname" required style="border: solid 1px rgb(238, 116, 116);"><br>
+                <span id="first_nameerror" style="color: red"> </span><br>
 
                 <label for="lname">Last Name:</label>
                 <input type="text" class="form-control" id="lname" placeholder="Enter your last name" name="lname" required style="border: solid 1px rgb(238, 116, 116);"><br>
 
                 <label for="age">Age:</label>
-                <input type="number" class="form-control" id="age" placeholder="Enter your age" name="age" required min="18" max="55" style="border: solid 1px rgb(238, 116, 116);">
-                <p style="color: rgb(238, 116, 116);">Applicants must be between 18 and 50 years old to apply for these positions.</p>
+                <input type="number" class="form-control" id="age" placeholder="Enter your age" name="age" required style="border: solid 1px rgb(238, 116, 116);">
+                <span id="ageerror" style="color: red"> </span><br>
 
                 <label for="apartmentDetais">Apartment No & Street:</label>
                 <input type="text" class="form-control" id="apartmentDetais" placeholder="Enter your apartment no & street" name="apartmentDetais" required style="border: solid 1px rgb(238, 116, 116);"><br>
@@ -59,11 +60,46 @@ require_once 'layout/header.php';
                 <img class="img-fluid" src="Pictures\baker2.png" alt="Little Tart Bakery main cake" style="height: 720px; width:720px">
             </div>
         </div>
-        </div>
+    </div>
         
     
 </form>
 
+<script>
+    function validateFName(){
+            const fname= document.getElementById("fname").value;
+            const nameError = document.getElementById("first_nameerror");
+
+            if(fname.length < 2 || fname.length > 20){
+                nameError.innerHTML = "Name must be between 2 to 20 characters";
+                return false;
+            }
+            else{
+                nameError.innerHTML = "";
+                return true;
+            }
+
+        }
+
+        function validateAge(){
+            const age= document.getElementById("age").value;
+            const ageError = document.getElementById("ageerror");
+
+            if(age < 55 || age > 18){
+                ageError.innerHTML = "Applicants must be between 18 and 50 years old to apply for these positions.";
+                return false;
+            }
+            else{
+                ageError.innerHTML = "";
+                return true;
+            }
+
+        }
+    
+        document.getElementById("fname").addEventListener("input", validateFName);
+        document.getElementById("age").addEventListener("input", validateAge);
+
+</script>
 
 
 <?php
