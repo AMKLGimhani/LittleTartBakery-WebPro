@@ -1,7 +1,12 @@
 <?php
 $title = "Customer Review";
+<<<<<<< Updated upstream
 require_once 'layout/header.php';
 require_once 'memberdb.php';
+=======
+include 'layout/header.php';
+include 'dbcareer.php';
+>>>>>>> Stashed changes
 
 ?><br><br>
 <div class="row">   
