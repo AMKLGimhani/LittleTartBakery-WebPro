@@ -41,7 +41,9 @@ $row= mysqli_fetch_array($result);
   <div class="row">
   <div class="col"><button type="submit" class="btn btn-primary" name="submit">Update your Information</button></div>
   <div class="col"><button type="submit" class="btn btn-primary" name="delete">Delete your Information</button></div>
-  <div class="col"><button type="reset" class="btn btn-primary" name="reset">Clear Form</button></div>
+  <div class="col"><button type="reset" class="btn btn-primary" style="width:200px" name="reset">Clear Form</button></div>
+  <a href="appointment_form.php" class="btn btn-danger" style="width: 200px; height: 60px;">New Appointment</a>
+
 
 
 
@@ -58,7 +60,7 @@ if (isset($_POST['submit'])){
     $tp = $_POST['tp'];
     $date = $_POST['date'];
     $time = $_POST['time'];
-    $query = mysqli_query($conn,"UPDATE appointments set name='$name', email='$email', tp='$tp', date='$date', time='time' where appointment_id='$a'");
+    $query = mysqli_query($conn,"UPDATE appointments set name='$name', email='$email', tp='$tp', date='$date', time='$time' where appointment_id='$a'");
     if($query){
         echo "<h2>Your information is updated Successfully</h2>";
         // if you want to redirect to update page after updating
