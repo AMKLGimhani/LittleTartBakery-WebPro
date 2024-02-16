@@ -16,7 +16,7 @@ if (isset($_POST['submitcareer'])) {
     $working = $_POST['working']; 
 
     
-    include 'memberdb.php';
+    include 'dbcareer.php';
 
     
     $sql = "INSERT INTO career (position, first_name, last_name, age, apartmentNo_street, city, email, tel_no, qualification, experience)
@@ -25,7 +25,11 @@ if (isset($_POST['submitcareer'])) {
     
     if ($conn->query($sql) === TRUE) {
         
-        echo "<span style='font-size: 25px';>Thank you!</span> <br> Application submitted successfully.";
+        echo "<span style='font-size: 25px';>Thank you!</span> <br> Application submitted successfully.";?>
+        <script> 
+        window.alert("Application submitted successfully") 
+        </script>
+    <?php
     } else {
         
         echo "Error: " . $sql . "<br>" . $conn->error;
