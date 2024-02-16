@@ -31,7 +31,7 @@ include 'db.php';
 </div>  
 
 
-//validate name
+
 
 
 <script>
