@@ -14,7 +14,7 @@ require_once 'layout/header.php';
   <form name="formTasting" method="post" action="appointment_process.php">
     
     <div class="form-tasting">
-        <div class="row">
+        <div class="row"> 
 
             <div class="col-md-7">
             <h3 class="text-center" >"Book Your Appointment Here!"</h3><br>
