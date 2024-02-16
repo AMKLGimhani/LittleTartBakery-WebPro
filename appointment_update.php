@@ -60,7 +60,7 @@ if (isset($_POST['submit'])){
     $tp = $_POST['tp'];
     $date = $_POST['date'];
     $time = $_POST['time'];
-    $query = mysqli_query($conn,"UPDATE appointments set name='$name', email='$email', tp='$tp', date='$date', time='time' where appointment_id='$a'");
+    $query = mysqli_query($conn,"UPDATE appointments set name='$name', email='$email', tp='$tp', date='$date', time='$time' where appointment_id='$a'");
     if($query){
         echo "<h2>Your information is updated Successfully</h2>";
         // if you want to redirect to update page after updating
