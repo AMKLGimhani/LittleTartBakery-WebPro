@@ -43,18 +43,12 @@ $row= mysqli_fetch_array($result);
   <div class="col"><button type="submit" class="btn btn-primary" name="delete">Delete your Information</button></div>
   <div class="col"><button type="reset" class="btn btn-primary" style="width:200px" name="reset">Clear Form</button></div>
   <a href="appointment_form.php" class="btn btn-danger" style="width: 200px; height: 60px;">New Appointment</a>
-
-
-
-
 </div>
 </form>
 
-
 <?php
 
-if (isset($_POST['submit'])){
-    
+if (isset($_POST['submit'])) {   
     $name = $_POST['name'];
     $email = $_POST['email'];
     $tp = $_POST['tp'];
@@ -70,14 +64,15 @@ if (isset($_POST['submit'])){
 
     if (isset($_POST['delete'])){
         $query = mysqli_query($conn,"DELETE FROM appointments where appointment_id='$a'");
+        
         if($query){
             echo "Record Deleted with id: $a <br>";
             // if you want to redirect to update page after updating
           //  header("location: appointment_update.php");
         }
         else { echo "Record Not Deleted";}
-        }
+    }
 
 $conn->close();
-
 ?>
+<?php require_once 'layout/footer.php'; ?>

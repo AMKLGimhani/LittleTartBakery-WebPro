@@ -17,16 +17,19 @@ require_once 'layout/header.php';
         <div class="row"> 
 
             <div class="col-md-7">
-            <h3 class="text-center" >"Book Your Appointment Here!"</h3><br>
+                <h3 class="text-center" >"Book Your Appointment Here!"</h3><br>
+                
                 <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required style="border: solid 1px rgb(238, 116, 116);"><br>
-               
+                <input type="text" class="form-control" id="name" placeholder="Enter Your Name" name="name" required style="border: solid 1px rgb(238, 116, 116);"><br>
+                <span id="nameerror"> </span><br>
+
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com" required style="border: solid 1px rgb(238, 116, 116);"><br>
-
+                <span id="emailerror"> </span><br>
 
                 <label for="tp">Telephone No:</label>
-                <input type="text" class="form-control" id="tp" placeholder="Enter your telephone no" name="tp" required style="border: solid 1px rgb(238, 116, 116);"><br>
+                <input type="text" class="form-control" id="tp" placeholder="Enter Your Telephone Number" name="tp" required style="border: solid 1px rgb(238, 116, 116);"><br>
+                <span id="tperror"> </span><br>
 
                 <div class="row">
                     <div class="col-md-6">
@@ -40,8 +43,7 @@ require_once 'layout/header.php';
                 </div>
 
                 <button type="submit" class="btn btn-primary" name="submit">Schedule Appointment</button>
-                <a href="appointment_update.php" class="btn btn-danger" style="width: 200px; height: 60px;">Update Appointment</a>
-
+                <a href="appointment_update.php" class="btn btn-danger" style="width: 200px; height: 55px;">Update Appointment</a>
 
             </div>
             <div class="col-md-5">
@@ -50,9 +52,7 @@ require_once 'layout/header.php';
                 </div>
             </div>
         </div>
-
-    </div>
-   
+    </div>  
   </form>
 </body>
 </html>
@@ -74,7 +74,6 @@ function validateName() {
     return true;
     }
 }
-
 
 //function to validate email
 function validateEmail() {
@@ -111,6 +110,5 @@ document.getElementById("name").addEventListener("input", validateName);
 document.getElementById("email").addEventListener("input", validateEmail);
 document.getElementById("tp").addEventListener("input", validatePhone);
 </script>
-
 
 <?php require_once 'layout/footer.php'; ?>
