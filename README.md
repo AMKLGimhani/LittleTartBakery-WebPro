@@ -14,6 +14,8 @@ This web page is created for a bakery to do the sales through an online store. T
 - [ ] Membership form (Manasha Siriwardana)
 - [ ] Reviews (Chalani Kalpana)
 - [ ] Careers (A.M.Kushani Lakshika)
+- [ ] Appointments for Sweet Tasting (Nilmini Pusweli) 
+
       
 ### 1. Online Order 
 
@@ -23,6 +25,8 @@ The online order form on the bakery site is a user-friendly interface designed t
 #### Links
 - GitHub:
 - shell.hamk.fi:
+
+
 
 ### 2. Membership form
 
@@ -51,6 +55,15 @@ A career feature on this website typically serves as a gateway for individuals s
 - GitHub:
 - shell.hamk.fi:
 
+### 5. Appointments for Sweet Tasting
+
+#### Introduction
+The Cake Tasting feature on our website is designed to make your cake shopping experience even more delightful. With this feature, customer can schedule a cake tasting session to get a firsthand experience of the flavors and quality of our cakes before making a purchase.
+
+#### Links
+- GitHub:
+- shell.hamk.fi:
+
 ## Database Tables
 
 - [ ] DB Table 1 (Admin Table, Created By-A.M.Kushani Lakshika)
@@ -60,6 +73,8 @@ A career feature on this website typically serves as a gateway for individuals s
 - [ ] DB Table 5 (Customer Table, Created By-Chalani Kalpana)
 - [ ] DB Table 6 (Review Table, Created By-Chalani Kalpana)
 - [ ] DB Table 7 (Career Table, Created By-A.M.Kushani Lakshika)
+- [ ] DB Table 8 (appointments Table, Created By-Nilmini Pusweli)
+
       
 ### Table 1 
 #### Admin Table
@@ -81,13 +96,13 @@ The "Order_Table" stores information about orders placed in a system. It capture
 
 ##### Columns
 - order_id (Primary Key): An integer field uniquely identifying each order placed within the system.
-- id: An integer field representing the unique identifier of the product being ordered. This field likely references a separate table containing product information.
+- pid: An integer field representing the unique identifier of the product being ordered. This field likely references a separate table containing product information.
 - quantity: An integer field representing the quantity of the product ordered in the respective order.
 - price: A decimal field representing the price per unit of the product ordered, with precision up to two decimal places.
   
 ##### Constraints
 - The "order_id" column serves as the primary key, ensuring each order record is uniquely identifiable.
-- id is a foreign key.
+- pid is a foreign key.
 - All columns are marked as "Not Null" indicating that they must contain valid data for each record.
 
 ##### Usage
@@ -102,13 +117,13 @@ The "Order_Table" stores information about orders placed in a system. It capture
 The "Product" table facilitates the management of product-related information within the system. It stores essential details about each product, enabling efficient inventory management, pricing strategies, and sales analysis.
 
 ##### Columns
-- id (Primary Key): An integer field uniquely identifying each product within the system.
+- pid (Primary Key): An integer field uniquely identifying each product within the system.
 - name: A varchar field representing the name or title of the product.
 - image: A varchar fiels representing the images of the products.
 - price: A decimal field representing the price of the product, with precision up to two decimal places.
   
 ##### Constraints
-- The "id" column serves as the primary key, ensuring each product record is uniquely identifiable.
+- The "pid" column serves as the primary key, ensuring each product record is uniquely identifiable.
 - All columns (id, name, image, price) are marked as "NOT NULL," indicating that they must contain valid data for each product record.
 
 ##### Usage
@@ -178,6 +193,23 @@ The "Customer" table facilitates the management of customer-related information 
 #### Career Table
 The career table is used to securely store information submitted by job seekers when applying for positions listed on the website. It typically includes fields such as applicant name, contact details, professional qualifications, and working experiences of the applicant.
 
+### Table 8  
+#### appointments Table
+
+The "appointments" table facilitates the management to know the cake tasting scedule of customers. It stores essential details about the visitors, enabling efficient inventory management, pricing strategies, and sales analysis.
+
+##### Columns
+- appointment_id (Primary Key): An integer field uniquely identifying each visitor for cake tasting.
+- name: A varchar field representing the name or title of the visitor.
+- email: A varchar field representing the email address of the visitor.
+- tp: A varchar field representing the telephone number or contact number of the visitor.
+- date: date field to know the appointment date.
+- time: time field to know the booked time.
+  
+
+
+
+
 ### ER Diagram
 
 ![ER_Diagram](Pictures/ER_diagram.jpg)
@@ -187,6 +219,8 @@ The career table is used to securely store information submitted by job seekers 
 - [ ] Membership Form (Manasha Siriwardana)
 - [ ] Career Form(Kushani Lakshika)
 - [ ] Online Cart(Nilmini Pusweli)
+- [ ] Appointments Form(Nilmini Pusweli)
+
 
 ### Form 1
 
@@ -202,25 +236,31 @@ In this for we gather information from the customers and request to include cust
 - GitHub:
 - shell.hamk.fi:
   
+
 ### Form 2
 
-#### Form Name
+#### Membership Form
 
 #### Link
 - GitHub:
 - shell.hamk.fi:
   
+
 ### Form 3
 
-#### Form Name
+#### Career Form
+
+The primary purpose of a Career Form is to allow job seekers to submit their applications for available positions within the organization. Career Forms are designed to collect essential information from job applicants in a structured manner. This includes personal details, educational qualifications, work experience, 
+and skills.
 
 #### Link
 - GitHub:
 - shell.hamk.fi:
   
+
 ### Form 4
 
-#### Form Name
+#### Appointments Form
 
 #### Link
 - GitHub:
@@ -228,10 +268,14 @@ In this for we gather information from the customers and request to include cust
 
 ## Tables
 
-- [ ] Customer Review Table ()
-- [ ] Table 2 (Full Name, Created By)
-- [ ] Table 3 (Full Name, Created By)
-- [ ] Table 4 (Full Name, Created By)
+- [ ] DB Table 1 (Admin Table, Created By-A.M.Kushani Lakshika)
+- [ ] DB Table 2 (Order Table, Created By-Nilmini Pusweli)
+- [ ] DB Table 3 (Product Table, Created By-Nilmini Pusweli)
+- [ ] DB Table 4 (Membership Table, Created By-Manasha Siriwardana)
+- [ ] DB Table 5 (Customer Table, Created By-Chalani Kalpana)
+- [ ] DB Table 6 (Review Table, Created By-Chalani Kalpana)
+- [ ] DB Table 7 (Career Table, Created By-A.M.Kushani Lakshika)
+- [ ] DB Table 8 (appointments Table, Created By-Nilmini Pusweli)
 
 ### Table 1
 

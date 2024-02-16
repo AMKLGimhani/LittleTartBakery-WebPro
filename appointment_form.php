@@ -1,6 +1,6 @@
 <?php
 $title = "Cake Tasting";
-require_once 'header.php'; 
+require_once 'layout/header.php'; 
 ?>
 
 <html>
@@ -40,6 +40,8 @@ require_once 'header.php';
                 </div>
 
                 <button type="submit" class="btn btn-primary" name="submit">Schedule Appointment</button>
+                <a href="appointment_update.php" class="btn btn-danger" style="width: 200px; height: 60px;">Update Appointment</a>
+
 
             </div>
             <div class="col-md-5">
@@ -111,4 +113,4 @@ document.getElementById("tp").addEventListener("input", validatePhone);
 </script>
 
 
-<?php require_once 'footer.php'; ?>
+<?php require_once 'layout/footer.php'; ?>

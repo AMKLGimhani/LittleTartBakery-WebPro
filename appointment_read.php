@@ -1,7 +1,8 @@
 <?php
 $title = "Sceduled Appointments";
-require_once 'header.php';
-require_once 'dbshop.php';
+require_once 'layout/header.php';
+require_once 'appointmentdb.php';
+
 ?>
 
 <h2 class="text-center">Scheduled appointments</h2>

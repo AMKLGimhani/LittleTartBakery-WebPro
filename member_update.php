@@ -1,7 +1,7 @@
 <?php
 $title = "memberupdate";
 require 'layout/header.php';
-require 'memberdb.php';
+require 'dbcareer.php';
 $a = $_GET['member_id'];
 $result = mysqli_query($conn, "SELECT * FROM Membership WHERE member_id = '$a'");
 $row= mysqli_fetch_array($result);

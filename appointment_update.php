@@ -1,7 +1,7 @@
 <?php
 $title = "Update Appointments";
-require_once 'header.php';
-require_once 'dbshop.php';  
+require_once 'layout/header.php';
+require_once 'appointmentdb.php';  
 ?>
 
 <?php
@@ -41,7 +41,9 @@ $row= mysqli_fetch_array($result);
   <div class="row">
   <div class="col"><button type="submit" class="btn btn-primary" name="submit">Update your Information</button></div>
   <div class="col"><button type="submit" class="btn btn-primary" name="delete">Delete your Information</button></div>
-  <a href="appointment_read.php" class="btn btn-primary" style="width: 200px; height: 60px;">Appointment List</a>
+  <div class="col"><button type="reset" class="btn btn-primary" name="reset">Clear Form</button></div>
+
+
 
 </div>
 </form>
