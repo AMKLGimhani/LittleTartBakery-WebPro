@@ -1,5 +1,5 @@
 <?php
-
+$title = "Cake Tasting Process";
 require_once 'layout/header.php'; 
 
    
