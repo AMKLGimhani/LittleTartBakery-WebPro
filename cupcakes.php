@@ -79,6 +79,8 @@ require_once 'layout/header.php';
                     </div>
                 </div>
             </div>
+            <a href="appointment_form.php" class="btn btn-danger" style="width: 150px; height: 60px;">Sweet Samples</a>
+
         </div>
 
 

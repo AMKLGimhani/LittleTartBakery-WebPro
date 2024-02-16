@@ -18,7 +18,13 @@
                 <p>with our exquisite cakes and cupcakes,</p>
                 <p> crafted to elevate your moments of joy.</p>
                 </br>
+<<<<<<< HEAD
                 <a href="shop.php" class="btn btn-danger">Shop now</a>
+=======
+                <a href="shop.php" class="btn btn-danger" style="width: 150px; height: 60px;" >Shop now</a>
+
+                <a href="appointment_form.php" class="btn btn-danger" style="width: 150px; height: 60px;">Sweet Samples</a>
+>>>>>>> 6fa0fcbe4d66fa4ee5c6cff394ccf0fdaaf9af97
                 <br><br>
                 <p>Same day delivery in Hämeenlinna</p>
             </div>
