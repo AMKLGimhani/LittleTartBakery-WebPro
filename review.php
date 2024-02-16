@@ -7,10 +7,11 @@ include 'db.php';
 <div class="row">   
 <div class='col-md-6'>
 <h2>Enter Your Review</h2><br><br>
-    <form action="review_process.php" method="post">
+    <form name = "myForm" action="review_process.php" method="post" onsubmit="return validateForm()">
         
         <label for="customer_name">Your Name:</label>
         <input type="text" id="customer_name" name="customer_name" required><br><br>
+        <span id="customer_nameerror"> </span>
 
         <label for="rating">Rating:</label>
         <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
@@ -29,13 +30,30 @@ include 'db.php';
      
 </div>  
 
-    
+
+//validate name
+
+
+<script>
+function validateForm() {
+
+  customer_name= document.forms["myForm"]["fname"].value;
+  if (customer_name == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
 
 
 
 <?php
+//Read data 
 
 $sql = "SELECT review_id, customer_name, rating, review_text, review_date FROM review order by review_date desc";
+
+ 
+
 $result = $conn->query($sql);
  
 if($result->num_rows> 0)
@@ -57,8 +75,9 @@ if($result->num_rows> 0)
                 echo "<div class='card-headers'>" ;
                 echo "<q>" .$row["review_date"] . "</q><br><br>";
 
-                echo "<a href='review_updatesingle.php?id={$row['review_id']}'>{$row['customer_name']}</a>";
+                echo "<a href='review_updatesingle.php?review_id={$row['review_id']}'>{$row['customer_name']}</a>";
                 
+                //star icons based on the rating of the review
                 for($i=1; $i<=$rates; $i++)
 
                 {
@@ -78,6 +97,7 @@ if($result->num_rows> 0)
                 echo "</div>";
                 echo "</div>"; 
         
+        //grid layout is maintained by closing the current grid row and starting a new one if necessary
         $col++;
         if ($col==4)
         {
