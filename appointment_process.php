@@ -8,7 +8,7 @@ if(isset($_POST["submit"])) {
     $date = $_POST['date'];
     $time = $_POST['time'];
 
-    include 'appointmentdb.php';
+    include 'memberdb.php';
 
     $sql = "INSERT INTO appointments (name, email, tp, date, time) 
             VALUES ('$name', '$email',  '$tp', '$date', '$time')";

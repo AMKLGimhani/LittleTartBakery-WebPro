@@ -1,7 +1,7 @@
 <?php
 $title = "Submitted Applications";
 require_once 'layout/header.php';
-require_once 'dbcareer.php';
+require_once 'memberdb.php';
 ?>
 
 <h2>Applications for Open Positions</h2>

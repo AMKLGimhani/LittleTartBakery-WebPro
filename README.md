@@ -218,8 +218,9 @@ The "appointments" table facilitates the management to know the cake tasting sce
 - [ ] Review Form (Chalani Kalpana)
 - [ ] Membership Form (Manasha Siriwardana)
 - [ ] Career Form(Kushani Lakshika)
-- [ ] Online Cart(Nilmini Pusweli)
 - [ ] Appointments Form(Nilmini Pusweli)
+- [ ] Online Cart(Nilmini Pusweli)
+
 
 
 ### Form 1
@@ -240,6 +241,7 @@ In this for we gather information from the customers and request to include cust
 ### Form 2
 
 #### Membership Form
+ A membership form of the Little Tart Bakery, is a document that individuals can fill out to become members or subscribers. The purpose of the form is to collect necessary information from customers who want to join a membership program or receive exclusive offers and updates from the bakery.
 
 #### Link
 - GitHub:

@@ -1,7 +1,7 @@
 <?php
 $title = "careerupdate";
 require_once 'layout/header.php';
-require_once 'dbcareer.php';
+require_once 'memberdb.php';
 $a = $_GET['applicant_id'];
 $result = mysqli_query($conn,"SELECT * FROM career WHERE applicant_id= '$a'");
 $row= mysqli_fetch_array($result);

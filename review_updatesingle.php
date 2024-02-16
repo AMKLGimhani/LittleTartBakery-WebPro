@@ -1,7 +1,7 @@
 <?php
 $title = "Update and Delete";
-include 'db.php';
-include 'layout/header.php';
+require_once 'dmemberdb.php';
+require_once 'layout/header.php';
 
 
 if($_SERVER["REQUEST_METHOD"] == "POST") 

@@ -83,8 +83,9 @@ require_once 'layout/header.php'; ?>
                 <a class="nav-link" href="#">Agree to Terms and Conditions</a>
                 </label>
             </div>
-
-                <button type="submit" class="btn btn-primary" name="submitmembership">Submit</button>
+            <div class="row">
+            <div class="col"><button type="submit" class="btn btn-primary" name="submitmembership">Submit</button></div>
+            </div>
         </div>
     </div>
 

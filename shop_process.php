@@ -1,7 +1,7 @@
 <?php  
 
 session_start(); 
-include 'shopdb.php'; // calling the database connection.
+require_once 'memberdb.php'; // calling the database connection.
 ?>
 
 <?php

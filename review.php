@@ -1,7 +1,7 @@
 <?php
 $title = "Customer Review";
-include 'layout/header.php';
-include 'db.php';
+require_once 'layout/header.php';
+require_once 'memberdb.php';
 
 ?><br><br>
 <div class="row">   

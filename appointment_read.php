@@ -1,7 +1,7 @@
 <?php
 $title = "Sceduled Appointments";
 require_once 'layout/header.php';
-require_once 'appointmentdb.php';
+require_once 'memberdb.php';
 
 ?>
 

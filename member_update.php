@@ -1,7 +1,7 @@
 <?php
 $title = "memberupdate";
-require 'layout/header.php';
-require 'dbcareer.php';
+require_once 'layout/header.php';
+require_once 'memberdb.php';
 $a = $_GET['member_id'];
 $result = mysqli_query($conn, "SELECT * FROM Membership WHERE member_id = '$a'");
 $row= mysqli_fetch_array($result);
@@ -9,7 +9,7 @@ $row= mysqli_fetch_array($result);
 
 
 <h2> Update memebership information below: </h2>
-<form name= "formmember" method="post" action="">
+<form name= "memberupdateform" method="post" action="">
   <div class="row">
       <label for="subscription">Subscription Type:
 
@@ -54,9 +54,11 @@ $row= mysqli_fetch_array($result);
           </label>
         </div>
 
-        <button type="submit" class="btn btn-primary" name="update" >Update Membership Information</button>
-        <button type="submit" class="btn btn-primary" name="delete">Delete Membership Information</button><br><br>
-        
+        <div class="row">
+        <div class="col"> <button type="submit" class="btn btn-primary" name="update" >Update Membership Information</button></div>
+        <div class="col"> <button type="submit" class="btn btn-primary" name="delete">Delete Membership Information</button></div>
+        <br><br>
+        </div>
   </div>
 
 </form>

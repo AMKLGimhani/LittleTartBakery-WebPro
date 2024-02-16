@@ -1,7 +1,7 @@
 <?php
 $title = "Memberships";
 require_once 'layout/header.php';
-include 'dbcareer.php';
+require_once 'memberdb.php';
 ?>
 
 <h2>Little Tart Memberships</h2>

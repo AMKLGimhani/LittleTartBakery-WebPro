@@ -1,11 +1,7 @@
 <?php
 $title = "Update Appointments";
 require_once 'layout/header.php';
-require_once 'appointmentdb.php';  
-?>
-
-<?php
-
+require_once 'memberdb.php';  
 $a = $_GET['appointment_id'];
 $result = mysqli_query($conn,"SELECT * FROM appointments WHERE appointment_id= '$a'");
 $row= mysqli_fetch_array($result);
