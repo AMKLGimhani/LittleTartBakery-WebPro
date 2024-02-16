@@ -274,19 +274,16 @@ and skills.
 
 ## Tables
 
-- [ ] DB Table 1 (Admin Table, Created By-A.M.Kushani Lakshika)
-- [ ] DB Table 2 (Order Table, Created By-Nilmini Pusweli)
-- [ ] DB Table 3 (Product Table, Created By-Nilmini Pusweli)
-- [ ] DB Table 4 (Membership Table, Created By-Manasha Siriwardana)
-- [ ] DB Table 5 (Customer Table, Created By-Chalani Kalpana)
-- [ ] DB Table 6 (Review Table, Created By-Chalani Kalpana)
-- [ ] DB Table 7 (Career Table, Created By-A.M.Kushani Lakshika)
-- [ ] DB Table 8 (appointments Table, Created By-Nilmini Pusweli)
+- [ ] Table 1 (A.M.Kushani Lakshika)
+- [ ] Table 2 (Manasha Siriwardana)
+- [ ] Table 3 (Nilmini Pusweli)
+- [ ] Table 4 (Chalani Kalpana)
+
 
 ### Table 1
 
 #### Table Name
-
+Recived Career Application
 #### Link
 
 - GitHub:
@@ -295,7 +292,7 @@ and skills.
 ### Table 2
 
 #### Table Name
-
+Membership Details
 #### Link
 
 - GitHub:
@@ -304,7 +301,7 @@ and skills.
 ### Table 3
 
 #### Table Name
-
+Sheduled Appoinments for sweet tasting
 #### Link
 
 - GitHub:
@@ -313,11 +310,14 @@ and skills.
 ### Table 4
 
 #### Table Name
-
+Feedback
 #### Link
 
-- GitHub:
-- shell.hamk.fi:
+- GitHub:https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/review.php
+https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/member_update.php
+
+- shell.hamk.fi: http://shell.hamk.fi/~chalani23000/ProjectWork/review.php
+http://shell.hamk.fi/~chalani23000/ProjectWork/review_updatesingle.php?review_id=2
 
 
 
