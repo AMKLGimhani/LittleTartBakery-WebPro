@@ -11,7 +11,7 @@ require_once 'layout/header.php';
   <h5 class="text-center"> Join us for a delightful journey through flavors and textures.<br>
   Choose a time slot that suits your taste buds and let the magic of our cakes captivate your senses."</h5><br><br>
   
-  <form name="formTasting" method="post" action="appointment_handler.php">
+  <form name="formTasting" method="post" action="appointment_process.php">
     
     <div class="form-tasting">
         <div class="row">
