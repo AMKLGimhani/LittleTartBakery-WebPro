@@ -41,6 +41,9 @@ $row= mysqli_fetch_array($result);
   <div class="row">
   <div class="col"><button type="submit" class="btn btn-primary" name="submit">Update your Information</button></div>
   <div class="col"><button type="submit" class="btn btn-primary" name="delete">Delete your Information</button></div>
+  <div class="col"><button type="reset" class="btn btn-primary" name="reset">Clear Form</button></div>
+
+
 
 </div>
 </form>
