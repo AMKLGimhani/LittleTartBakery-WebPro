@@ -2,8 +2,9 @@
 $title = "Shop here";
 
 session_start(); 
-include 'header.php'; 
-include 'dbshop.php'; // calling the database connection.
+require_once 'layout/header.php'; 
+require_once 'shopdb.php'; 
+
 ?>
 
 <?php
@@ -16,7 +17,7 @@ include 'dbshop.php'; // calling the database connection.
                     $count = count($_SESSION["shopping_cart"]);   //counting the items in the cart.
                    //creating a new array 
                     $item_array = array(  
-                         'item_id'=>$_GET["id"],  
+                         'item_id'=>$_GET["pid"],  
                          'item_name'=>$_POST["hidden_name"],  
                          'item_price'=>$_POST["hidden_price"],  
                          'item_quantity'=>$_POST["quantity"]  
@@ -31,7 +32,7 @@ include 'dbshop.php'; // calling the database connection.
           //it creates a new item array and adds  array at index 0.
           else  {          
                $item_array = array( 
-                    'item_id'=>$_GET["id"],  
+                    'item_id'=>$_GET["pid"],  
                     'item_name'=>$_POST["hidden_name"],  
                     'item_price'=>$_POST["hidden_price"],  
                     'item_quantity'=>$_POST["quantity"]  
@@ -45,8 +46,8 @@ include 'dbshop.php'; // calling the database connection.
           if($_GET["action"] == "delete") { //It loops through $_SESSION["shopping_cart"] array and assign each item to the $values variable. 
                foreach($_SESSION["shopping_cart"] as $keys => $values) {  
                     
-                    if($values["item_id"] == $_GET["id"]) {  //It checks $values["item_id"] is equal to the ID passed through ($_GET["id"]). 
-                         $key = array_search($_GET['id'], $_SESSION['shopping_cart']);	
+                    if($values["item_id"] == $_GET["pid"]) {  //It checks $values["item_id"] is equal to the ID passed through ($_GET["id"]). 
+                         $key = array_search($_GET['pid'], $_SESSION['shopping_cart']);	
                          unset($_SESSION["shopping_cart"][$key]);   //removes the item from the $_SESSION["shopping_cart"].                   
                          echo '<script>window.location="shop.php"</script>';  //redirect
                     }  
@@ -67,7 +68,7 @@ if(isset($_POST["submit_order"])) {
         $price = $values['item_price'];
 
         // Insert the data into the "Order_Table"
-        $sql = "INSERT INTO Order_Table (order_id, id, quantity, price) VALUES ('$order_id', '$id', '$quantity', '$price')";
+        $sql = "INSERT INTO Order_Table (order_id, pid, quantity, price) VALUES ('$order_id', '$pid', '$quantity', '$price')";
         $result = mysqli_query($conn, $sql);
         if(!$result) {
             // Error handling if the insert fails
@@ -94,7 +95,7 @@ if(isset($_POST["submit_order"])) {
                <div class="col-6">
                     <h2 align ="center">Select Your favourite Here!</h2><br>   
                     <?php 
-                        $query = "SELECT * FROM Product ORDER BY id ASC"; // fetching data from db.            
+                        $query = "SELECT * FROM Product ORDER BY pid ASC"; // fetching data from db.            
                         $result = $conn->query($query); //connect with the database.The results of the query are stored in $result.
                         //if there are any products in the  variable $result, it displays products through this loop.
                         if(mysqli_num_rows($result) > 0){  
@@ -109,7 +110,7 @@ if(isset($_POST["submit_order"])) {
                                 when the form is submitted(clicked on add to cart button) selected product 
                                 will be added to the shopping cart.<-->
                                    <div class="col-md-6"> 
-                                        <form method="post" action="shop.php?action=add&id="<?php echo $row["id"]; ?> >  
+                                        <form method="post" action="shop.php?action=add&id="<?php echo $row["pid"]; ?> >  
                                              <div style="border:1px solid #333; background-color:#f1f1f1; border-radius:5px; padding:16px;" align="center">  
                                                   <img src="<?php echo $row["image"]; ?>" width="150" height="auto" /><br />  
                                                   <h4 class="text-basic" ><?php echo $row["name"]; ?></h4>  
@@ -183,18 +184,19 @@ if(isset($_POST["submit_order"])) {
                     </div>
                     
                     <form method="post" action="shop_process.php">    
-                        <button type="submit" class="btn btn-primary" name="submit_order">Submit Order</button>
+                        <button type="submit" class="btn btn-primary" name="submit_order">Submit Order</button><br><br>
+                        <a href="appointment_form.php" class="btn btn-danger" style="width: 200px; height: 50px;">Taste Before you Buy!</a>
                     </form>
                </div>
           </div>  
      </div> <br />  
 </body>
-</html> 
+</html>   
 
 
 <?php 
 mysqli_close($conn);
-include 'footer.php';
+include 'layout/footer.php';
 ?>
 
 
