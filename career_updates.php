@@ -130,13 +130,12 @@ if (isset($_POST['update'])){
     $query = mysqli_query($conn,"UPDATE career set position = '$Positions', first_name = '$f_name', last_name = '$l_name', age = '$ageN', apartmentNo_street = '$apartmentAdd', 
     city = '$cityN', email = '$email', tel_no = '$tel', qualification = '$qua', experience = '$workingex' where applicant_id='$a'");
     
-    if($query){
-      header("Location: admin_view.php");
-      exit();
+    if($query){      
 ?>
-      <script> 
-      window.alert("Updated Successfully") 
-      </script>
+    <script> 
+      window.alert("Applicant Information Was Updated Successfully") 
+      window.location="career_read.php"
+    </script>
 <?php 
     }
     else { echo "Record Not modified";}
@@ -149,7 +148,8 @@ if (isset($_POST['delete'])){
       echo "<h2>Record Deleted with id: $a <br></h2>";
 ?>
       <script> 
-      window.alert("Record Deleted") 
+      window.alert("Applicant Record  Was Deleted Successfully")
+      window.location="career_read.php" 
       </script>
 <?php
     }
