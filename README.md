@@ -250,7 +250,8 @@ In this for we gather information from the customers and request to include cust
 
 #### Career Form
 
-The primary purpose of a Career Form is to allow job seekers to submit their applications for available positions within the organization. 
+The primary purpose of a Career Form is to allow job seekers to submit their applications for available positions within the organization. Career Forms are designed to collect essential information from job applicants in a structured manner. This includes personal details, educational qualifications, work experience, 
+and skills.
 
 #### Link
 - GitHub:
@@ -267,10 +268,14 @@ The primary purpose of a Career Form is to allow job seekers to submit their app
 
 ## Tables
 
-- [ ] Customer Review Table ()
-- [ ] Table 2 (Full Name, Created By)
-- [ ] Table 3 (Full Name, Created By)
-- [ ] Table 4 (Full Name, Created By)
+- [ ] DB Table 1 (Admin Table, Created By-A.M.Kushani Lakshika)
+- [ ] DB Table 2 (Order Table, Created By-Nilmini Pusweli)
+- [ ] DB Table 3 (Product Table, Created By-Nilmini Pusweli)
+- [ ] DB Table 4 (Membership Table, Created By-Manasha Siriwardana)
+- [ ] DB Table 5 (Customer Table, Created By-Chalani Kalpana)
+- [ ] DB Table 6 (Review Table, Created By-Chalani Kalpana)
+- [ ] DB Table 7 (Career Table, Created By-A.M.Kushani Lakshika)
+- [ ] DB Table 8 (appointments Table, Created By-Nilmini Pusweli)
 
 ### Table 1
 
