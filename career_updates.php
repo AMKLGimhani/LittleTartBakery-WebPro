@@ -116,7 +116,6 @@ $row= mysqli_fetch_array($result);
 
 if (isset($_POST['update'])){
     
-    
     $Positions = $_POST['OpenPositionsN']; 
     $f_name = $_POST['fnameN'];     
     $l_name = $_POST['lnameN'];
@@ -130,20 +129,32 @@ if (isset($_POST['update'])){
 
     $query = mysqli_query($conn,"UPDATE career set position = '$Positions', first_name = '$f_name', last_name = '$l_name', age = '$ageN', apartmentNo_street = '$apartmentAdd', 
     city = '$cityN', email = '$email', tel_no = '$tel', qualification = '$qua', experience = '$workingex' where applicant_id='$a'");
+    
     if($query){
-      echo "<h2>Your information is updated Successfully</h2>";
-      
+      header("Location: admin_view.php");
+      exit();
+?>
+      <script> 
+      window.alert("Updated Successfully") 
+      </script>
+<?php 
     }
     else { echo "Record Not modified";}
-    }
+  }
 
-    if (isset($_POST['delete'])){
-        $query = mysqli_query($conn,"DELETE FROM career where applicant_id='$a'");
-        if($query){
-            echo "<h2>Record Deleted with id: $a <br></h2>";
-        }
-        else { echo "Record Not Deleted";}
-        }
+if (isset($_POST['delete'])){
+    $query = mysqli_query($conn,"DELETE FROM career where applicant_id='$a'");
+    
+    if($query){
+      echo "<h2>Record Deleted with id: $a <br></h2>";
+?>
+      <script> 
+      window.alert("Record Deleted") 
+      </script>
+<?php
+    }
+    else { echo "Record Not Deleted";}
+  }
 
 $conn->close();
 require_once 'layout/footer.php';
