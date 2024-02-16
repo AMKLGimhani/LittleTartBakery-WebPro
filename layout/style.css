@@ -1,6 +1,6 @@
 body {
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-image: url(layout/pictures_layout/Backgroundnew.jpg); 
+    background-image: url(../Pictures/Backgroundnew.jpg); 
     margin: 16px auto;
     width: 1200px;
     background-repeat: no-repeat; 
