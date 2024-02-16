@@ -69,17 +69,14 @@ CREATE TABLE `career` (
 ```sql
 
 CREATE TABLE `Product` (
-  `pid` int NOT NULL,
+  `id` int NOT NULL,
   `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `image` varchar(255) NOT NULL,
   `price` double(5,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
-
---
 -- Dumping data for table `Product`
---
 
 INSERT INTO `Product` (`pid`, `name`, `image`, `price`) VALUES
 (1, 'Humming bird cake', 'Pictures/1.jpg', 30.00),
@@ -97,17 +94,31 @@ INSERT INTO `Product` (`pid`, `name`, `image`, `price`) VALUES
 
 ```
 
-
 # Order Table- Nilmini Pusweli
 ```sql
 CREATE TABLE `Order_Table` (
   `order_id` int NOT NULL,
-  `pid` int NOT NULL,
+  `id` int NOT NULL,
   `quantity` int NOT NULL,
   `price` decimal(10,0) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 ```
+# Appointments Table- Nilmini Pusweli
+```sql
+
+CREATE TABLE `appointments` (
+  `appointment_id` int NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `tp` text NOT NULL,
+  `date` date NOT NULL,
+  `time` time NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+```
+
+
 
 # Membership Table- Manasha Siriwardana
 
