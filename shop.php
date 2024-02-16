@@ -56,6 +56,37 @@ include 'dbshop.php'; // calling the database connection.
      }  
 ?> 
 
+<?php
+
+
+if(isset($_POST["submit_order"])) {
+    foreach($_SESSION["shopping_cart"] as $values) {
+        $order_id = '';
+        $id = $values['item_id'];
+        $quantity = $values['item_quantity'];
+        $price = $values['item_price'];
+
+        // Insert the data into the "Order_Table"
+        $sql = "INSERT INTO Order_Table (order_id, id, quantity, price) VALUES ('$order_id', '$id', '$quantity', '$price')";
+        $result = mysqli_query($conn, $sql);
+        if(!$result) {
+            // Error handling if the insert fails
+            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        }
+    }
+
+    // Clear the shopping cart session after the order is submitted
+    unset($_SESSION["shopping_cart"]);
+
+    // Redirect to a success page or any other desired location
+    echo '<script>window.location="shop.php"</script>';
+}
+
+?>
+
+
+
+
 <html>  
 <body>
      <div class="container" >  
