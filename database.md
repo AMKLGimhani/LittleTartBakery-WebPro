@@ -98,6 +98,7 @@ INSERT INTO `Product` (`pid`, `name`, `image`, `price`) VALUES
 ```sql
 CREATE TABLE `Order_Table` (
   `order_id` int NOT NULL,
+  `customer_id` int NOT NULL,
   `pid` int NOT NULL,
   `quantity` int NOT NULL,
   `price` decimal(10,0) NOT NULL
