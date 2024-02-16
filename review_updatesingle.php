@@ -1,12 +1,18 @@
 <?php
+$title = "Update and Delete";
 include 'db.php';
 include 'layout/header.php';
 
-// Check if review_id is provided in the URL
+
+if($_SERVER["REQUEST_METHOD"] == "POST") 
+{
+    echo "<script>alert('Sucessfully Updated!!!');</script>";
+}
+
 if(isset($_GET['review_id'])) {
     $review_id = $_GET['review_id'];
 
-    // Fetch the review from the database based on review_id
+    
     $result = mysqli_query($conn, "SELECT * FROM review WHERE review_id = '$review_id'");
     if($result && mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_array($result);
@@ -19,7 +25,7 @@ if(isset($_GET['review_id'])) {
                     <input type="text" class="form-control" placeholder="Customer Name" name="customer_name" required value="<?php echo htmlspecialchars($row['customer_name']); ?>">
                 </div>
                 <div class="col">
-                    <input type="number" class="form-control" placeholder="Rating" name="rating" required value="<?php echo htmlspecialchars($row['rating']); ?>">
+                    <input type="number" class="form-control" placeholder="Rating" min="1" max="5" name="rating" required value="<?php echo htmlspecialchars($row['rating']); ?>">
                 </div>
             </div>
             <br>
@@ -35,10 +41,11 @@ if(isset($_GET['review_id'])) {
                     <button type="submit" class="btn btn-primary" name="delete">Delete your Information</button>
                 </div>
             </div>
-        </form>
+        </form><br><br>
 
+ 
 <?php
-        // Handle form submission
+        
         if(isset($_POST['submit'])){
             $customer_name = mysqli_real_escape_string($conn, $_POST['customer_name']);
             $rating = mysqli_real_escape_string($conn, $_POST['rating']);
@@ -58,17 +65,17 @@ if(isset($_GET['review_id'])) {
             // Delete review information from the database
             $delete_query = "DELETE FROM review WHERE review_id = '$review_id'";
             if(mysqli_query($conn, $delete_query)) {
-                echo "Review information deleted successfully.";
+                echo "<h2>Review information deleted successfully.</h2>";
                
             } else {
-                echo "Error deleting review information: " . mysqli_error($conn);
+                echo "<h2>Error deleting review information: </h2>" . mysqli_error($conn);
             }
         }
     } else {
-        echo "Review not found.";
+        echo "<h2>Review not found.</h2>";
     }
 } else {
-    echo "Review ID not provided.";
+    echo "<h2>Review ID not provided.</h2>";
 }
 include 'layout/footer.php';
 ?>
