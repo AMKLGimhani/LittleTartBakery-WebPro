@@ -3,9 +3,6 @@ $title = "Cake Tasting";
 require_once 'layout/header.php'; 
 ?>
 
-
-
-
 <html>
 <body>
 <h2 class="text-center" >Cake Tasting Heaven</h2><br>

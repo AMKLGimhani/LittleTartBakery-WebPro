@@ -3,7 +3,6 @@ $title = "Sceduled Appointments";
 require_once 'layout/header.php';
 require_once 'dbshop.php';
 
-
 ?>
 
 <h2 class="text-center">Scheduled appointments</h2>
