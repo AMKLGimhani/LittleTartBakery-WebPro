@@ -1,7 +1,10 @@
 <?php
 $title = "Cake Tasting";
-require_once 'header.php'; 
+require_once 'layout/header.php'; 
 ?>
+
+
+
 
 <html>
 <body>
@@ -111,4 +114,4 @@ document.getElementById("tp").addEventListener("input", validatePhone);
 </script>
 
 
-<?php require_once 'footer.php'; ?>
+<?php require_once 'layout/footer.php'; ?>
