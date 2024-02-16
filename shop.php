@@ -1,11 +1,9 @@
 <?php  
 $title = "Shop here";
-
 session_start(); 
 require_once 'layout/header.php'; 
-require_once 'shopdb.php'; 
-
-?>
+include 'appointmentdb.php';
+?>   
 
 <?php
      if(isset($_POST["add"])) {  // checking if the 'add_to_cart' form has been submitted.
@@ -84,8 +82,6 @@ if(isset($_POST["submit_order"])) {
 }
 
 ?>
-
-
 
 
 <html>  
