@@ -1,7 +1,7 @@
 <?php  
 
 session_start(); 
-include 'dbshop.php'; // calling the database connection.
+include 'shopdb.php'; // calling the database connection.
 ?>
 
 <?php
@@ -13,7 +13,7 @@ if(!empty($_SESSION["shopping_cart"])) {
         $item_quantity = $values["item_quantity"];
         
         // insert the data into the database
-        $query = "INSERT INTO your_table_name (item_name, item_price, item_quantity) VALUES ('$item_name', '$item_price', '$item_quantity')";
+        $query = "INSERT INTO Order_Table (item_name, item_price, item_quantity) VALUES ('$item_name', '$item_price', '$item_quantity')";
         $result = mysqli_query($conn, $query);
         
         if(!$result) {
@@ -23,5 +23,5 @@ if(!empty($_SESSION["shopping_cart"])) {
 }
 
 mysqli_close($conn);
-include 'footer.php';
+include 'layout/footer.php';
 ?>
