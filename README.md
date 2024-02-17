@@ -42,7 +42,7 @@ The Membership Form on the bakery site offers an exclusive experience for loyal 
 A career feature on this website typically serves as a gateway for individuals seeking employment opportunities within the organization. It provides information about available job positions, requirements, and the application process.
 
 #### Links
-- GitHub:
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/career.php
 - shell.hamk.fi: http://shell.hamk.fi/~kushani23000/projectWork/career.php
 
 
@@ -258,7 +258,7 @@ The primary purpose of a Career Form is to allow job seekers to submit their app
 and skills.
 
 #### Link
-- GitHub:
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/career.php
 - shell.hamk.fi: http://shell.hamk.fi/~kushani23000/projectWork/career.php
   
 
@@ -294,14 +294,13 @@ Products are viewd by this form so that the customers can select the products an
 
 
 ### Table 1
-
-#### Table Name
+#### Admin Table
 
 #### Link
 
 - GitHub:
-- shell.hamk.fi:
-- 
+- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_kushani23000&table=Admin
+  
 
 
 ### Table 2
@@ -325,7 +324,13 @@ Products are viewd by this form so that the customers can select the products an
 - shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_nilmini23000&table=Order_Table
 
 
+### Table 5
+#### Career Table
 
+#### Link
+
+- GitHub:
+- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_kushani23000&table=career
 
 
 
