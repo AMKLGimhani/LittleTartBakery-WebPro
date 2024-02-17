@@ -1,6 +1,6 @@
 <?php
 $title = "Update and Delete";
-require_once 'dmemberdb.php';
+require_once 'memberdb.php';
 require_once 'layout/header.php';
 
 

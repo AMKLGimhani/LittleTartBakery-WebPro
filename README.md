@@ -338,9 +338,8 @@ Products are viewd by this form so that the customers can select the products an
 ### Table 4
 #### Membership Table
 #### Link
-- GitHub: 
-- shell.hamk.fi: 
-
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#membership-table--manasha-siriwardana
+- shell.hamk.fi:  http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_manasha23000&table=Membership
 
 ### Table 5
 #### Customer Table
