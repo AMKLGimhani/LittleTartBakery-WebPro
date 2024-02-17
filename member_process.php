@@ -1,4 +1,6 @@
 <?php
+$title = "Member";
+require_once 'layout/header.php'; 
 
 if (isset($_POST['submitmembership'])) {
 
@@ -28,7 +30,7 @@ if (isset($_POST['submitmembership'])) {
 
     if ($conn->query($sql) === TRUE) {
         
-        echo "Subscription Succcessfully added added";
+        echo "<h2>Subscription Succcessfully added.</h2>";
     } else {
         
         echo "Error: " . $sql . "<br>" . $conn->error;
@@ -42,5 +44,9 @@ if (isset($_POST['submitmembership'])) {
 
 $conn->close();
     
+
 }
+
+
+require_once 'layout/footer.php';
 ?>

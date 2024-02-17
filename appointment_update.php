@@ -72,3 +72,4 @@ if (isset($_POST['submit'])) {
 $conn->close();
 ?>
 <?php require_once 'layout/footer.php'; ?>
+

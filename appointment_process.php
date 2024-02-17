@@ -10,11 +10,7 @@ if(isset($_POST["submit"])) {
     $date = $_POST['date'];
     $time = $_POST['time'];
 
-<<<<<<< Updated upstream
     include 'memberdb.php';
-=======
-    include 'dbcareer.php';
->>>>>>> Stashed changes
 
     $sql = "INSERT INTO appointments (name, email, tp, date, time) 
             VALUES ('$name', '$email',  '$tp', '$date', '$time')";
