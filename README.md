@@ -34,7 +34,7 @@ The Membership Form on the bakery site offers an exclusive experience for loyal 
 A "review table" typically refers to a database table that stores reviews or feedback provided by users about products, services, or experiences. It's a common component of many customers, especially those purchasing from this webpage where user feedback is valuable for making for more sales.
 
 #### Links
-- GitHub: https://github.com/AMKLGimhani/ LittleTartBakery-WebPro/blob/main/review.php
+- GitHub:[ https://github.com/AMKLGimhani/ LittleTartBakery-WebPro/blob/main/review.php](https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/review.php)
 
 - shell.hamk.fi:http://shell.hamk.fi/~chalani23000/ProjectWork/review.php
 
