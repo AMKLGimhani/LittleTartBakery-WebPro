@@ -12,7 +12,6 @@ $row= mysqli_fetch_array($result);
     <div class="col-md-7">
       <label for="OpenPositionsN">Open Positions:</label>
       <select class="form-control" name="OpenPositionsN" required style="border: solid 1px rgb(238, 116, 116);">
-        <option value="" disabled>Select position</option>
         <option value="Baker" <?php if ($row['position'] == 'Baker') echo 'selected'; ?>>Baker</option>
         <option value="CakeDecorator" <?php if ($row['position'] == 'CakeDecorator') echo 'selected'; ?>>Cake Decorator</option>
         <option value="CustomerService" <?php if ($row['position'] == 'CustomerService') echo 'selected'; ?>>Customer Service Representative</option>

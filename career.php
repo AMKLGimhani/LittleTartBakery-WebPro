@@ -13,8 +13,8 @@ require_once 'layout/header.php';
         <div class="row">
             <div class="col-md-7">
                 <label for="OpenPositions">Open Positions:</label>
-                <select class="form-control" id="OpenPositions" name="OpenPositions" style="border: solid 1px rgb(238, 116, 116);">
-                    <option selected>Select position</option>
+                <select class="form-control" id="OpenPositions" name="OpenPositions" required style="border: solid 1px rgb(238, 116, 116);">
+                    <option value="" disabled selected hidden>Select position</option>
                     <option value="Baker">Baker</option>
                     <option value="CakeDecorator">Cake Decorator</option>
                     <option value="CustomerService">Customer Service Representative</option>
