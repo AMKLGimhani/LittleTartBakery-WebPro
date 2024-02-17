@@ -307,7 +307,7 @@ Products are viewd by this form so that the customers can select the products an
 - GitHub: 
 - shell.hamk.fi:
 
-- 
+  
 ### Table 3
 #### Product Table 
 #### Link
