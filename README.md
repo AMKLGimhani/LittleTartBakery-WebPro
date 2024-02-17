@@ -329,7 +329,7 @@ Products are viewd by this form so that the customers can select the products an
 
 #### Link
 
-- GitHub: 
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#career-table---am-kushani-lakshika
 - shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_kushani23000&table=career
 
 
