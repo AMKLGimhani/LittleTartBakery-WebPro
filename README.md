@@ -31,10 +31,13 @@ The Membership Form on the bakery site offers an exclusive experience for loyal 
 
 #### Introduction
 
+A "review table" typically refers to a database table that stores reviews or feedback provided by users about products, services, or experiences. It's a common component of many customers, especially those purchasing from this webpage where user feedback is valuable for making for more sales.
 
 #### Links
-- GitHub:
-- shell.hamk.fi:
+- GitHub: https://github.com/AMKLGimhani/ LittleTartBakery-WebPro/blob/main/review.php
+
+- shell.hamk.fi:http://shell.hamk.fi/~chalani23000/ProjectWork/review.php
+
 
 ### 3. Careers  
 
@@ -236,8 +239,9 @@ These forms serve multiple purposes, including helping businesses identify areas
 In this for we gather information from the customers and request to include customer name, rating and feedback about the products. After the customers feedback it stored in the database table. In the website the reviews are displyed in the website wall.
 
 #### Link
-- GitHub:
-- shell.hamk.fi:
+- GitHub: https://github.com/AMKLGimhani/ LittleTartBakery-WebPro/blob/main/review.php
+
+- shell.hamk.fi:http://shell.hamk.fi/~chalani23000/ProjectWork/review.php
   
 
 ### Form 2
@@ -282,19 +286,18 @@ Products are viewd by this form so that the customers can select the products an
 
 ## Tables
 
-- [ ] DB Table 1 (Admin Table, Created By-A.M.Kushani Lakshika)
-- [ ] DB Table 2 (Order Table, Created By-Nilmini Pusweli)
-- [ ] DB Table 3 (Product Table, Created By-Nilmini Pusweli)
-- [ ] DB Table 4 (Membership Table, Created By-Manasha Siriwardana)
-- [ ] DB Table 5 (Customer Table, Created By-Chalani Kalpana)
-- [ ] DB Table 6 (Review Table, Created By-Chalani Kalpana)
-- [ ] DB Table 7 (Career Table, Created By-A.M.Kushani Lakshika)
-- [ ] DB Table 8 (appointments Table, Created By-Nilmini Pusweli)
+- [ ] Table 1 (A.M.Kushani Lakshika)
+- [ ] Table 2 (Manasha Siriwardana)
+- [ ] Table 3 (Nilmini Pusweli)
+- [ ] Table 4 (Chalani Kalpana)
+
 
 
 
 ### Table 1
-#### Admin Table
+
+#### Table Name
+Recived Career Application
 #### Link
 
 - GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#admin-table---am-kushani-lakshika
@@ -302,14 +305,18 @@ Products are viewd by this form so that the customers can select the products an
   
 
 ### Table 2
-#### Order Table
+
+#### Table Name
+Membership Details
 #### Link
 - GitHub: 
 - shell.hamk.fi:
 
   
 ### Table 3
-#### Product Table 
+
+#### Table Name
+Sheduled Appoinments for sweet tasting
 #### Link
 - GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#product-table---nilmini-pusweli
 - shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_nilmini23000&table=Product
@@ -321,34 +328,20 @@ Products are viewd by this form so that the customers can select the products an
 - GitHub: 
 - shell.hamk.fi: 
 
-
-### Table 5
-#### Customer Table
-#### Link
-- GitHub: 
-- shell.hamk.fi: 
-  
-
-### Table 6
-#### Review Table
-#### Link
-- GitHub: 
-- shell.hamk.fi: 
-
-
-### Table 7
-#### Career Table
-#### Link
-- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#career-table---am-kushani-lakshika
-- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_kushani23000&table=career
-
-
-### Table 8
-#### appointments Table
+#### Table Name
+Feedback
 #### Link
 
-- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#appointments-table--nilmini-pusweli
-- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_nilmini23000&table=appointments
+- GitHub:https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/review.php
+https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/member_update.php
+
+- shell.hamk.fi: http://shell.hamk.fi/~chalani23000/ProjectWork/review.php
+http://shell.hamk.fi/~chalani23000/ProjectWork/review_updatesingle.php?review_id=2
+
+
+
+
+
 
 
 

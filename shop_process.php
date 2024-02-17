@@ -1,7 +1,7 @@
 <?php  
 
 session_start(); 
-require_once 'memberdb.php'; // calling the database connection.
+require_once 'db.php'; // calling the database connection.
 ?>
 
 <?php
