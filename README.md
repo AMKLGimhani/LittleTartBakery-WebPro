@@ -43,7 +43,7 @@ A career feature on this website typically serves as a gateway for individuals s
 
 #### Links
 - GitHub:
-- shell.hamk.fi:
+- shell.hamk.fi: http://shell.hamk.fi/~kushani23000/projectWork/career.php
 
 
 ### 4. Appointments for Sweet Tasting
@@ -259,7 +259,7 @@ and skills.
 
 #### Link
 - GitHub:
-- shell.hamk.fi:
+- shell.hamk.fi: http://shell.hamk.fi/~kushani23000/projectWork/career.php
   
 
 ### Form 4
