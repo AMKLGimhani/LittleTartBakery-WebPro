@@ -43,7 +43,6 @@ require_once 'layout/header.php';
                 </div>
 
                 <button type="submit" class="btn btn-primary" name="submit">Schedule Appointment</button>
-                <a href="appointment_update.php" class="btn btn-danger" style="width: 200px; height: 55px;">Update Appointment</a>
 
             </div>
             <div class="col-md-5">
