@@ -31,10 +31,13 @@ The Membership Form on the bakery site offers an exclusive experience for loyal 
 
 #### Introduction
 
+A "review table" typically refers to a database table that stores reviews or feedback provided by users about products, services, or experiences. It's a common component of many customers, especially those purchasing from this webpage where user feedback is valuable for making for more sales.
 
 #### Links
-- GitHub:
-- shell.hamk.fi:
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/review.php
+
+- shell.hamk.fi:http://shell.hamk.fi/~chalani23000/ProjectWork/review.php
+
 
 ### 3. Careers  
 
@@ -189,7 +192,23 @@ The "Customer" table facilitates the management of customer-related information 
 
 
 ### Table 6
-#### Review Table
+#### Review Table 
+
+The review table is designed to store customer reviews for a product or service. Each review is identified by a unique review_id and includes information such as the customer_name, rating, review_text, and review_date.
+
+review_id: An identifier for each review.
+
+customer_name: The name of the customer who wrote the review.
+
+rating: The rating given by the customer, typically on a scale from 1 to 5.
+
+review_text: The text content of the review, allowing customers to provide detailed feedback.
+
+review_date: The date and time when the review was submitted.
+
+This table enables businesses to gather and manage feedback from customers, helping them understand customer satisfaction levels and areas for improvement. 
+The reviews can be used for analytics, customer engagement, and decision-making processes to enhance products or services.
+
 
 ### Table 7
 #### Career Table
@@ -236,8 +255,9 @@ These forms serve multiple purposes, including helping businesses identify areas
 In this for we gather information from the customers and request to include customer name, rating and feedback about the products. After the customers feedback it stored in the database table. In the website the reviews are displyed in the website wall.
 
 #### Link
-- GitHub:
-- shell.hamk.fi:
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/review.php
+
+- shell.hamk.fi:http://shell.hamk.fi/~chalani23000/ProjectWork/review.php
   
 
 ### Form 2
@@ -293,49 +313,52 @@ Products are viewd by this form so that the customers can select the products an
 
 
 
+
 ### Table 1
 #### Admin Table
 #### Link
 
 - GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#admin-table---am-kushani-lakshika
 - shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_kushani23000&table=Admin
-  
 
-### Table 2
-#### Order Table
-#### Link
-- GitHub: 
-- shell.hamk.fi:
 
-  
+  ### Table 2
+  #### Order Table
+  #### Link
+- GitHub:  https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#order-table--nilmini-pusweli 
+- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_nilmini23000&table=Order_Table
+
+
 ### Table 3
 #### Product Table 
 #### Link
 - GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#product-table---nilmini-pusweli
 - shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_nilmini23000&table=Product
 
-
 ### Table 4
 #### Membership Table
 #### Link
-- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#membership-table--manasha-siriwardana
-- shell.hamk.fi:  http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_manasha23000&table=Membership
+- GitHub: 
+- shell.hamk.fi: 
 
 
 ### Table 5
 #### Customer Table
 #### Link
-- GitHub: 
-- shell.hamk.fi: 
-  
+- GitHub:  https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#customer-table---chalani-kalpana
+- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_chalani23000&table=Customer
+
+
 
 ### Table 6
 #### Review Table
 #### Link
-- GitHub: 
-- shell.hamk.fi: 
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#review-table---chalani-kalpana
+- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_chalani23000&table=review
 
 
+
+  
 ### Table 7
 #### Career Table
 #### Link
@@ -349,6 +372,13 @@ Products are viewd by this form so that the customers can select the products an
 
 - GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#appointments-table--nilmini-pusweli
 - shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_nilmini23000&table=appointments
+  
+
+
+
+
+
+
 
 
 
