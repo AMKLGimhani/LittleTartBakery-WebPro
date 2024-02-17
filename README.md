@@ -24,8 +24,8 @@ This web page is created for a bakery to do the sales through an online store. T
 The Membership Form on the bakery site offers an exclusive experience for loyal customers. By filling out the Membership Form, customers can join a community of fellow enthusiasts and enjoy a more personalized and rewarding relationship with the bakery.
 
 #### Links
-- GitHub:
-- shell.hamk.fi:
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/membership.php
+- shell.hamk.fi: http://shell.hamk.fi/~nilmini23000/projectWork/membership.php
 
 ### 2. Reviews
 
@@ -246,8 +246,8 @@ In this for we gather information from the customers and request to include cust
  A membership form of the Little Tart Bakery, is a document that individuals can fill out to become members or subscribers. The purpose of the form is to collect necessary information from customers who want to join a membership program or receive exclusive offers and updates from the bakery.
 
 #### Link
-- GitHub:
-- shell.hamk.fi:
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/membership.php
+- shell.hamk.fi: http://shell.hamk.fi/~nilmini23000/projectWork/membership.php
   
 
 ### Form 3
@@ -318,8 +318,8 @@ Products are viewd by this form so that the customers can select the products an
 ### Table 4
 #### Membership Table
 #### Link
-- GitHub: 
-- shell.hamk.fi: 
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#membership-table--manasha-siriwardana
+- shell.hamk.fi:  http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_manasha23000&table=Membership
 
 
 ### Table 5
