@@ -239,7 +239,7 @@ These forms serve multiple purposes, including helping businesses identify areas
 In this for we gather information from the customers and request to include customer name, rating and feedback about the products. After the customers feedback it stored in the database table. In the website the reviews are displyed in the website wall.
 
 #### Link
-- GitHub: https://github.com/AMKLGimhani/ LittleTartBakery-WebPro/blob/main/review.php
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/review.php
 
 - shell.hamk.fi:http://shell.hamk.fi/~chalani23000/ProjectWork/review.php
   
