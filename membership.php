@@ -39,7 +39,7 @@ require_once 'layout/header.php'; ?>
         <div class="row">
                 <label for="subscription">Subscription Type:</label>
                 <select class="form-control" id="subscription" name="subscription" required>
-                    <option selected>Select one from the list</option>
+                    <option value="" disabled selected hidden> Select one from the list</option>
                     <option value="Silver">Silver Subscription (For 3 months)</option>
                     <option value="Gold">Gold Subscription (For 6 months)</option>
                     <option value="Platinum">Platinum Subscription (For 12 months)</option>
