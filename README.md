@@ -286,57 +286,77 @@ Products are viewd by this form so that the customers can select the products an
 
 ## Tables
 
-- [ ] Table 1 (A.M.Kushani Lakshika)
-- [ ] Table 2 (Manasha Siriwardana)
-- [ ] Table 3 (Nilmini Pusweli)
-- [ ] Table 4 (Chalani Kalpana)
+- [ ] DB Table 1 (Admin Table, Created By-A.M.Kushani Lakshika)
+- [ ] DB Table 2 (Order Table, Created By-Nilmini Pusweli)
+- [ ] DB Table 3 (Product Table, Created By-Nilmini Pusweli)
+- [ ] DB Table 4 (Membership Table, Created By-Manasha Siriwardana)
+- [ ] DB Table 5 (Customer Table, Created By-Chalani Kalpana)
+- [ ] DB Table 6 (Review Table, Created By-Chalani Kalpana)
+- [ ] DB Table 7 (Career Table, Created By-A.M.Kushani Lakshika)
+- [ ] DB Table 8 (appointments Table, Created By-Nilmini Pusweli)
 
 
 
 
 ### Table 1
-
-#### Table Name
-Recived Career Application
+#### Admin Table
 #### Link
 
 - GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#admin-table---am-kushani-lakshika
 - shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_kushani23000&table=Admin
-  
 
-### Table 2
 
-#### Table Name
-Membership Details
-#### Link
-- GitHub: 
-- shell.hamk.fi:
+  ### Table 2
+  #### Order Table
+  #### Link
+- GitHub:  https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#order-table--nilmini-pusweli 
+- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_nilmini23000&table=Order_Table
 
-  
+
 ### Table 3
-
-#### Table Name
-Sheduled Appoinments for sweet tasting
+#### Product Table 
 #### Link
 - GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#product-table---nilmini-pusweli
 - shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_nilmini23000&table=Product
 
-
 ### Table 4
 #### Membership Table
 #### Link
-- GitHub: 
-- shell.hamk.fi: 
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#membership-table--manasha-siriwardana
+- shell.hamk.fi:  http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_manasha23000&table=Membership
 
-#### Table Name
-Feedback
+### Table 5
+#### Customer Table
+#### Link
+- GitHub:  https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#customer-table---chalani-kalpana
+- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_chalani23000&table=Customer
+
+
+
+### Table 6
+#### Review Table
+#### Link
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#review-table---chalani-kalpana
+- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_chalani23000&table=review
+
+
+
+  
+### Table 7
+#### Career Table
+#### Link
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#career-table---am-kushani-lakshika
+- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_kushani23000&table=career
+
+
+### Table 8
+#### appointments Table
 #### Link
 
-- GitHub:https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/review.php
-https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/member_update.php
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#appointments-table--nilmini-pusweli
+- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_nilmini23000&table=appointments
+  
 
-- shell.hamk.fi: http://shell.hamk.fi/~chalani23000/ProjectWork/review.php
-http://shell.hamk.fi/~chalani23000/ProjectWork/review_updatesingle.php?review_id=2
 
 
 
