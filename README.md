@@ -218,7 +218,7 @@ The career table is used to securely store information submitted by job seekers 
 ### Table 8  
 #### appointments Table
 
-The "appointments" table facilitates the customers to schedule a time for cake tasting ans also the management to know the cake tasting scedule of customers. It stores essential details about the visitors, enabling efficient inventory management, pricing strategies, and sales analysis.
+The "appointments" table facilitates the customers to schedule a time for cake tasting and also the management to know the cake tasting scedule of customers. It stores essential details about the visitors, enabling efficient inventory management, pricing strategies, and sales analysis.
 
 ##### Columns
 - appointment_id (Primary Key): An integer field uniquely identifying each visitor for cake tasting.
