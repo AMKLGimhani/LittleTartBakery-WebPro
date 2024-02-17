@@ -10,25 +10,15 @@ This web page is created for a bakery to do the sales through an online store. T
 - [Tables](#tables)
 
 ## Features
-- [ ] Online Orders (Nilmini Pusweli) 
-- [ ] Membership form (Manasha Siriwardana)
-- [ ] Reviews (Chalani Kalpana)
-- [ ] Careers (A.M.Kushani Lakshika)
-- [ ] Appointments for Sweet Tasting (Nilmini Pusweli) 
+- [1] Membership form (Manasha Siriwardana)
+- [2] Reviews (Chalani Kalpana)
+- [3] Careers (A.M.Kushani Lakshika)
+- [4] Appointments for Sweet Tasting (Nilmini Pusweli) 
+- [5] Online Orders (Nilmini Pusweli) 
+
 
       
-### 1. Online Order 
-
-#### Introduction
-The online order form on the bakery site is a user-friendly interface designed to streamline the process of purchasing delicious baked goods. The form prompts users to specify quantity, flavor preferences, and any special instructions. 
-
-#### Links
-- GitHub:
-- shell.hamk.fi:
-
-
-
-### 2. Membership form
+### 1. Membership form
 
 #### Introduction
 The Membership Form on the bakery site offers an exclusive experience for loyal customers. By filling out the Membership Form, customers can join a community of fellow enthusiasts and enjoy a more personalized and rewarding relationship with the bakery.
@@ -37,7 +27,7 @@ The Membership Form on the bakery site offers an exclusive experience for loyal 
 - GitHub:
 - shell.hamk.fi:
 
-### 3. Reviews
+### 2. Reviews
 
 #### Introduction
 
@@ -46,7 +36,7 @@ The Membership Form on the bakery site offers an exclusive experience for loyal 
 - GitHub:
 - shell.hamk.fi:
 
-### 4. Careers  
+### 3. Careers  
 
 #### Introduction
 A career feature on this website typically serves as a gateway for individuals seeking employment opportunities within the organization. It provides information about available job positions, requirements, and the application process.
@@ -55,14 +45,24 @@ A career feature on this website typically serves as a gateway for individuals s
 - GitHub:
 - shell.hamk.fi:
 
-### 5. Appointments for Sweet Tasting
 
+### 4. Appointments for Sweet Tasting
 #### Introduction
-The Cake Tasting feature on our website is designed to make your cake shopping experience even more delightful. With this feature, customer can schedule a cake tasting session to get a firsthand experience of the flavors and quality of our cakes before making a purchase.
+The Cake Tasting feature on our website is designed to make customer's cake shopping experience even more delightful. With this feature, customer can schedule a cake tasting session to get a firsthand experience of the flavors and quality of our cakes before making a purchase.
 
 #### Links
-- GitHub:
-- shell.hamk.fi:
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/appointment_form.php
+- shell.hamk.fi: http://shell.hamk.fi/~nilmini23000/projectWork/appointment_form.php
+
+
+### 5. Online Order 
+            (This task is yet to be completed. Confirmed order should added to the Order table in the database, but this part yet to be completed).
+#### Introduction
+The online order form on the bakery site is a user-friendly interface designed to streamline the process of purchasing delicious baked goods. The form prompts users to specify quantity and the flavor preferences. 
+
+#### Links
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/shop.php
+- shell.hamk.fi: http://shell.hamk.fi/~nilmini23000/projectWork/shop.php
 
 ## Database Tables
 
@@ -89,27 +89,27 @@ The admin table is designed to store information about administrators or users w
 - admin_email: A varchar field storing the email address associated with the administrator's account for communication and notification purposes.
 - admin_tp: A varchar field storing the telephone number or contact number of the administrator, facilitating communication and contact verification.
 
+
 ### Table 2  
 #### Order Table
 
-The "Order_Table" stores information about orders placed in a system. It captures details such as the order ID, the product ID of the item ordered, the quantity of the product, and the price per unit. The "Order_Table" facilitates the management of orders placed within the system. It captures essential details about each order, including the product ordered, the quantity, and the price per unit. This information is vital for tracking sales, managing inventory, and analyzing customer purchase patterns.
+The "Order_Table" stores information about orders placed in a system. It captures details such as the order ID, the product ID of the item ordered, the quantity of the product, and the price per unit. 
 
 ##### Columns
 - order_id (Primary Key): An integer field uniquely identifying each order placed within the system.
-- pid: An integer field representing the unique identifier of the product being ordered. This field likely references a separate table containing product information.
+- pid: An integer field representing the unique identifier of the product being ordered. 
 - quantity: An integer field representing the quantity of the product ordered in the respective order.
-- price: A decimal field representing the price per unit of the product ordered, with precision up to two decimal places.
+- price: A double field representing the price per unit of the product ordered.
   
 ##### Constraints
 - The "order_id" column serves as the primary key, ensuring each order record is uniquely identifiable.
 - pid is a foreign key.
-- All columns are marked as "Not Null" indicating that they must contain valid data for each record.
 
 ##### Usage
 -  Recording orders placed by customers.
 -  Calculating total sales revenue based on order quantities and prices.
--  Updating inventory levels by deducting sold quantities.
 -  Analyzing customer buying behavior and preferences.
+
 
 ### Table 3  
 #### Product Table
@@ -131,6 +131,7 @@ The "Product" table facilitates the management of product-related information wi
 - Setting and updating product prices based on market trends and business strategies.
 - Tracking product availability and inventory levels.
 - Analyzing sales performance and revenue generation by product.
+
 
 ### Table 4
 #### Membership Table
@@ -186,6 +187,7 @@ The "Customer" table facilitates the management of customer-related information 
 - Processing orders and tracking customer transactions.
 - Providing personalized services and support based on customer preferences and history.
 
+
 ### Table 6
 #### Review Table
 
@@ -193,10 +195,11 @@ The "Customer" table facilitates the management of customer-related information 
 #### Career Table
 The career table is used to securely store information submitted by job seekers when applying for positions listed on the website. It typically includes fields such as applicant name, contact details, professional qualifications, and working experiences of the applicant.
 
+
 ### Table 8  
 #### appointments Table
 
-The "appointments" table facilitates the management to know the cake tasting scedule of customers. It stores essential details about the visitors, enabling efficient inventory management, pricing strategies, and sales analysis.
+The "appointments" table facilitates the customers to schedule a time for cake tasting ans also the management to know the cake tasting scedule of customers. It stores essential details about the visitors, enabling efficient inventory management, pricing strategies, and sales analysis.
 
 ##### Columns
 - appointment_id (Primary Key): An integer field uniquely identifying each visitor for cake tasting.
@@ -209,17 +212,16 @@ The "appointments" table facilitates the management to know the cake tasting sce
 
 
 
-
 ### ER Diagram
 
 ![ER_Diagram](Pictures/ER_diagram.jpg)
 
 ## Forms
-- [ ] Review Form (Chalani Kalpana)
-- [ ] Membership Form (Manasha Siriwardana)
-- [ ] Career Form(Kushani Lakshika)
-- [ ] Appointments Form(Nilmini Pusweli)
-- [ ] Online Cart(Nilmini Pusweli)
+- [1] Review Form (Chalani Kalpana)
+- [2] Membership Form (Manasha Siriwardana)
+- [3] Career Form(Kushani Lakshika)
+- [4] Appointments Form(Nilmini Pusweli)
+- [5] Online order form(Nilmini Pusweli)
 
 
 
@@ -261,12 +263,22 @@ and skills.
   
 
 ### Form 4
-
-#### Appointments Form
+#### Appointments Form(Nilmini Pusweli)
+Cake tasting appointment form allows the customers to easily schedule a time to come in and sample delicious cakes for their upcoming event. Customer can simply fill out their contact information, choose a desired date and time for the tasting.
 
 #### Link
-- GitHub:
-- shell.hamk.fi:
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/appointment_form.php
+- shell.hamk.fi: http://shell.hamk.fi/~nilmini23000/projectWork/appointment_form.php
+
+### Form 5
+#### Online order-product view form(Nilmini Pusweli)
+Products are viewd by this form so that the customers can select the products and add to their shopping cart by clicking on a button.
+
+#### Link
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/shop.php
+- shell.hamk.fi: http://shell.hamk.fi/~nilmini23000/projectWork/shop.php
+
+
 
 ## Tables
 
@@ -279,6 +291,8 @@ and skills.
 - [ ] DB Table 7 (Career Table, Created By-A.M.Kushani Lakshika)
 - [ ] DB Table 8 (appointments Table, Created By-Nilmini Pusweli)
 
+
+
 ### Table 1
 
 #### Table Name
@@ -288,32 +302,27 @@ and skills.
 - GitHub:
 - shell.hamk.fi:
 - 
+
+
 ### Table 2
-
-#### Table Name
-
+#### appointments Table
 #### Link
-
-- GitHub:
-- shell.hamk.fi:
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#appointments-table--nilmini-pusweli
+- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_nilmini23000&table=appointments
   
+
 ### Table 3
-
-#### Table Name
-
+#### Product Table 
 #### Link
-
-- GitHub:
-- shell.hamk.fi:
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#product-table---nilmini-pusweli
+- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_nilmini23000&table=Product
   
+
 ### Table 4
-
-#### Table Name
-
+#### Order Table
 #### Link
-
-- GitHub:
-- shell.hamk.fi:
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#order-table--nilmini-pusweli
+- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_nilmini23000&table=Order_Table
 
 
 

@@ -102,6 +102,9 @@ if(isset($_POST["submit_order"])) {
                                     echo "<div class='row'>";
                                 }                             
                     ?>            
+                                <!-- form to display products.
+                                when the form is submitted(clicked on add to cart button) selected product 
+                                will be added to the shopping cart.<-->
                                    <div class="col-md-6"> 
                                         <form method="post" action="shop.php?action=add&id="<?php echo $row["pid"]; ?> >  
                                              <div style="border:1px solid #333; background-color:#f1f1f1; border-radius:5px; padding:16px;" align="center">  
