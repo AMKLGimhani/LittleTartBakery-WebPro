@@ -197,11 +197,17 @@ The "Customer" table facilitates the management of customer-related information 
 The review table is designed to store customer reviews for a product or service. Each review is identified by a unique review_id and includes information such as the customer_name, rating, review_text, and review_date.
 
 review_id: An identifier for each review.
+
 customer_name: The name of the customer who wrote the review.
+
 rating: The rating given by the customer, typically on a scale from 1 to 5.
+
 review_text: The text content of the review, allowing customers to provide detailed feedback.
+
 review_date: The date and time when the review was submitted.
-This table enables businesses to gather and manage feedback from customers, helping them understand customer satisfaction levels and areas for improvement. The reviews can be used for analytics, customer engagement, and decision-making processes to enhance products or services.
+
+This table enables businesses to gather and manage feedback from customers, helping them understand customer satisfaction levels and areas for improvement. 
+The reviews can be used for analytics, customer engagement, and decision-making processes to enhance products or services.
 
 
 ### Table 7
