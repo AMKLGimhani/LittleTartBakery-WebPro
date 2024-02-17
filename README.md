@@ -295,44 +295,60 @@ Products are viewd by this form so that the customers can select the products an
 
 ### Table 1
 #### Admin Table
-
 #### Link
 
-- GitHub:
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#admin-table---am-kushani-lakshika
 - shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_kushani23000&table=Admin
   
 
-
 ### Table 2
-#### appointments Table
+#### Order Table
 #### Link
-- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#appointments-table--nilmini-pusweli
-- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_nilmini23000&table=appointments
-  
+- GitHub: 
+- shell.hamk.fi:
 
+- 
 ### Table 3
 #### Product Table 
 #### Link
 - GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#product-table---nilmini-pusweli
 - shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_nilmini23000&table=Product
-  
+
 
 ### Table 4
-#### Order Table
+#### Membership Table
 #### Link
-- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#order-table--nilmini-pusweli
-- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_nilmini23000&table=Order_Table
+- GitHub: 
+- shell.hamk.fi: 
 
 
 ### Table 5
-#### Career Table
-
+#### Customer Table
 #### Link
+- GitHub: 
+- shell.hamk.fi: 
+  
 
+### Table 6
+#### Review Table
+#### Link
+- GitHub: 
+- shell.hamk.fi: 
+
+
+### Table 7
+#### Career Table
+#### Link
 - GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#career-table---am-kushani-lakshika
 - shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_kushani23000&table=career
 
 
+### Table 8
+#### appointments Table
+#### Link
+
+- GitHub: https://github.com/AMKLGimhani/LittleTartBakery-WebPro/blob/main/database.md#appointments-table--nilmini-pusweli
+- shell.hamk.fi: http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_nilmini23000&table=appointments
 
 
 
